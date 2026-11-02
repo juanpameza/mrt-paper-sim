@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: paper-sim
@@ -21,7 +22,7 @@ concurrency:
 jobs:
   pass:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
 
@@ -51,3 +52,13 @@ jobs:
             git pull --rebase --autostash
             git push
           fi
+
+      # GitHub's cron is best-effort, so each pass also hands off to the next one: wait for the next
+      # quarter-hour slot and dispatch the workflow again, until 4:45pm New York. One run started by
+      # anything (cron, a manual click, an outside trigger) keeps the chain going all day.
+      - name: Chain the next pass
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WORKFLOW_FILE: sim.yml
+        run: python chain_next.py

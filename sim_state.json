@@ -92,17 +92,17 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 1.68,
+   "lastMark": 1.93,
    "lastMarkDate": "2026-11-02",
-   "lastMarkTime": "16:07",
+   "lastMarkTime": "16:22",
    "markSource": "chain",
    "marks": [
     {
      "date": "2026-11-02",
-     "mark": 1.68,
+     "mark": 1.93,
      "source": "chain",
      "price": 278.99,
-     "time": "16:07"
+     "time": "16:22"
     }
    ]
   }
@@ -560,10 +560,17 @@
    "action": "skip",
    "reason": "RSI 40.1 above 30",
    "time": "16:07"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "FDX",
+   "action": "skip",
+   "reason": "RSI 69.0 below 70",
+   "time": "16:22"
   }
  ],
  "lastBar": "2026-11-02",
- "lastRun": "2026-11-02T21:07:19",
+ "lastRun": "2026-11-02T21:22:04",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-02",
@@ -587,7 +594,7 @@
   },
   "FDX": {
    "date": "2026-11-02",
-   "reason": "RSI 69.1 below 70"
+   "reason": "RSI 69.0 below 70"
   },
   "XLF": {
    "date": "2026-11-02",
@@ -638,6 +645,6 @@
    "reason": "RSI 34.6 above 30"
   }
  },
- "lastPoll": "2026-11-02T16:07-05:00",
+ "lastPoll": "2026-11-02T16:22-05:00",
  "mode": "intraday"
 }

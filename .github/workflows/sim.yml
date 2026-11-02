@@ -4,9 +4,11 @@ name: Paper sim
 # which GitHub Pages then serves next to index.html. Cron is in UTC; the window below covers
 # 9:30-16:00 New York in both daylight and standard time, and mrt_sim.py itself skips passes that
 # land outside market hours, so the extra hour on either side costs nothing.
+# Ticks sit off the quarter-hour on purpose: :00/:15/:30/:45 are GitHub's busiest minutes and
+# scheduled runs there are the first to be delayed or dropped.
 on:
   schedule:
-    - cron: "*/15 13-21 * * 1-5"
+    - cron: "7,22,37,52 13-21 * * 1-5"
   workflow_dispatch:
 
 permissions:

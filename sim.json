@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-02T20:30:54",
+ "generatedAt": "2026-11-02T20:37:09",
  "asof": "2026-11-02",
- "lastPoll": "2026-11-02T15:30-05:00",
+ "lastPoll": "2026-11-02T15:37-05:00",
  "mode": "intraday",
  "settings": {
   "startCapital": 2500.0,
@@ -102,17 +102,17 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.05,
+   "lastMark": 2.11,
    "lastMarkDate": "2026-11-02",
-   "lastMarkTime": "15:30",
+   "lastMarkTime": "15:37",
    "markSource": "chain",
    "marks": [
     {
      "date": "2026-11-02",
-     "mark": 2.05,
+     "mark": 2.11,
      "source": "chain",
-     "price": 281.82,
-     "time": "15:30"
+     "price": 281.54,
+     "time": "15:37"
     }
    ]
   }
@@ -360,6 +360,76 @@
    "action": "skip",
    "reason": "squeeze: bands inside Keltner",
    "time": "15:30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "NUE",
+   "action": "skip",
+   "reason": "RSI 69.8 below 70",
+   "time": "15:37"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "FDX",
+   "action": "skip",
+   "reason": "RSI 69.5 below 70",
+   "time": "15:37"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "QQQ",
+   "action": "skip",
+   "reason": "RSI 32.3 above 30",
+   "time": "15:37"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "AMD",
+   "action": "skip",
+   "reason": "RSI 34.7 above 30",
+   "time": "15:37"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "XLF",
+   "action": "skip",
+   "reason": "RSI 65.3 below 70",
+   "time": "15:37"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "QCOM",
+   "action": "skip",
+   "reason": "RSI 37.2 above 30",
+   "time": "15:37"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "TSLA",
+   "action": "skip",
+   "reason": "RSI 61.9 below 70",
+   "time": "15:37"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "SPY",
+   "action": "skip",
+   "reason": "RSI 38.6 above 30",
+   "time": "15:37"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "PLTR",
+   "action": "skip",
+   "reason": "RSI 38.9 above 30",
+   "time": "15:37"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "MSFT",
+   "action": "skip",
+   "reason": "RSI 41.4 above 30",
+   "time": "15:37"
   }
  ]
 }

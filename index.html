@@ -208,6 +208,17 @@ table.scan{width:100%;border-collapse:collapse;min-width:1100px}
 .trade .acts{display:flex;gap:6px;justify-content:flex-end;flex-wrap:wrap}
 @media (max-width:760px){.trade{grid-template-columns:1fr 1fr}.trade .t1{grid-column:1 / -1}.trade .acts{grid-column:1 / -1;justify-content:flex-start}}
 
+table.cmp{width:100%;border-collapse:collapse;min-width:640px}
+.cmp th{background:var(--surface-2);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.05em;text-align:left;padding:8px;border-bottom:1px solid var(--line);font-weight:500}
+.cmp td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top;font-size:12.5px}
+.cmp tr:last-child td{border-bottom:none}
+.cmp .tk{font-family:var(--font-mono);font-weight:600;font-size:13px}
+.cmp .cell{display:flex;flex-direction:column;gap:2px}
+.cmp .cell .l1{font-family:var(--font-mono);font-size:12.5px}
+.cmp .cell .l2{font-size:11.5px;color:var(--muted)}
+.cmp .cell .l2.up{color:var(--good)}.cmp .cell .l2.down{color:var(--bad)}
+.cmp .none{color:var(--muted)}
+.shadow-book-head{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
 .loglist{display:flex;flex-direction:column;gap:0;max-height:360px;overflow-y:auto;border:1px solid var(--line);border-radius:6px}
 .logrow{display:grid;grid-template-columns:52px 58px 64px minmax(0,1fr);gap:8px;align-items:center;padding:6px 10px;border-bottom:1px solid var(--line);font-size:12.5px}
 .logrow:last-child{border-bottom:none}
@@ -402,6 +413,20 @@ table.scan{width:100%;border-collapse:collapse;min-width:1100px}
       </div>
     </div>
 
+    <div class="card" id="shadow-card" style="display:none">
+      <div class="card-head">
+        <h2>Entry timing · shadow books</h2>
+        <p>Same signals, same rules, same sizing. Only the moment of entry differs. Nothing here affects the live book.</p>
+      </div>
+      <div class="statgrid" id="shadow-stats" style="grid-template-columns:repeat(3,minmax(0,1fr))"></div>
+      <div class="scan-wrap" style="margin-top:4px">
+        <table class="cmp" id="shadow-table">
+          <thead><tr><th>Ticker</th><th>First pass (live)</th><th>Close</th><th>Confirm</th></tr></thead>
+          <tbody id="shadow-body"></tbody>
+        </table>
+      </div>
+    </div>
+
     <div class="card">
       <div class="card-head">
         <h2>Open positions <span class="muted" id="open-count"></span></h2>
@@ -555,8 +580,20 @@ function normalizeSim(raw){
     equity: Number(raw.equity) || 0,
     trades, log: Array.isArray(raw.log) ? raw.log : [],
     asof: raw.asof || '', generatedAt: raw.generatedAt || '', rules: raw.rules || {},
-    mode: raw.mode || 'daily', lastPoll: raw.lastPoll || ''
+    mode: raw.mode || 'daily', lastPoll: raw.lastPoll || '',
+    shadow: normalizeShadow(raw.shadow)
   };
+}
+function normalizeShadow(raw){
+  const out = {};
+  if (!raw || typeof raw !== 'object') return out;
+  for (const name of Object.keys(raw)){
+    const b = raw[name]; if (!b || typeof b !== 'object' || !b.trades) continue;
+    const trades = {};
+    for (const k of Object.keys(b.trades)){ const t = b.trades[k]; if (t && t.ticker) trades[t.id || k] = Object.assign({ id: t.id || k }, t); }
+    out[name] = { equity: Number(b.equity) || 0, trades, log: Array.isArray(b.log) ? b.log : [] };
+  }
+  return out;
 }
 let SIM = normalizeSim(typeof window !== 'undefined' ? window.MRT_SIM : null);
 // When the page is served over http(s) next to a running sim, pick up new passes without a reload.
@@ -1251,8 +1288,58 @@ function tradeRow(t, c, closed, readOnly){
     el('div', {class:'acts'}, acts)
   ]);
 }
+function bookStats(trades, startCapital){
+  const all = Object.values(trades);
+  const closed = all.filter(t => t.status === 'closed');
+  const open = all.filter(t => t.status !== 'closed');
+  let pnl = 0, wins = 0;
+  for (const t of closed){ const p = num(t.pnl); if (p !== null){ pnl += p; if (p > 0) wins++; } }
+  return { n: closed.length, open: open.length, wins, pnl: round2(pnl), equity: round2(startCapital + pnl), winRate: closed.length ? wins / closed.length : null };
+}
+function renderShadow(){
+  const card = $('shadow-card');
+  const names = SIM ? Object.keys(SIM.shadow) : [];
+  if (!SIM || !names.length){ card.style.display = 'none'; return; }
+  card.style.display = '';
+  const start = SIM.settings.startCapital;
+  const books = [['First pass (live)', SIM.trades]].concat(names.map(n => [n === 'close' ? 'Close' : n === 'confirm' ? 'Confirm' : n, SIM.shadow[n].trades]));
+  const g = $('shadow-stats'); g.textContent = '';
+  for (const [label, trades] of books){
+    const s = bookStats(trades, start);
+    g.appendChild(el('div', null, [
+      el('div', {class:'k', text: label}),
+      el('div', {class:'v', text: usd0(s.equity) + ' · ' + signed(s.pnl, usd0)}),
+      el('div', {class:'small muted', text: s.n + ' closed' + (s.winRate !== null ? ' · ' + pct1(s.winRate * 100) + ' win' : '') + ' · ' + s.open + ' open'})
+    ]));
+  }
+  // one row per ticker, latest trade per book
+  const byTicker = new Map();
+  const add = (col, t)=>{ const r = byTicker.get(t.ticker) || { ticker: t.ticker, latest: '', cells: {} }; const prev = r.cells[col]; if (!prev || (t.opened || '') > (prev.opened || '')) r.cells[col] = t; r.count = r.count || {}; r.count[col] = (r.count[col] || 0) + 1; if ((t.opened || '') > r.latest) r.latest = t.opened || ''; byTicker.set(t.ticker, r); };
+  for (const t of Object.values(SIM.trades)) add('live', t);
+  for (const n of names) for (const t of Object.values(SIM.shadow[n].trades)) add(n, t);
+  const rows = Array.from(byTicker.values()).sort((a, b) => b.latest.localeCompare(a.latest));
+  const body = $('shadow-body'); body.textContent = '';
+  const cols = ['live'].concat(names);
+  const cell = (t, extra)=>{
+    if (!t) return el('span', {class:'none', text:'no entry'});
+    const c = tradeCalc(t);
+    const l1 = fmtDate(t.opened) + (t.openedAt ? ' ' + t.openedAt : '') + ' · ' + strikes(t) + ' @ ' + usd2(c.debit);
+    let l2, cls = '';
+    if (t.status === 'closed'){ l2 = (t.exitReason ? t.exitReason.split(' ')[0] : 'closed') + ' ' + fmtDate(t.closed) + ' · ' + signed(c.pnl, usd2); cls = c.pnl > 0 ? 'up' : c.pnl < 0 ? 'down' : ''; }
+    else { const m = num(t.lastMark); l2 = 'open' + (m !== null ? ' · mark ' + usd2(m) + ' (' + signed((m - c.debit) / (c.debit || 1) * 100, x => pct1(x)) + ')' : ''); cls = m !== null ? (m > c.debit ? 'up' : m < c.debit ? 'down' : '') : ''; }
+    if (extra > 1) l2 += ' · +' + (extra - 1) + ' more';
+    return el('div', {class:'cell'}, [el('span', {class:'l1', text: l1}), el('span', {class:'l2 ' + cls, text: l2})]);
+  };
+  if (!rows.length) body.appendChild(el('tr', null, el('td', {colspan: String(cols.length + 1), class:'none', text:'No entries in any book yet.'})));
+  for (const r of rows){
+    const tr = el('tr', null, [el('td', {class:'tk', text: r.ticker})]);
+    for (const col of cols) tr.appendChild(el('td', null, cell(r.cells[col], (r.count && r.count[col]) || 0)));
+    body.appendChild(tr);
+  }
+}
 function renderSimCard(st){
   if (!SIM) return;
+  renderShadow();
   const poll = SIM.lastPoll ? SIM.lastPoll.replace('T', ' ').slice(0, 16) : (SIM.generatedAt ? SIM.generatedAt.replace('T', ' ').slice(0, 16) : '');
   $('sim-stamp').textContent = (SIM.mode === 'intraday' ? 'Live passes' : 'Daily passes') + (SIM.asof ? ' · bar ' + fmtDate(SIM.asof) : '') + (poll ? ' · last pass ' + poll + (SIM.mode === 'intraday' ? ' NY' : '') : '');
   const g = $('sim-stats'); g.textContent = '';
@@ -1283,6 +1370,7 @@ function renderTrades(){
   $('trade-mode-row').style.display = SIM ? '' : 'none';
   $('manual-card').style.display = simMode ? 'none' : '';
   $('sim-card').style.display = simMode ? '' : 'none';
+  if (!simMode) $('shadow-card').style.display = 'none';
   for (const b of $('trade-mode').querySelectorAll('button')) b.classList.toggle('active', b.dataset.m === ui.tradeMode);
   if (simMode) renderSimCard(st);
   // tiles

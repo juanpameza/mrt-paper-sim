@@ -140,6 +140,13 @@ RULES = {
     "SLIPPAGE_PER_SPREAD": 0.05,   # paid on top of mid at entry, given up at exit
     "COMMISSION_PER_CONTRACT_LEG": 0.65,
     "RISK_FREE_RATE": 0.04,        # only for the Black-Scholes fallback
+
+    # Shadow books: the same signals and rules, traded on paper under different entry timing, so the
+    # timing question is answered with data. "first" is the live book (first pass that passes every
+    # rule). "close" buys at the first pass after 4pm New York on the finished daily bar. "confirm"
+    # waits for a close back inside the band after a touch, then buys at that day's close.
+    "SHADOW_BOOKS": ["close", "confirm"],
+    "CONFIRM_LOOKBACK": 5,         # a valid touch within this many sessions counts for the confirm book
 }
 
 
@@ -217,6 +224,29 @@ def scan_row(ticker, df):
     else:
         bb = "none"
     squeeze = bool(float(bb_u.iloc[-1]) < float(kc_u.iloc[-1]) and float(bb_l.iloc[-1]) > float(kc_l.iloc[-1]))
+
+    # Confirmation view for the "confirm" shadow book: a valid touch in the last few sessions (band
+    # touched with RSI past its threshold), and today a close back inside the band, up (or down) on the
+    # day, with RSI turning. The live book never uses these.
+    look = int(RULES["CONFIRM_LOOKBACK"])
+    confirm = None
+    close_now, close_prev = float(close.iloc[-1]), float(close.iloc[-2])
+    rsi_now, rsi_prev = float(r.iloc[-1]), float(r.iloc[-2])
+    inside = float(bb_l.iloc[-1]) < close_now < float(bb_u.iloc[-1])
+    touch_long = touch_short = None
+    for k in range(2, look + 2):
+        if len(df) < k:
+            break
+        lo_k, hi_k, rsi_k = float(df["Low"].iloc[-k]), float(df["High"].iloc[-k]), float(r.iloc[-k])
+        if touch_long is None and lo_k <= float(bb_l.iloc[-k]) and rsi_k <= RULES["RSI_LONG_MAX"]:
+            touch_long = k - 1
+        if touch_short is None and hi_k >= float(bb_u.iloc[-k]) and rsi_k >= RULES["RSI_SHORT_MIN"]:
+            touch_short = k - 1
+    if inside and touch_long is not None and close_now > close_prev and rsi_now >= rsi_prev:
+        confirm = "bull-call"
+    elif inside and touch_short is not None and close_now < close_prev and rsi_now <= rsi_prev:
+        confirm = "bear-put"
+
     return {
         "ticker": ticker,
         "price": round(float(last["Close"]), 2),
@@ -228,6 +258,8 @@ def scan_row(ticker, df):
         "rsi": round(float(r.iloc[-1]), 1),
         "adx": round(float(x.iloc[-1]), 1),
         "adx_prev": round(float(x.iloc[-2]), 1),
+        "confirm": confirm,
+        "touch_days_ago": touch_long if confirm == "bull-call" else (touch_short if confirm == "bear-put" else None),
         "bb_upper": round(float(bb_u.iloc[-1]), 2),
         "bb_lower": round(float(bb_l.iloc[-1]), 2),
         "kc_upper": round(float(kc_u.iloc[-1]), 2),
@@ -558,8 +590,32 @@ def log_skip(state, today, ticker, reason, when=None):
     log(state, today, ticker, "skip", reason, when=when)
 
 
+_clock = None   # tests can set this to a function returning a New York datetime
+
+
 def ny_now():
+    if _clock:
+        return _clock()
     return dt.datetime.now(NY) if NY else dt.datetime.now()
+
+
+def is_close_pass(intraday):
+    """The pass that sees the finished daily bar: any daily-mode run, or an intraday pass after 4pm New York."""
+    if not intraday:
+        return True
+    now = ny_now()
+    return now.time() >= dt.time(16, 0)
+
+
+def new_book():
+    return {"equity": RULES["START_CAPITAL"], "trades": {}, "log": [], "lastSkip": {}}
+
+
+def shadow_book(state, name):
+    books = state.setdefault("shadow", {})
+    if name not in books:
+        books[name] = new_book()
+    return books[name]
 
 
 def market_open_now(now=None):
@@ -673,17 +729,19 @@ def candidate_order(rows):
     return cands
 
 
-def try_entry(md, state, row, today, cache, dry):
-    """Apply the checklist in order. Returns (entered, reason)."""
+def try_entry(md, state, row, today, cache, dry, side=None, book_name="live"):
+    """Apply the checklist in order. Returns (entered, reason).
+    `side` preset (confirm book): the touch-day checks were done in scan_row; today's squeeze/ADX still apply."""
     t = row["ticker"]
     # 1. Is it a setup at all?
     if row["squeeze"]:
         return False, "squeeze: bands inside Keltner"
-    side = "bull-call" if row["bb"] == "lower" else "bear-put"
-    if side == "bull-call" and row["rsi"] > RULES["RSI_LONG_MAX"]:
-        return False, f"RSI {row['rsi']} above {RULES['RSI_LONG_MAX']:g}"
-    if side == "bear-put" and row["rsi"] < RULES["RSI_SHORT_MIN"]:
-        return False, f"RSI {row['rsi']} below {RULES['RSI_SHORT_MIN']:g}"
+    if side is None:
+        side = "bull-call" if row["bb"] == "lower" else "bear-put"
+        if side == "bull-call" and row["rsi"] > RULES["RSI_LONG_MAX"]:
+            return False, f"RSI {row['rsi']} above {RULES['RSI_LONG_MAX']:g}"
+        if side == "bear-put" and row["rsi"] < RULES["RSI_SHORT_MIN"]:
+            return False, f"RSI {row['rsi']} below {RULES['RSI_SHORT_MIN']:g}"
     if RULES["ADX_MAX"] is not None and row["adx"] > RULES["ADX_MAX"]:
         return False, f"ADX {row['adx']} above {RULES['ADX_MAX']:g}: trend too strong to fade"
     if RULES["REQUIRE_ADX_COOLING"] and row["adx"] > row["adx_prev"]:
@@ -740,8 +798,9 @@ def try_entry(md, state, row, today, cache, dry):
         "debit": spread["debit"], "midDebit": spread["midDebit"], "contracts": n,
         "cost": round(cost_per * n, 2), "stop": stop, "target": target,
         "stopPct": RULES["STOP_PCT"], "targetPct": RULES["TARGET_PCT"],
-        "entryFees": entry_fees, "status": "open",
-        "signal": {"price": row["price"], "rsi": row["rsi"], "adx": row["adx"], "adx_prev": row["adx_prev"], "bb": row["bb"], "atr": row["atr"]},
+        "entryFees": entry_fees, "status": "open", "book": book_name,
+        "signal": {"price": row["price"], "rsi": row["rsi"], "adx": row["adx"], "adx_prev": row["adx_prev"], "bb": row["bb"], "atr": row["atr"],
+                   "confirm": row.get("confirm"), "touchDaysAgo": row.get("touch_days_ago")},
         "entry": {"long": spread["long"], "short": spread["short"], "quotes": "live" if spread["long"]["live"] and spread["short"]["live"] else "last trade"},
         "createdAt": dt.datetime.now().isoformat(timespec="seconds"),
     }
@@ -804,6 +863,29 @@ def run_day(md, state, force=False, dry=False, today_override=None, intraday=Fal
                 else:
                     log(state, today, row["ticker"], "skip", reason)
 
+    # Shadow books: exits every pass (same marks), entries only on the close pass.
+    summary["shadow"] = {}
+    close_pass = is_close_pass(intraday)
+    for name in RULES.get("SHADOW_BOOKS", []):
+        book = shadow_book(state, name)
+        ev = manage_exits(md, book, rows, today, cache, dry, when=when)
+        entries = []
+        if close_pass:
+            if name == "close":
+                cands = [(r, None) for r in candidate_order(rows)]
+            elif name == "confirm":
+                cands = [(r, r["confirm"]) for r in rows.values() if r.get("confirm")]
+                cands.sort(key=lambda rc: -abs(rc[0]["rsi"] - 50))
+            else:
+                cands = []
+            for row, side in cands:
+                entered, reason = try_entry(md, book, row, today, cache, dry, side=side, book_name=name)
+                if entered:
+                    entries.append(f"{row['ticker']}: {reason}")
+                elif not dry:
+                    log_skip(book, today, row["ticker"], reason, when=when)
+        summary["shadow"][name] = {"exits": [e for e in ev if "EXIT" in e], "entries": entries}
+
     if not dry:
         state["lastBar"] = asof
         state["lastRun"] = dt.datetime.now().isoformat(timespec="seconds")
@@ -835,6 +917,10 @@ def export(state):
         "deployed": deployed(state),
         "trades": state["trades"],
         "log": state["log"][-300:],
+        "shadow": {
+            name: {"equity": b["equity"], "deployed": deployed(b), "trades": b["trades"], "log": b["log"][-100:]}
+            for name, b in state.get("shadow", {}).items()
+        },
     }
     JSON_PATH.write_text(json.dumps(payload, indent=1))
     JS_PATH.write_text("window.MRT_SIM = " + json.dumps(payload) + ";\n")
@@ -845,6 +931,16 @@ def export(state):
         w.writeheader()
         for t in sorted(state["trades"].values(), key=lambda x: (x["opened"], x["createdAt"])):
             w.writerow(t)
+    shadow_rows = []
+    for name, b in state.get("shadow", {}).items():
+        for t in b["trades"].values():
+            shadow_rows.append(dict(t, book=name))
+    if shadow_rows:
+        with (HERE / "shadow_trades.csv").open("w", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=["book"] + cols, extrasaction="ignore")
+            w.writeheader()
+            for t in sorted(shadow_rows, key=lambda x: (x["opened"], x["book"], x["createdAt"])):
+                w.writerow(t)
 
 
 def print_summary(state, summary):
@@ -873,6 +969,17 @@ def print_summary(state, summary):
     print(f"Open {len(open_positions(state))}  deployed {dep:,.0f} ({(dep / state['equity'] * 100) if state['equity'] else 0:.1f}% of equity, cap {RULES['DEPLOY_CAP_PCT']:g}%)")
     if closed:
         print(f"Closed {len(closed)}  wins {wins}  win rate {wins / len(closed) * 100:.0f}%  realized {state['equity'] - RULES['START_CAPITAL']:+,.2f}")
+    if state.get("shadow"):
+        print("\nShadow books (entry timing):")
+        for name, b in state["shadow"].items():
+            c = closed_positions(b); w = sum(1 for t in c if t["pnl"] > 0)
+            today_bits = summary.get("shadow", {}).get(name, {})
+            extra = ""
+            if today_bits.get("entries"):
+                extra += "  entered today: " + "; ".join(today_bits["entries"])
+            if today_bits.get("exits"):
+                extra += "  exits today: " + "; ".join(today_bits["exits"])
+            print(f"  {name:<8} equity {b['equity']:,.2f}  open {len(open_positions(b))}  closed {len(c)}" + (f"  wins {w}" if c else "") + extra)
     print(f"\nWrote {JS_PATH.name}, {JSON_PATH.name}, {CSV_PATH.name}")
 
 

@@ -80,3 +80,14 @@ Things to know:
   mark that may have gapped through it. Expect realized losses closer to −50% than the daily run's −65%.
 - A name trades at most once per day. Exits are checked every pass regardless.
 - The Rule log records a skip only when a name's reason changes that day, so it stays readable.
+
+---
+
+## Shadow books (entry timing)
+
+Alongside the live book the sim runs two paper books on the same signals and rules, differing only
+in when they buy: **close** buys at the first pass after 4pm New York on the finished daily bar;
+**confirm** waits for a close back inside the band after a touch (up day, RSI turning) and buys at
+that day's close. Each has its own $2,500 account. They never affect the live book. The Trades tab
+shows all three side by side; `shadow_trades.csv` has every shadow trade. Turn them off by setting
+`SHADOW_BOOKS` to `[]` in `mrt_sim.py`.

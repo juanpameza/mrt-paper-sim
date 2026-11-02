@@ -36,7 +36,63 @@
   "RISK_FREE_RATE": 0.04
  },
  "equity": 2500.0,
- "trades": {},
+ "trades": {
+  "s9e0c095d89": {
+   "id": "s9e0c095d89",
+   "ticker": "GOOGL",
+   "type": "bull-call",
+   "opened": "2026-11-02",
+   "expiry": "2026-12-04",
+   "longK": 285.0,
+   "shortK": 290.0,
+   "width": 5.0,
+   "debit": 2.35,
+   "midDebit": 2.3,
+   "contracts": 1,
+   "cost": 235.0,
+   "stop": 1.18,
+   "target": 4.7,
+   "stopPct": 50.0,
+   "targetPct": 100.0,
+   "entryFees": 1.3,
+   "status": "open",
+   "signal": {
+    "price": 283.63,
+    "rsi": 24.6,
+    "adx": 28.1,
+    "adx_prev": 26.1,
+    "bb": "lower",
+    "atr": 10.17
+   },
+   "entry": {
+    "long": {
+     "strike": 285.0,
+     "bid": 10.2,
+     "ask": 10.9,
+     "last": 10.7,
+     "mid": 10.55,
+     "spread": 0.7,
+     "oi": 1848,
+     "iv": 0.3397,
+     "live": true
+    },
+    "short": {
+     "strike": 290.0,
+     "bid": 8.0,
+     "ask": 8.5,
+     "last": 8.0,
+     "mid": 8.25,
+     "spread": 0.5,
+     "oi": 1231,
+     "iv": 0.3318,
+     "live": true
+    },
+    "quotes": "live"
+   },
+   "createdAt": "2026-11-02T19:00:11",
+   "openedAt": "14:00"
+  }
+ },
  "log": [
   {
    "date": "2026-11-02",
@@ -121,10 +177,50 @@
    "action": "skip",
    "reason": "squeeze: bands inside Keltner",
    "time": "13:56"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "GOOGL",
+   "action": "entry",
+   "reason": "bull-call 285/290 exp 2026-12-04 @ 2.35 x1",
+   "time": "14:00",
+   "detail": {
+    "stop": 1.18,
+    "target": 4.7,
+    "cost": 235.0
+   }
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "FDX",
+   "action": "skip",
+   "reason": "RSI 69.7 below 70",
+   "time": "14:00"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "TSLA",
+   "action": "skip",
+   "reason": "RSI 63.6 below 70",
+   "time": "14:00"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "PLTR",
+   "action": "skip",
+   "reason": "RSI 41.3 above 30",
+   "time": "14:00"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "MSFT",
+   "action": "skip",
+   "reason": "RSI 46.0 above 30",
+   "time": "14:00"
   }
  ],
  "lastBar": "2026-11-02",
- "lastRun": "2026-11-02T18:56:52",
+ "lastRun": "2026-11-02T19:00:11",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-02",
@@ -148,7 +244,7 @@
   },
   "FDX": {
    "date": "2026-11-02",
-   "reason": "RSI 69.5 below 70"
+   "reason": "RSI 69.7 below 70"
   },
   "XLF": {
    "date": "2026-11-02",
@@ -160,7 +256,7 @@
   },
   "TSLA": {
    "date": "2026-11-02",
-   "reason": "RSI 63.9 below 70"
+   "reason": "RSI 63.6 below 70"
   },
   "QCOM": {
    "date": "2026-11-02",
@@ -168,13 +264,17 @@
   },
   "PLTR": {
    "date": "2026-11-02",
-   "reason": "RSI 41.7 above 30"
+   "reason": "RSI 41.3 above 30"
   },
   "JPM": {
    "date": "2026-11-02",
    "reason": "squeeze: bands inside Keltner"
+  },
+  "MSFT": {
+   "date": "2026-11-02",
+   "reason": "RSI 46.0 above 30"
   }
  },
- "lastPoll": "2026-11-02T13:56-05:00",
+ "lastPoll": "2026-11-02T14:00-05:00",
  "mode": "intraday"
 }

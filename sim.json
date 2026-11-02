@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-02T19:00:11",
+ "generatedAt": "2026-11-02T19:03:34",
  "asof": "2026-11-02",
- "lastPoll": "2026-11-02T14:00-05:00",
+ "lastPoll": "2026-11-02T14:03-05:00",
  "mode": "intraday",
  "settings": {
   "startCapital": 2500.0,
@@ -30,9 +30,10 @@
   "DEBIT_MIN_FRAC": 0.35,
   "DEBIT_MAX_FRAC": 0.5,
   "STRIKE_SEARCH": 2,
-  "MIN_DTE": 21,
-  "MAX_DTE": 45,
-  "TARGET_DTE": 30,
+  "MIN_DTE": 20,
+  "MAX_DTE": 55,
+  "TARGET_DTE": 35,
+  "PREFER_MONTHLY": true,
   "MIN_OI": 1000,
   "MAX_LEG_SPREAD_PCT": 0.1,
   "MAX_LEG_SPREAD_ABS": 0.15,
@@ -100,7 +101,20 @@
     "quotes": "live"
    },
    "createdAt": "2026-11-02T19:00:11",
-   "openedAt": "14:00"
+   "openedAt": "14:00",
+   "lastMark": 2.42,
+   "lastMarkDate": "2026-11-02",
+   "lastMarkTime": "14:03",
+   "markSource": "chain",
+   "marks": [
+    {
+     "date": "2026-11-02",
+     "mark": 2.42,
+     "source": "chain",
+     "price": 283.35,
+     "time": "14:03"
+    }
+   ]
   }
  },
  "log": [
@@ -227,6 +241,55 @@
    "action": "skip",
    "reason": "RSI 46.0 above 30",
    "time": "14:00"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "GOOGL",
+   "action": "skip",
+   "reason": "valid setup, already have a position",
+   "time": "14:03"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "HD",
+   "action": "skip",
+   "reason": "earnings 2026-11-17 before expiry 2026-12-18",
+   "time": "14:03"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "COIN",
+   "action": "skip",
+   "reason": "no strike pair passed (2026-12-18): 135/140: long leg open interest 99 < 1000; 130/135: long leg open interest 110 < 1000; 140/145: short leg open interest 267 < 1000",
+   "time": "14:03"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "NUE",
+   "action": "skip",
+   "reason": "no strike pair passed (2026-12-18): 280/275: no 5-wide pair; 270/265: no 5-wide pair; 290/285: no 5-wide pair",
+   "time": "14:03"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "FDX",
+   "action": "skip",
+   "reason": "RSI 69.8 below 70",
+   "time": "14:03"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "XLF",
+   "action": "skip",
+   "reason": "RSI 65.4 below 70",
+   "time": "14:03"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "PLTR",
+   "action": "skip",
+   "reason": "RSI 41.1 above 30",
+   "time": "14:03"
   }
  ]
 }

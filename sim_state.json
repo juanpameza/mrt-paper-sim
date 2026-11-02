@@ -92,17 +92,17 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.42,
+   "lastMark": 2.05,
    "lastMarkDate": "2026-11-02",
-   "lastMarkTime": "14:03",
+   "lastMarkTime": "15:30",
    "markSource": "chain",
    "marks": [
     {
      "date": "2026-11-02",
-     "mark": 2.42,
+     "mark": 2.05,
      "source": "chain",
-     "price": 283.35,
-     "time": "14:03"
+     "price": 281.82,
+     "time": "15:30"
     }
    ]
   }
@@ -280,14 +280,84 @@
    "action": "skip",
    "reason": "RSI 41.1 above 30",
    "time": "14:03"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "WMT",
+   "action": "skip",
+   "reason": "ADX 42.6 above 40: trend too strong to fade",
+   "time": "15:30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "QQQ",
+   "action": "skip",
+   "reason": "RSI 32.7 above 30",
+   "time": "15:30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "XLF",
+   "action": "skip",
+   "reason": "RSI 65.1 below 70",
+   "time": "15:30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "QCOM",
+   "action": "skip",
+   "reason": "RSI 37.6 above 30",
+   "time": "15:30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "TSLA",
+   "action": "skip",
+   "reason": "RSI 62.0 below 70",
+   "time": "15:30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "ORCL",
+   "action": "skip",
+   "reason": "RSI 38.5 above 30",
+   "time": "15:30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "SPY",
+   "action": "skip",
+   "reason": "RSI 38.9 above 30",
+   "time": "15:30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "PLTR",
+   "action": "skip",
+   "reason": "RSI 39.4 above 30",
+   "time": "15:30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "MSFT",
+   "action": "skip",
+   "reason": "RSI 41.9 above 30",
+   "time": "15:30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "TGT",
+   "action": "skip",
+   "reason": "squeeze: bands inside Keltner",
+   "time": "15:30"
   }
  ],
  "lastBar": "2026-11-02",
- "lastRun": "2026-11-02T19:03:34",
+ "lastRun": "2026-11-02T20:30:54",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-02",
-   "reason": "ADX 42.5 above 40: trend too strong to fade"
+   "reason": "ADX 42.6 above 40: trend too strong to fade"
   },
   "GOOGL": {
    "date": "2026-11-02",
@@ -311,7 +381,7 @@
   },
   "XLF": {
    "date": "2026-11-02",
-   "reason": "RSI 65.4 below 70"
+   "reason": "RSI 65.1 below 70"
   },
   "PYPL": {
    "date": "2026-11-02",
@@ -319,15 +389,15 @@
   },
   "TSLA": {
    "date": "2026-11-02",
-   "reason": "RSI 63.6 below 70"
+   "reason": "RSI 62.0 below 70"
   },
   "QCOM": {
    "date": "2026-11-02",
-   "reason": "squeeze: bands inside Keltner"
+   "reason": "RSI 37.6 above 30"
   },
   "PLTR": {
    "date": "2026-11-02",
-   "reason": "RSI 41.1 above 30"
+   "reason": "RSI 39.4 above 30"
   },
   "JPM": {
    "date": "2026-11-02",
@@ -335,9 +405,25 @@
   },
   "MSFT": {
    "date": "2026-11-02",
-   "reason": "RSI 46.0 above 30"
+   "reason": "RSI 41.9 above 30"
+  },
+  "QQQ": {
+   "date": "2026-11-02",
+   "reason": "RSI 32.7 above 30"
+  },
+  "ORCL": {
+   "date": "2026-11-02",
+   "reason": "RSI 38.5 above 30"
+  },
+  "SPY": {
+   "date": "2026-11-02",
+   "reason": "RSI 38.9 above 30"
+  },
+  "TGT": {
+   "date": "2026-11-02",
+   "reason": "squeeze: bands inside Keltner"
   }
  },
- "lastPoll": "2026-11-02T14:03-05:00",
+ "lastPoll": "2026-11-02T15:30-05:00",
  "mode": "intraday"
 }

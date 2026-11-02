@@ -94,7 +94,7 @@
    "openedAt": "14:00",
    "lastMark": 1.93,
    "lastMarkDate": "2026-11-02",
-   "lastMarkTime": "16:22",
+   "lastMarkTime": "16:37",
    "markSource": "chain",
    "marks": [
     {
@@ -102,7 +102,7 @@
      "mark": 1.93,
      "source": "chain",
      "price": 278.99,
-     "time": "16:22"
+     "time": "16:37"
     }
    ]
   }
@@ -567,10 +567,17 @@
    "action": "skip",
    "reason": "RSI 69.0 below 70",
    "time": "16:22"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "XLF",
+   "action": "skip",
+   "reason": "RSI 65.2 below 70",
+   "time": "16:37"
   }
  ],
  "lastBar": "2026-11-02",
- "lastRun": "2026-11-02T21:22:04",
+ "lastRun": "2026-11-02T21:37:59",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-02",
@@ -598,7 +605,7 @@
   },
   "XLF": {
    "date": "2026-11-02",
-   "reason": "RSI 65.1 below 70"
+   "reason": "RSI 65.2 below 70"
   },
   "PYPL": {
    "date": "2026-11-02",
@@ -645,6 +652,6 @@
    "reason": "RSI 34.6 above 30"
   }
  },
- "lastPoll": "2026-11-02T16:22-05:00",
+ "lastPoll": "2026-11-02T16:37-05:00",
  "mode": "intraday"
 }

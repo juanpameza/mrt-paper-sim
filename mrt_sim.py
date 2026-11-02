@@ -120,9 +120,10 @@ RULES = {
     "STRIKE_SEARCH": 2,            # try the ATM pair and up to this many strikes either side
 
     # Time
-    "MIN_DTE": 21,
-    "MAX_DTE": 45,
-    "TARGET_DTE": 30,
+    "MIN_DTE": 20,                 # window wide enough that a monthly expiration is always inside it
+    "MAX_DTE": 55,
+    "TARGET_DTE": 35,
+    "PREFER_MONTHLY": True,        # third-Friday expirations carry the open interest; weeklies only if no monthly fits
 
     # Liquidity
     "MIN_OI": 1000,                # open interest on each leg
@@ -386,8 +387,17 @@ def leg_quote(df, strike):
             "spread": None if spread is None else round(spread, 2), "oi": oi, "iv": round(iv, 4), "live": live}
 
 
+def is_monthly(d):
+    """Standard monthly expiration: the third Friday (or the Thursday before it when that Friday is a holiday)."""
+    if d.weekday() == 4 and 15 <= d.day <= 21:
+        return True
+    if d.weekday() == 3 and 14 <= d.day <= 20:
+        return True
+    return False
+
+
 def choose_expiry(expiries, today):
-    best, best_gap = None, None
+    inside = []
     for e in expiries:
         try:
             d = dt.date.fromisoformat(str(e)[:10])
@@ -395,10 +405,15 @@ def choose_expiry(expiries, today):
             continue
         dte = (d - today).days
         if RULES["MIN_DTE"] <= dte <= RULES["MAX_DTE"]:
-            gap = abs(dte - RULES["TARGET_DTE"])
-            if best is None or gap < best_gap:
-                best, best_gap = d.isoformat(), gap
-    return best
+            inside.append((abs(dte - RULES["TARGET_DTE"]), d))
+    if not inside:
+        return None
+    if RULES.get("PREFER_MONTHLY"):
+        monthly = [x for x in inside if is_monthly(x[1])]
+        if monthly:
+            inside = monthly
+    inside.sort()
+    return inside[0][1].isoformat()
 
 
 def leg_ok(q):
@@ -430,7 +445,9 @@ def build_spread(calls, puts, price, side, width):
         anchor = min(above) if above else max(strikes)
     idx = strikes.index(anchor)
     passing, reasons = [], []
-    for shift in range(-RULES["STRIKE_SEARCH"], RULES["STRIKE_SEARCH"] + 1):
+    # At-the-money first, then one step either side, and so on: the first reason reported is the ATM pair's.
+    shifts = sorted(range(-RULES["STRIKE_SEARCH"], RULES["STRIKE_SEARCH"] + 1), key=lambda s: (abs(s), s))
+    for shift in shifts:
         i = idx + shift
         if i < 0 or i >= len(strikes):
             continue
@@ -700,7 +717,7 @@ def try_entry(md, state, row, today, cache, dry):
         return False, f"could not read option chain ({ex.__class__.__name__})"
     spread, rejects = build_spread(calls, puts, row["price"], side, width)
     if spread is None:
-        return False, "no strike pair passed: " + (rejects[0] if rejects else "none available")
+        return False, f"no strike pair passed ({expiry}): " + ("; ".join(rejects[:3]) if rejects else "none available")
 
     equity = state["equity"]
     cost_per = round(spread["debit"] * 100, 2)

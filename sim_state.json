@@ -97,9 +97,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.57,
+   "lastMark": 2.0,
    "lastMarkDate": "2026-11-03",
-   "lastMarkTime": "16:07",
+   "lastMarkTime": "16:22",
    "markSource": "chain",
    "marks": [
     {
@@ -111,10 +111,10 @@
     },
     {
      "date": "2026-11-03",
-     "mark": 2.57,
+     "mark": 2.0,
      "source": "chain",
      "price": 280.03,
-     "time": "16:07"
+     "time": "16:22"
     }
    ]
   }
@@ -1930,10 +1930,17 @@
    "action": "skip",
    "reason": "RSI 49.4 above 30",
    "time": "16:07"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "SPY",
+   "action": "skip",
+   "reason": "RSI 40.2 above 30",
+   "time": "16:22"
   }
  ],
  "lastBar": "2026-11-03",
- "lastRun": "2026-11-03T21:07:06",
+ "lastRun": "2026-11-03T21:22:15",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-02",
@@ -1997,7 +2004,7 @@
   },
   "SPY": {
    "date": "2026-11-03",
-   "reason": "RSI 40.3 above 30"
+   "reason": "RSI 40.2 above 30"
   },
   "TGT": {
    "date": "2026-11-02",
@@ -2024,7 +2031,7 @@
    "reason": "RSI 53.2 below 70"
   }
  },
- "lastPoll": "2026-11-03T16:07-05:00",
+ "lastPoll": "2026-11-03T16:22-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -2107,6 +2114,13 @@
      "action": "skip",
      "reason": "RSI 49.4 above 30",
      "time": "16:07"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "SPY",
+     "action": "skip",
+     "reason": "RSI 40.2 above 30",
+     "time": "16:22"
     }
    ],
    "lastSkip": {
@@ -2136,7 +2150,7 @@
     },
     "SPY": {
      "date": "2026-11-03",
-     "reason": "RSI 40.3 above 30"
+     "reason": "RSI 40.2 above 30"
     },
     "AAPL": {
      "date": "2026-11-03",
@@ -2215,7 +2229,20 @@
       "quotes": "live"
      },
      "createdAt": "2026-11-03T21:07:05",
-     "openedAt": "16:07"
+     "openedAt": "16:07",
+     "lastMark": 2.1,
+     "lastMarkDate": "2026-11-03",
+     "lastMarkTime": "16:22",
+     "markSource": "chain",
+     "marks": [
+      {
+       "date": "2026-11-03",
+       "mark": 2.1,
+       "source": "chain",
+       "price": 280.03,
+       "time": "16:22"
+      }
+     ]
     },
     "s48831b4801": {
      "id": "s48831b4801",
@@ -2273,7 +2300,20 @@
       "quotes": "live"
      },
      "createdAt": "2026-11-03T21:07:05",
-     "openedAt": "16:07"
+     "openedAt": "16:07",
+     "lastMark": 2.25,
+     "lastMarkDate": "2026-11-03",
+     "lastMarkTime": "16:22",
+     "markSource": "chain",
+     "marks": [
+      {
+       "date": "2026-11-03",
+       "mark": 2.25,
+       "source": "chain",
+       "price": 85.68,
+       "time": "16:22"
+      }
+     ]
     },
     "s151150ad6d": {
      "id": "s151150ad6d",
@@ -2331,7 +2371,20 @@
       "quotes": "live"
      },
      "createdAt": "2026-11-03T21:07:05",
-     "openedAt": "16:07"
+     "openedAt": "16:07",
+     "lastMark": 1.53,
+     "lastMarkDate": "2026-11-03",
+     "lastMarkTime": "16:22",
+     "markSource": "chain",
+     "marks": [
+      {
+       "date": "2026-11-03",
+       "mark": 1.53,
+       "source": "chain",
+       "price": 145.45,
+       "time": "16:22"
+      }
+     ]
     }
    },
    "log": [
@@ -2398,6 +2451,27 @@
      "action": "skip",
      "reason": "no strike pair passed (2026-12-18): 290/285: no 5-wide pair; 280/275: no 5-wide pair; 300/295: no 5-wide pair",
      "time": "16:07"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "GOOGL",
+     "action": "skip",
+     "reason": "valid setup, already have a position",
+     "time": "16:22"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "HOOD",
+     "action": "skip",
+     "reason": "valid setup, already have a position",
+     "time": "16:22"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "COIN",
+     "action": "skip",
+     "reason": "valid setup, already have a position",
+     "time": "16:22"
     }
    ],
    "lastSkip": {
@@ -2416,6 +2490,18 @@
     "ABBV": {
      "date": "2026-11-03",
      "reason": "no strike pair passed (2026-12-18): 290/285: no 5-wide pair; 280/275: no 5-wide pair; 300/295: no 5-wide pair"
+    },
+    "GOOGL": {
+     "date": "2026-11-03",
+     "reason": "valid setup, already have a position"
+    },
+    "HOOD": {
+     "date": "2026-11-03",
+     "reason": "valid setup, already have a position"
+    },
+    "COIN": {
+     "date": "2026-11-03",
+     "reason": "valid setup, already have a position"
     }
    }
   }

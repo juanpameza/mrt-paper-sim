@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-03T20:52:09",
+ "generatedAt": "2026-11-03T21:07:06",
  "asof": "2026-11-03",
- "lastPoll": "2026-11-03T15:52-05:00",
+ "lastPoll": "2026-11-03T16:07-05:00",
  "mode": "intraday",
  "settings": {
   "startCapital": 2500.0,
@@ -107,9 +107,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.04,
+   "lastMark": 2.57,
    "lastMarkDate": "2026-11-03",
-   "lastMarkTime": "15:52",
+   "lastMarkTime": "16:07",
    "markSource": "chain",
    "marks": [
     {
@@ -121,10 +121,10 @@
     },
     {
      "date": "2026-11-03",
-     "mark": 2.04,
+     "mark": 2.57,
      "source": "chain",
-     "price": 279.95,
-     "time": "15:52"
+     "price": 280.03,
+     "time": "16:07"
     }
    ]
   }
@@ -1884,6 +1884,62 @@
    "action": "skip",
    "reason": "RSI 50.1 above 30",
    "time": "15:52"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "FDX",
+   "action": "skip",
+   "reason": "RSI 68.7 below 70",
+   "time": "16:07"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "PLTR",
+   "action": "skip",
+   "reason": "RSI 35.8 above 30",
+   "time": "16:07"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "CRM",
+   "action": "skip",
+   "reason": "RSI 37.3 above 30",
+   "time": "16:07"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "QCOM",
+   "action": "skip",
+   "reason": "RSI 39.6 above 30",
+   "time": "16:07"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "SPY",
+   "action": "skip",
+   "reason": "RSI 40.3 above 30",
+   "time": "16:07"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "GE",
+   "action": "skip",
+   "reason": "RSI 57.9 below 70",
+   "time": "16:07"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "UAL",
+   "action": "skip",
+   "reason": "RSI 53.2 below 70",
+   "time": "16:07"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "MSFT",
+   "action": "skip",
+   "reason": "RSI 49.4 above 30",
+   "time": "16:07"
   }
  ],
  "shadow": {
@@ -1891,13 +1947,331 @@
    "equity": 2500.0,
    "deployed": 0,
    "trades": {},
-   "log": []
+   "log": [
+    {
+     "date": "2026-11-03",
+     "ticker": "FDX",
+     "action": "skip",
+     "reason": "RSI 68.7 below 70",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "PLTR",
+     "action": "skip",
+     "reason": "RSI 35.8 above 30",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "COIN",
+     "action": "skip",
+     "reason": "RSI 36.1 above 30",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "CRM",
+     "action": "skip",
+     "reason": "RSI 37.3 above 30",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "PYPL",
+     "action": "skip",
+     "reason": "squeeze: bands inside Keltner",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "QCOM",
+     "action": "skip",
+     "reason": "RSI 39.6 above 30",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "SPY",
+     "action": "skip",
+     "reason": "RSI 40.3 above 30",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "AAPL",
+     "action": "skip",
+     "reason": "squeeze: bands inside Keltner",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "GE",
+     "action": "skip",
+     "reason": "RSI 57.9 below 70",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "UAL",
+     "action": "skip",
+     "reason": "RSI 53.2 below 70",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "MSFT",
+     "action": "skip",
+     "reason": "RSI 49.4 above 30",
+     "time": "16:07"
+    }
+   ]
   },
   "confirm": {
    "equity": 2500.0,
-   "deployed": 0,
-   "trades": {},
-   "log": []
+   "deployed": 619.0,
+   "trades": {
+    "s7cd37254c1": {
+     "id": "s7cd37254c1",
+     "ticker": "GOOGL",
+     "type": "bull-call",
+     "opened": "2026-11-03",
+     "expiry": "2026-12-18",
+     "longK": 285.0,
+     "shortK": 290.0,
+     "width": 5.0,
+     "debit": 2.08,
+     "midDebit": 2.03,
+     "contracts": 1,
+     "cost": 208.0,
+     "stop": 1.04,
+     "target": 4.16,
+     "stopPct": 50.0,
+     "targetPct": 100.0,
+     "entryFees": 1.3,
+     "status": "open",
+     "book": "confirm",
+     "signal": {
+      "price": 280.03,
+      "rsi": 22.2,
+      "adx": 30.1,
+      "adx_prev": 28.1,
+      "bb": "none",
+      "atr": 9.83,
+      "confirm": "bull-call",
+      "touchDaysAgo": 1
+     },
+     "entry": {
+      "long": {
+       "strike": 285.0,
+       "bid": 10.55,
+       "ask": 10.75,
+       "last": 10.54,
+       "mid": 10.65,
+       "spread": 0.2,
+       "oi": 2768,
+       "iv": 0.3272,
+       "live": true
+      },
+      "short": {
+       "strike": 290.0,
+       "bid": 8.4,
+       "ask": 8.85,
+       "last": 8.6,
+       "mid": 8.62,
+       "spread": 0.45,
+       "oi": 5827,
+       "iv": 0.3283,
+       "live": true
+      },
+      "quotes": "live"
+     },
+     "createdAt": "2026-11-03T21:07:05",
+     "openedAt": "16:07"
+    },
+    "s48831b4801": {
+     "id": "s48831b4801",
+     "ticker": "HOOD",
+     "type": "bull-call",
+     "opened": "2026-11-03",
+     "expiry": "2026-12-18",
+     "longK": 85.0,
+     "shortK": 90.0,
+     "width": 5.0,
+     "debit": 2.18,
+     "midDebit": 2.13,
+     "contracts": 1,
+     "cost": 218.0,
+     "stop": 1.09,
+     "target": 4.36,
+     "stopPct": 50.0,
+     "targetPct": 100.0,
+     "entryFees": 1.3,
+     "status": "open",
+     "book": "confirm",
+     "signal": {
+      "price": 85.68,
+      "rsi": 31.8,
+      "adx": 28.3,
+      "adx_prev": 27.2,
+      "bb": "none",
+      "atr": 5.17,
+      "confirm": "bull-call",
+      "touchDaysAgo": 2
+     },
+     "entry": {
+      "long": {
+       "strike": 85.0,
+       "bid": 7.9,
+       "ask": 8.05,
+       "last": 8.15,
+       "mid": 7.98,
+       "spread": 0.15,
+       "oi": 2050,
+       "iv": 0.6326,
+       "live": true
+      },
+      "short": {
+       "strike": 90.0,
+       "bid": 5.8,
+       "ask": 5.9,
+       "last": 5.88,
+       "mid": 5.85,
+       "spread": 0.1,
+       "oi": 2441,
+       "iv": 0.6301,
+       "live": true
+      },
+      "quotes": "live"
+     },
+     "createdAt": "2026-11-03T21:07:05",
+     "openedAt": "16:07"
+    },
+    "s151150ad6d": {
+     "id": "s151150ad6d",
+     "ticker": "COIN",
+     "type": "bull-call",
+     "opened": "2026-11-03",
+     "expiry": "2026-12-18",
+     "longK": 155.0,
+     "shortK": 160.0,
+     "width": 5.0,
+     "debit": 1.93,
+     "midDebit": 1.88,
+     "contracts": 1,
+     "cost": 193.0,
+     "stop": 0.96,
+     "target": 3.86,
+     "stopPct": 50.0,
+     "targetPct": 100.0,
+     "entryFees": 1.3,
+     "status": "open",
+     "book": "confirm",
+     "signal": {
+      "price": 145.45,
+      "rsi": 36.1,
+      "adx": 26.6,
+      "adx_prev": 25.7,
+      "bb": "lower",
+      "atr": 10.44,
+      "confirm": "bull-call",
+      "touchDaysAgo": 1
+     },
+     "entry": {
+      "long": {
+       "strike": 155.0,
+       "bid": 10.1,
+       "ask": 10.7,
+       "last": 10.3,
+       "mid": 10.4,
+       "spread": 0.6,
+       "oi": 1181,
+       "iv": 0.6921,
+       "live": true
+      },
+      "short": {
+       "strike": 160.0,
+       "bid": 8.35,
+       "ask": 8.7,
+       "last": 8.28,
+       "mid": 8.52,
+       "spread": 0.35,
+       "oi": 2523,
+       "iv": 0.6802,
+       "live": true
+      },
+      "quotes": "live"
+     },
+     "createdAt": "2026-11-03T21:07:05",
+     "openedAt": "16:07"
+    }
+   },
+   "log": [
+    {
+     "date": "2026-11-03",
+     "ticker": "GOOGL",
+     "action": "entry",
+     "reason": "bull-call 285/290 exp 2026-12-18 @ 2.08 x1",
+     "time": "16:07",
+     "detail": {
+      "stop": 1.04,
+      "target": 4.16,
+      "cost": 208.0
+     }
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "CAT",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 620/630: long leg open interest 93 < 1000; 610/620: long leg open interest 123 < 1000; 630/640: long leg open interest 117 < 1000",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "WMT",
+     "action": "skip",
+     "reason": "ADX 44.4 above 40: trend too strong to fade",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "HOOD",
+     "action": "entry",
+     "reason": "bull-call 85/90 exp 2026-12-18 @ 2.18 x1",
+     "time": "16:07",
+     "detail": {
+      "stop": 1.09,
+      "target": 4.36,
+      "cost": 218.0
+     }
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "HD",
+     "action": "skip",
+     "reason": "earnings 2026-11-17 before expiry 2026-12-18",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "COIN",
+     "action": "entry",
+     "reason": "bull-call 155/160 exp 2026-12-18 @ 1.93 x1",
+     "time": "16:07",
+     "detail": {
+      "stop": 0.96,
+      "target": 3.86,
+      "cost": 193.0
+     }
+    },
+    {
+     "date": "2026-11-03",
+     "ticker": "ABBV",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 290/285: no 5-wide pair; 280/275: no 5-wide pair; 300/295: no 5-wide pair",
+     "time": "16:07"
+    }
+   ]
   }
  }
 }

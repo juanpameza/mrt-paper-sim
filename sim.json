@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-03T15:52:09",
+ "generatedAt": "2026-11-03T16:07:11",
  "asof": "2026-11-03",
- "lastPoll": "2026-11-03T10:52-05:00",
+ "lastPoll": "2026-11-03T11:07-05:00",
  "mode": "intraday",
  "settings": {
   "startCapital": 2500.0,
@@ -107,9 +107,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 1.95,
+   "lastMark": 2.01,
    "lastMarkDate": "2026-11-03",
-   "lastMarkTime": "10:52",
+   "lastMarkTime": "11:07",
    "markSource": "chain",
    "marks": [
     {
@@ -121,10 +121,10 @@
     },
     {
      "date": "2026-11-03",
-     "mark": 1.95,
+     "mark": 2.01,
      "source": "chain",
-     "price": 278.55,
-     "time": "10:52"
+     "price": 279.18,
+     "time": "11:07"
     }
    ]
   }
@@ -918,6 +918,55 @@
    "action": "skip",
    "reason": "RSI 45.5 above 30",
    "time": "10:52"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "PLTR",
+   "action": "skip",
+   "reason": "RSI 35.2 above 30",
+   "time": "11:07"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "CRM",
+   "action": "skip",
+   "reason": "RSI 37.7 above 30",
+   "time": "11:07"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "COIN",
+   "action": "skip",
+   "reason": "RSI 39.4 above 30",
+   "time": "11:07"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "QCOM",
+   "action": "skip",
+   "reason": "RSI 40.1 above 30",
+   "time": "11:07"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "GE",
+   "action": "skip",
+   "reason": "RSI 58.0 below 70",
+   "time": "11:07"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "SPY",
+   "action": "skip",
+   "reason": "RSI 42.0 above 30",
+   "time": "11:07"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "MSFT",
+   "action": "skip",
+   "reason": "RSI 46.8 above 30",
+   "time": "11:07"
   }
  ],
  "shadow": {

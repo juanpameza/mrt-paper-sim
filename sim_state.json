@@ -97,9 +97,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.06,
+   "lastMark": 1.97,
    "lastMarkDate": "2026-11-03",
-   "lastMarkTime": "14:22",
+   "lastMarkTime": "14:37",
    "markSource": "chain",
    "marks": [
     {
@@ -111,10 +111,10 @@
     },
     {
      "date": "2026-11-03",
-     "mark": 2.06,
+     "mark": 1.97,
      "source": "chain",
-     "price": 279.3,
-     "time": "14:22"
+     "price": 278.92,
+     "time": "14:37"
     }
    ]
   }
@@ -1538,10 +1538,66 @@
    "action": "skip",
    "reason": "RSI 49.6 above 30",
    "time": "14:22"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "PLTR",
+   "action": "skip",
+   "reason": "RSI 34.7 above 30",
+   "time": "14:37"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "PYPL",
+   "action": "skip",
+   "reason": "squeeze: bands inside Keltner",
+   "time": "14:37"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "COIN",
+   "action": "skip",
+   "reason": "RSI 36.3 above 30",
+   "time": "14:37"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "CRM",
+   "action": "skip",
+   "reason": "RSI 37.5 above 30",
+   "time": "14:37"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "QCOM",
+   "action": "skip",
+   "reason": "RSI 38.0 above 30",
+   "time": "14:37"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "SPY",
+   "action": "skip",
+   "reason": "RSI 40.8 above 30",
+   "time": "14:37"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "GE",
+   "action": "skip",
+   "reason": "RSI 58.4 below 70",
+   "time": "14:37"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "MSFT",
+   "action": "skip",
+   "reason": "RSI 49.5 above 30",
+   "time": "14:37"
   }
  ],
  "lastBar": "2026-11-03",
- "lastRun": "2026-11-03T19:22:17",
+ "lastRun": "2026-11-03T19:37:22",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-02",
@@ -1557,7 +1613,7 @@
   },
   "COIN": {
    "date": "2026-11-03",
-   "reason": "RSI 36.6 above 30"
+   "reason": "RSI 36.3 above 30"
   },
   "NUE": {
    "date": "2026-11-02",
@@ -1573,7 +1629,7 @@
   },
   "PYPL": {
    "date": "2026-11-03",
-   "reason": "RSI 65.7 below 70"
+   "reason": "squeeze: bands inside Keltner"
   },
   "TSLA": {
    "date": "2026-11-02",
@@ -1581,11 +1637,11 @@
   },
   "QCOM": {
    "date": "2026-11-03",
-   "reason": "RSI 38.8 above 30"
+   "reason": "RSI 38.0 above 30"
   },
   "PLTR": {
    "date": "2026-11-03",
-   "reason": "RSI 35.7 above 30"
+   "reason": "RSI 34.7 above 30"
   },
   "JPM": {
    "date": "2026-11-02",
@@ -1593,7 +1649,7 @@
   },
   "MSFT": {
    "date": "2026-11-03",
-   "reason": "RSI 49.6 above 30"
+   "reason": "RSI 49.5 above 30"
   },
   "QQQ": {
    "date": "2026-11-02",
@@ -1605,7 +1661,7 @@
   },
   "SPY": {
    "date": "2026-11-03",
-   "reason": "RSI 41.6 above 30"
+   "reason": "RSI 40.8 above 30"
   },
   "TGT": {
    "date": "2026-11-02",
@@ -1617,7 +1673,7 @@
   },
   "CRM": {
    "date": "2026-11-03",
-   "reason": "RSI 38.0 above 30"
+   "reason": "RSI 37.5 above 30"
   },
   "AAPL": {
    "date": "2026-11-03",
@@ -1625,10 +1681,10 @@
   },
   "GE": {
    "date": "2026-11-03",
-   "reason": "RSI 58.2 below 70"
+   "reason": "RSI 58.4 below 70"
   }
  },
- "lastPoll": "2026-11-03T14:22-05:00",
+ "lastPoll": "2026-11-03T14:37-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {

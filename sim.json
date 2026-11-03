@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-03T14:36:37",
+ "generatedAt": "2026-11-03T14:52:09",
  "asof": "2026-11-03",
- "lastPoll": "2026-11-03T09:36-05:00",
+ "lastPoll": "2026-11-03T09:52-05:00",
  "mode": "intraday",
  "settings": {
   "startCapital": 2500.0,
@@ -107,9 +107,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.02,
+   "lastMark": 2.3,
    "lastMarkDate": "2026-11-03",
-   "lastMarkTime": "09:36",
+   "lastMarkTime": "09:52",
    "markSource": "chain",
    "marks": [
     {
@@ -121,10 +121,10 @@
     },
     {
      "date": "2026-11-03",
-     "mark": 2.02,
+     "mark": 2.3,
      "source": "chain",
-     "price": 279.57,
-     "time": "09:36"
+     "price": 278.44,
+     "time": "09:52"
     }
    ]
   }
@@ -666,6 +666,69 @@
    "action": "skip",
    "reason": "RSI 57.3 below 70",
    "time": "09:36"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "FDX",
+   "action": "skip",
+   "reason": "RSI 69.8 below 70",
+   "time": "09:52"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "PLTR",
+   "action": "skip",
+   "reason": "RSI 33.1 above 30",
+   "time": "09:52"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "CRM",
+   "action": "skip",
+   "reason": "RSI 33.9 above 30",
+   "time": "09:52"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "COIN",
+   "action": "skip",
+   "reason": "RSI 34.9 above 30",
+   "time": "09:52"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "QCOM",
+   "action": "skip",
+   "reason": "RSI 36.8 above 30",
+   "time": "09:52"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "SPY",
+   "action": "skip",
+   "reason": "RSI 39.8 above 30",
+   "time": "09:52"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "AAPL",
+   "action": "skip",
+   "reason": "squeeze: bands inside Keltner",
+   "time": "09:52"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "MSFT",
+   "action": "skip",
+   "reason": "RSI 43.3 above 30",
+   "time": "09:52"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "GE",
+   "action": "skip",
+   "reason": "RSI 56.3 below 70",
+   "time": "09:52"
   }
  ],
  "shadow": {

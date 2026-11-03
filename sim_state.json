@@ -97,9 +97,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 1.58,
+   "lastMark": 1.95,
    "lastMarkDate": "2026-11-03",
-   "lastMarkTime": "11:37",
+   "lastMarkTime": "11:52",
    "markSource": "chain",
    "marks": [
     {
@@ -111,10 +111,10 @@
     },
     {
      "date": "2026-11-03",
-     "mark": 1.58,
+     "mark": 1.95,
      "source": "chain",
-     "price": 278.62,
-     "time": "11:37"
+     "price": 278.55,
+     "time": "11:52"
     }
    ]
   }
@@ -1048,10 +1048,45 @@
    "action": "skip",
    "reason": "RSI 46.3 above 30",
    "time": "11:37"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "PLTR",
+   "action": "skip",
+   "reason": "RSI 34.3 above 30",
+   "time": "11:52"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "CRM",
+   "action": "skip",
+   "reason": "RSI 37.6 above 30",
+   "time": "11:52"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "QCOM",
+   "action": "skip",
+   "reason": "RSI 38.7 above 30",
+   "time": "11:52"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "SPY",
+   "action": "skip",
+   "reason": "RSI 40.5 above 30",
+   "time": "11:52"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "GE",
+   "action": "skip",
+   "reason": "RSI 58.0 below 70",
+   "time": "11:52"
   }
  ],
  "lastBar": "2026-11-03",
- "lastRun": "2026-11-03T16:37:07",
+ "lastRun": "2026-11-03T16:52:06",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-02",
@@ -1091,11 +1126,11 @@
   },
   "QCOM": {
    "date": "2026-11-03",
-   "reason": "RSI 39.0 above 30"
+   "reason": "RSI 38.7 above 30"
   },
   "PLTR": {
    "date": "2026-11-03",
-   "reason": "RSI 34.0 above 30"
+   "reason": "RSI 34.3 above 30"
   },
   "JPM": {
    "date": "2026-11-02",
@@ -1115,7 +1150,7 @@
   },
   "SPY": {
    "date": "2026-11-03",
-   "reason": "RSI 40.6 above 30"
+   "reason": "RSI 40.5 above 30"
   },
   "TGT": {
    "date": "2026-11-02",
@@ -1127,7 +1162,7 @@
   },
   "CRM": {
    "date": "2026-11-03",
-   "reason": "RSI 37.7 above 30"
+   "reason": "RSI 37.6 above 30"
   },
   "AAPL": {
    "date": "2026-11-03",
@@ -1135,10 +1170,10 @@
   },
   "GE": {
    "date": "2026-11-03",
-   "reason": "RSI 58.5 below 70"
+   "reason": "RSI 58.0 below 70"
   }
  },
- "lastPoll": "2026-11-03T11:37-05:00",
+ "lastPoll": "2026-11-03T11:52-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {

@@ -97,9 +97,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.88,
+   "lastMark": 3.25,
    "lastMarkDate": "2026-11-04",
-   "lastMarkTime": "10:37",
+   "lastMarkTime": "10:52",
    "markSource": "chain",
    "marks": [
     {
@@ -118,10 +118,10 @@
     },
     {
      "date": "2026-11-04",
-     "mark": 2.88,
+     "mark": 3.25,
      "source": "chain",
-     "price": 293.35,
-     "time": "10:37"
+     "price": 292.21,
+     "time": "10:52"
     }
    ]
   }
@@ -2441,14 +2441,126 @@
    "action": "skip",
    "reason": "RSI 51.6 below 70",
    "time": "10:37"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "CAT",
+   "action": "skip",
+   "reason": "no strike pair passed (2026-12-18): 580/590: long leg open interest 35 < 1000; 570/580: long leg open interest 83 < 1000; 590/600: long leg open interest 55 < 1000",
+   "time": "10:52"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "WMT",
+   "action": "skip",
+   "reason": "ADX 46.4 above 40: trend too strong to fade",
+   "time": "10:52"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "V",
+   "action": "skip",
+   "reason": "no strike pair passed (2026-12-18): 435/425: long leg open interest 35 < 1000; 430/420: long leg open interest 93 < 1000; 440/430: long leg open interest 5 < 1000",
+   "time": "10:52"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "CVS",
+   "action": "skip",
+   "reason": "RSI 30.9 above 30",
+   "time": "10:52"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "PG",
+   "action": "skip",
+   "reason": "RSI 68.6 below 70",
+   "time": "10:52"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "XLF",
+   "action": "skip",
+   "reason": "RSI 68.5 below 70",
+   "time": "10:52"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "NKE",
+   "action": "skip",
+   "reason": "RSI 68.3 below 70",
+   "time": "10:52"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "PLTR",
+   "action": "skip",
+   "reason": "RSI 34.8 above 30",
+   "time": "10:52"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "MSFT",
+   "action": "skip",
+   "reason": "RSI 63.2 below 70",
+   "time": "10:52"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "JPM",
+   "action": "skip",
+   "reason": "RSI 60.6 below 70",
+   "time": "10:52"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "AMZN",
+   "action": "skip",
+   "reason": "RSI 60.5 below 70",
+   "time": "10:52"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "XLE",
+   "action": "skip",
+   "reason": "RSI 40.5 above 30",
+   "time": "10:52"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "GE",
+   "action": "skip",
+   "reason": "RSI 59.3 below 70",
+   "time": "10:52"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "TGT",
+   "action": "skip",
+   "reason": "RSI 58.8 below 70",
+   "time": "10:52"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "UAL",
+   "action": "skip",
+   "reason": "RSI 57.5 below 70",
+   "time": "10:52"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "IWM",
+   "action": "skip",
+   "reason": "RSI 54.7 below 70",
+   "time": "10:52"
   }
  ],
  "lastBar": "2026-11-04",
- "lastRun": "2026-11-04T15:37:09",
+ "lastRun": "2026-11-04T15:52:08",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-04",
-   "reason": "ADX 46.3 above 40: trend too strong to fade"
+   "reason": "ADX 46.4 above 40: trend too strong to fade"
   },
   "GOOGL": {
    "date": "2026-11-02",
@@ -2472,7 +2584,7 @@
   },
   "XLF": {
    "date": "2026-11-04",
-   "reason": "RSI 67.3 below 70"
+   "reason": "RSI 68.5 below 70"
   },
   "PYPL": {
    "date": "2026-11-04",
@@ -2488,15 +2600,15 @@
   },
   "PLTR": {
    "date": "2026-11-04",
-   "reason": "RSI 37.0 above 30"
+   "reason": "RSI 34.8 above 30"
   },
   "JPM": {
    "date": "2026-11-04",
-   "reason": "squeeze: bands inside Keltner"
+   "reason": "RSI 60.6 below 70"
   },
   "MSFT": {
    "date": "2026-11-04",
-   "reason": "RSI 63.8 below 70"
+   "reason": "RSI 63.2 below 70"
   },
   "QQQ": {
    "date": "2026-11-02",
@@ -2512,7 +2624,7 @@
   },
   "TGT": {
    "date": "2026-11-04",
-   "reason": "RSI 57.5 below 70"
+   "reason": "RSI 58.8 below 70"
   },
   "AMD": {
    "date": "2026-11-02",
@@ -2528,11 +2640,11 @@
   },
   "GE": {
    "date": "2026-11-04",
-   "reason": "RSI 58.5 below 70"
+   "reason": "RSI 59.3 below 70"
   },
   "UAL": {
    "date": "2026-11-04",
-   "reason": "RSI 58.1 below 70"
+   "reason": "RSI 57.5 below 70"
   },
   "DIS": {
    "date": "2026-11-04",
@@ -2540,7 +2652,7 @@
   },
   "CVS": {
    "date": "2026-11-04",
-   "reason": "RSI 31.4 above 30"
+   "reason": "RSI 30.9 above 30"
   },
   "ISRG": {
    "date": "2026-11-04",
@@ -2548,30 +2660,38 @@
   },
   "NKE": {
    "date": "2026-11-04",
-   "reason": "RSI 67.6 below 70"
+   "reason": "RSI 68.3 below 70"
   },
   "AMZN": {
    "date": "2026-11-04",
-   "reason": "RSI 61.1 below 70"
+   "reason": "RSI 60.5 below 70"
   },
   "IWM": {
    "date": "2026-11-04",
-   "reason": "RSI 55.2 below 70"
+   "reason": "RSI 54.7 below 70"
   },
   "XLE": {
    "date": "2026-11-04",
-   "reason": "RSI 41.4 above 30"
+   "reason": "RSI 40.5 above 30"
   },
   "V": {
    "date": "2026-11-04",
-   "reason": "no strike pair passed (2026-12-18): 430/420: long leg open interest 93 < 1000; 425/415: long leg open interest 98 < 1000; 435/425: long leg open interest 35 < 1000"
+   "reason": "no strike pair passed (2026-12-18): 435/425: long leg open interest 35 < 1000; 430/420: long leg open interest 93 < 1000; 440/430: long leg open interest 5 < 1000"
   },
   "GS": {
    "date": "2026-11-04",
    "reason": "RSI 51.6 below 70"
+  },
+  "CAT": {
+   "date": "2026-11-04",
+   "reason": "no strike pair passed (2026-12-18): 580/590: long leg open interest 35 < 1000; 570/580: long leg open interest 83 < 1000; 590/600: long leg open interest 55 < 1000"
+  },
+  "PG": {
+   "date": "2026-11-04",
+   "reason": "RSI 68.6 below 70"
   }
  },
- "lastPoll": "2026-11-04T10:37-05:00",
+ "lastPoll": "2026-11-04T10:52-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -2770,9 +2890,9 @@
      },
      "createdAt": "2026-11-03T21:07:05",
      "openedAt": "16:07",
-     "lastMark": 2.47,
+     "lastMark": 3.0,
      "lastMarkDate": "2026-11-04",
-     "lastMarkTime": "10:37",
+     "lastMarkTime": "10:52",
      "markSource": "chain",
      "marks": [
       {
@@ -2784,10 +2904,10 @@
       },
       {
        "date": "2026-11-04",
-       "mark": 2.47,
+       "mark": 3.0,
        "source": "chain",
-       "price": 293.35,
-       "time": "10:37"
+       "price": 292.21,
+       "time": "10:52"
       }
      ]
     },
@@ -2848,9 +2968,9 @@
      },
      "createdAt": "2026-11-03T21:07:05",
      "openedAt": "16:07",
-     "lastMark": 2.47,
+     "lastMark": 2.48,
      "lastMarkDate": "2026-11-04",
-     "lastMarkTime": "10:37",
+     "lastMarkTime": "10:52",
      "markSource": "chain",
      "marks": [
       {
@@ -2862,10 +2982,10 @@
       },
       {
        "date": "2026-11-04",
-       "mark": 2.47,
+       "mark": 2.48,
        "source": "chain",
-       "price": 87.43,
-       "time": "10:37"
+       "price": 85.82,
+       "time": "10:52"
       }
      ]
     },
@@ -2926,9 +3046,9 @@
      },
      "createdAt": "2026-11-03T21:07:05",
      "openedAt": "16:07",
-     "lastMark": 2.18,
+     "lastMark": 1.97,
      "lastMarkDate": "2026-11-04",
-     "lastMarkTime": "10:37",
+     "lastMarkTime": "10:52",
      "markSource": "chain",
      "marks": [
       {
@@ -2940,10 +3060,10 @@
       },
       {
        "date": "2026-11-04",
-       "mark": 2.18,
+       "mark": 1.97,
        "source": "chain",
-       "price": 151.46,
-       "time": "10:37"
+       "price": 148.84,
+       "time": "10:52"
       }
      ]
     }

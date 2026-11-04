@@ -97,9 +97,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.0,
-   "lastMarkDate": "2026-11-03",
-   "lastMarkTime": "16:37",
+   "lastMark": 2.52,
+   "lastMarkDate": "2026-11-04",
+   "lastMarkTime": "09:36",
    "markSource": "chain",
    "marks": [
     {
@@ -115,6 +115,13 @@
      "source": "chain",
      "price": 280.03,
      "time": "16:37"
+    },
+    {
+     "date": "2026-11-04",
+     "mark": 2.52,
+     "source": "chain",
+     "price": 287.88,
+     "time": "09:36"
     }
    ]
   }
@@ -1937,10 +1944,129 @@
    "action": "skip",
    "reason": "RSI 40.2 above 30",
    "time": "16:22"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "DIS",
+   "action": "skip",
+   "reason": "earnings 2026-11-17 before expiry 2026-12-18",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "FDX",
+   "action": "skip",
+   "reason": "earnings date unknown",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "HD",
+   "action": "skip",
+   "reason": "ADX 40.3 above 40: trend too strong to fade",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "CVS",
+   "action": "skip",
+   "reason": "earnings 2026-11-04 before expiry 2026-12-18",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "ISRG",
+   "action": "skip",
+   "reason": "RSI 69.6 below 70",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "XLF",
+   "action": "skip",
+   "reason": "RSI 68.5 below 70",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "PLTR",
+   "action": "skip",
+   "reason": "RSI 33.0 above 30",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "PYPL",
+   "action": "skip",
+   "reason": "RSI 67.0 below 70",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "NKE",
+   "action": "skip",
+   "reason": "RSI 66.8 below 70",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "GE",
+   "action": "skip",
+   "reason": "RSI 62.7 below 70",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "MSFT",
+   "action": "skip",
+   "reason": "RSI 60.9 below 70",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "AMZN",
+   "action": "skip",
+   "reason": "RSI 60.8 below 70",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "UAL",
+   "action": "skip",
+   "reason": "RSI 60.8 below 70",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "IWM",
+   "action": "skip",
+   "reason": "RSI 59.9 below 70",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "JPM",
+   "action": "skip",
+   "reason": "RSI 59.2 below 70",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "XLE",
+   "action": "skip",
+   "reason": "RSI 42.0 above 30",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-04",
+   "ticker": "TGT",
+   "action": "skip",
+   "reason": "RSI 57.9 below 70",
+   "time": "09:36"
   }
  ],
- "lastBar": "2026-11-03",
- "lastRun": "2026-11-03T21:37:15",
+ "lastBar": "2026-11-04",
+ "lastRun": "2026-11-04T14:36:36",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-02",
@@ -1951,8 +2077,8 @@
    "reason": "valid setup, already have a position"
   },
   "HD": {
-   "date": "2026-11-02",
-   "reason": "earnings 2026-11-17 before expiry 2026-12-18"
+   "date": "2026-11-04",
+   "reason": "ADX 40.3 above 40: trend too strong to fade"
   },
   "COIN": {
    "date": "2026-11-03",
@@ -1963,16 +2089,16 @@
    "reason": "RSI 69.4 below 70"
   },
   "FDX": {
-   "date": "2026-11-03",
-   "reason": "RSI 68.7 below 70"
+   "date": "2026-11-04",
+   "reason": "earnings date unknown"
   },
   "XLF": {
-   "date": "2026-11-02",
-   "reason": "RSI 65.2 below 70"
+   "date": "2026-11-04",
+   "reason": "RSI 68.5 below 70"
   },
   "PYPL": {
-   "date": "2026-11-03",
-   "reason": "squeeze: bands inside Keltner"
+   "date": "2026-11-04",
+   "reason": "RSI 67.0 below 70"
   },
   "TSLA": {
    "date": "2026-11-02",
@@ -1983,16 +2109,16 @@
    "reason": "RSI 39.6 above 30"
   },
   "PLTR": {
-   "date": "2026-11-03",
-   "reason": "RSI 35.8 above 30"
+   "date": "2026-11-04",
+   "reason": "RSI 33.0 above 30"
   },
   "JPM": {
-   "date": "2026-11-02",
-   "reason": "squeeze: bands inside Keltner"
+   "date": "2026-11-04",
+   "reason": "RSI 59.2 below 70"
   },
   "MSFT": {
-   "date": "2026-11-03",
-   "reason": "RSI 49.4 above 30"
+   "date": "2026-11-04",
+   "reason": "RSI 60.9 below 70"
   },
   "QQQ": {
    "date": "2026-11-02",
@@ -2007,8 +2133,8 @@
    "reason": "RSI 40.2 above 30"
   },
   "TGT": {
-   "date": "2026-11-02",
-   "reason": "squeeze: bands inside Keltner"
+   "date": "2026-11-04",
+   "reason": "RSI 57.9 below 70"
   },
   "AMD": {
    "date": "2026-11-02",
@@ -2023,15 +2149,43 @@
    "reason": "squeeze: bands inside Keltner"
   },
   "GE": {
-   "date": "2026-11-03",
-   "reason": "RSI 57.9 below 70"
+   "date": "2026-11-04",
+   "reason": "RSI 62.7 below 70"
   },
   "UAL": {
-   "date": "2026-11-03",
-   "reason": "RSI 53.2 below 70"
+   "date": "2026-11-04",
+   "reason": "RSI 60.8 below 70"
+  },
+  "DIS": {
+   "date": "2026-11-04",
+   "reason": "earnings 2026-11-17 before expiry 2026-12-18"
+  },
+  "CVS": {
+   "date": "2026-11-04",
+   "reason": "earnings 2026-11-04 before expiry 2026-12-18"
+  },
+  "ISRG": {
+   "date": "2026-11-04",
+   "reason": "RSI 69.6 below 70"
+  },
+  "NKE": {
+   "date": "2026-11-04",
+   "reason": "RSI 66.8 below 70"
+  },
+  "AMZN": {
+   "date": "2026-11-04",
+   "reason": "RSI 60.8 below 70"
+  },
+  "IWM": {
+   "date": "2026-11-04",
+   "reason": "RSI 59.9 below 70"
+  },
+  "XLE": {
+   "date": "2026-11-04",
+   "reason": "RSI 42.0 above 30"
   }
  },
- "lastPoll": "2026-11-03T16:37-05:00",
+ "lastPoll": "2026-11-04T09:36-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -2230,9 +2384,9 @@
      },
      "createdAt": "2026-11-03T21:07:05",
      "openedAt": "16:07",
-     "lastMark": 2.1,
-     "lastMarkDate": "2026-11-03",
-     "lastMarkTime": "16:37",
+     "lastMark": 2.2,
+     "lastMarkDate": "2026-11-04",
+     "lastMarkTime": "09:36",
      "markSource": "chain",
      "marks": [
       {
@@ -2241,6 +2395,13 @@
        "source": "chain",
        "price": 280.03,
        "time": "16:37"
+      },
+      {
+       "date": "2026-11-04",
+       "mark": 2.2,
+       "source": "chain",
+       "price": 287.88,
+       "time": "09:36"
       }
      ]
     },
@@ -2301,9 +2462,9 @@
      },
      "createdAt": "2026-11-03T21:07:05",
      "openedAt": "16:07",
-     "lastMark": 2.25,
-     "lastMarkDate": "2026-11-03",
-     "lastMarkTime": "16:37",
+     "lastMark": 1.87,
+     "lastMarkDate": "2026-11-04",
+     "lastMarkTime": "09:36",
      "markSource": "chain",
      "marks": [
       {
@@ -2312,6 +2473,13 @@
        "source": "chain",
        "price": 85.68,
        "time": "16:37"
+      },
+      {
+       "date": "2026-11-04",
+       "mark": 1.87,
+       "source": "chain",
+       "price": 84.61,
+       "time": "09:36"
       }
      ]
     },
@@ -2372,9 +2540,9 @@
      },
      "createdAt": "2026-11-03T21:07:05",
      "openedAt": "16:07",
-     "lastMark": 1.53,
-     "lastMarkDate": "2026-11-03",
-     "lastMarkTime": "16:37",
+     "lastMark": 2.02,
+     "lastMarkDate": "2026-11-04",
+     "lastMarkTime": "09:36",
      "markSource": "chain",
      "marks": [
       {
@@ -2383,6 +2551,13 @@
        "source": "chain",
        "price": 145.45,
        "time": "16:37"
+      },
+      {
+       "date": "2026-11-04",
+       "mark": 2.02,
+       "source": "chain",
+       "price": 145.98,
+       "time": "09:36"
       }
      ]
     }

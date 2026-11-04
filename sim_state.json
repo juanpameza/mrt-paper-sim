@@ -97,9 +97,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.63,
+   "lastMark": 2.66,
    "lastMarkDate": "2026-11-04",
-   "lastMarkTime": "16:22",
+   "lastMarkTime": "16:37",
    "markSource": "chain",
    "marks": [
     {
@@ -118,10 +118,10 @@
     },
     {
      "date": "2026-11-04",
-     "mark": 2.63,
+     "mark": 2.66,
      "source": "chain",
      "price": 288.93,
-     "time": "16:22"
+     "time": "16:37"
     }
    ]
   }
@@ -4278,7 +4278,7 @@
   }
  ],
  "lastBar": "2026-11-04",
- "lastRun": "2026-11-04T21:22:14",
+ "lastRun": "2026-11-04T21:37:17",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-04",
@@ -4429,7 +4429,7 @@
    "reason": "RSI 56.4 below 70"
   }
  },
- "lastPoll": "2026-11-04T16:22-05:00",
+ "lastPoll": "2026-11-04T16:37-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -4934,7 +4934,7 @@
      "openedAt": "16:07",
      "lastMark": 2.67,
      "lastMarkDate": "2026-11-04",
-     "lastMarkTime": "16:22",
+     "lastMarkTime": "16:37",
      "markSource": "chain",
      "marks": [
       {
@@ -4949,7 +4949,7 @@
        "mark": 2.67,
        "source": "chain",
        "price": 288.93,
-       "time": "16:22"
+       "time": "16:37"
       }
      ]
     },
@@ -5012,7 +5012,7 @@
      "openedAt": "16:07",
      "lastMark": 2.43,
      "lastMarkDate": "2026-11-04",
-     "lastMarkTime": "16:22",
+     "lastMarkTime": "16:37",
      "markSource": "chain",
      "marks": [
       {
@@ -5027,7 +5027,7 @@
        "mark": 2.43,
        "source": "chain",
        "price": 87.41,
-       "time": "16:22"
+       "time": "16:37"
       }
      ]
     },
@@ -5090,7 +5090,7 @@
      "openedAt": "16:07",
      "lastMark": 2.0,
      "lastMarkDate": "2026-11-04",
-     "lastMarkTime": "16:22",
+     "lastMarkTime": "16:37",
      "markSource": "chain",
      "marks": [
       {
@@ -5105,7 +5105,7 @@
        "mark": 2.0,
        "source": "chain",
        "price": 151.5,
-       "time": "16:22"
+       "time": "16:37"
       }
      ]
     }

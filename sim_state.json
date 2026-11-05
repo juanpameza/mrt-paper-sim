@@ -99,7 +99,7 @@
    "openedAt": "14:00",
    "lastMark": 2.28,
    "lastMarkDate": "2026-11-05",
-   "lastMarkTime": "16:22",
+   "lastMarkTime": "16:37",
    "markSource": "chain",
    "marks": [
     {
@@ -128,7 +128,7 @@
      "mark": 2.28,
      "source": "chain",
      "price": 282.57,
-     "time": "16:22"
+     "time": "16:37"
     }
    ]
   },
@@ -191,7 +191,7 @@
    "openedAt": "10:22",
    "lastMark": 1.6,
    "lastMarkDate": "2026-11-05",
-   "lastMarkTime": "16:22",
+   "lastMarkTime": "16:37",
    "markSource": "chain",
    "marks": [
     {
@@ -199,7 +199,7 @@
      "mark": 1.6,
      "source": "chain",
      "price": 57.9,
-     "time": "16:22"
+     "time": "16:37"
     }
    ]
   },
@@ -262,7 +262,7 @@
    "openedAt": "10:37",
    "lastMark": 2.65,
    "lastMarkDate": "2026-11-05",
-   "lastMarkTime": "16:22",
+   "lastMarkTime": "16:37",
    "markSource": "chain",
    "marks": [
     {
@@ -270,33 +270,12 @@
      "mark": 2.65,
      "source": "chain",
      "price": 78.39,
-     "time": "16:22"
+     "time": "16:37"
     }
    ]
   }
  },
  "log": [
-  {
-   "date": "2026-11-05",
-   "ticker": "PYPL",
-   "action": "skip",
-   "reason": "RSI 60.5 below 70",
-   "time": "10:37"
-  },
-  {
-   "date": "2026-11-05",
-   "ticker": "MRK",
-   "action": "skip",
-   "reason": "RSI 58.7 below 70",
-   "time": "10:37"
-  },
-  {
-   "date": "2026-11-05",
-   "ticker": "TGT",
-   "action": "skip",
-   "reason": "RSI 58.1 below 70",
-   "time": "10:37"
-  },
   {
    "date": "2026-11-05",
    "ticker": "XLE",
@@ -4475,10 +4454,31 @@
    "action": "skip",
    "reason": "RSI 56.7 below 70",
    "time": "16:22"
+  },
+  {
+   "date": "2026-11-05",
+   "ticker": "QQQ",
+   "action": "skip",
+   "reason": "no strike pair passed (2026-12-18): 645/655: debit 5.87 over 50% of width; 640/650: debit 6.15 over 50% of width; 650/660: debit 5.62 over 50% of width",
+   "time": "16:37"
+  },
+  {
+   "date": "2026-11-05",
+   "ticker": "XLE",
+   "action": "skip",
+   "reason": "RSI 34.0 above 30",
+   "time": "16:37"
+  },
+  {
+   "date": "2026-11-05",
+   "ticker": "XLF",
+   "action": "skip",
+   "reason": "RSI 57.7 below 70",
+   "time": "16:37"
   }
  ],
  "lastBar": "2026-11-05",
- "lastRun": "2026-11-05T21:22:10",
+ "lastRun": "2026-11-05T21:37:07",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -4506,7 +4506,7 @@
   },
   "XLF": {
    "date": "2026-11-05",
-   "reason": "RSI 57.8 below 70"
+   "reason": "RSI 57.7 below 70"
   },
   "PYPL": {
    "date": "2026-11-05",
@@ -4534,7 +4534,7 @@
   },
   "QQQ": {
    "date": "2026-11-05",
-   "reason": "no strike pair passed (2026-12-18): 645/655: debit 6.06 over 50% of width; 640/650: debit 6.08 over 50% of width; 650/660: debit 5.43 over 50% of width"
+   "reason": "no strike pair passed (2026-12-18): 645/655: debit 5.87 over 50% of width; 640/650: debit 6.15 over 50% of width; 650/660: debit 5.62 over 50% of width"
   },
   "ORCL": {
    "date": "2026-11-05",
@@ -4594,7 +4594,7 @@
   },
   "XLE": {
    "date": "2026-11-05",
-   "reason": "RSI 34.1 above 30"
+   "reason": "RSI 34.0 above 30"
   },
   "V": {
    "date": "2026-11-05",
@@ -4661,7 +4661,7 @@
    "reason": "valid setup, already have a position"
   }
  },
- "lastPoll": "2026-11-05T16:22-05:00",
+ "lastPoll": "2026-11-05T16:37-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -4726,7 +4726,7 @@
      "openedAt": "16:07",
      "lastMark": 1.6,
      "lastMarkDate": "2026-11-05",
-     "lastMarkTime": "16:22",
+     "lastMarkTime": "16:37",
      "markSource": "chain",
      "marks": [
       {
@@ -4734,7 +4734,7 @@
        "mark": 1.6,
        "source": "chain",
        "price": 57.9,
-       "time": "16:22"
+       "time": "16:37"
       }
      ]
     },
@@ -4797,7 +4797,7 @@
      "openedAt": "16:07",
      "lastMark": 2.1,
      "lastMarkDate": "2026-11-05",
-     "lastMarkTime": "16:22",
+     "lastMarkTime": "16:37",
      "markSource": "chain",
      "marks": [
       {
@@ -4805,7 +4805,7 @@
        "mark": 2.1,
        "source": "chain",
        "price": 78.39,
-       "time": "16:22"
+       "time": "16:37"
       }
      ]
     }
@@ -5478,6 +5478,27 @@
      "action": "skip",
      "reason": "RSI 56.7 below 70",
      "time": "16:22"
+    },
+    {
+     "date": "2026-11-05",
+     "ticker": "QQQ",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 645/655: debit 5.87 over 50% of width; 640/650: debit 6.15 over 50% of width; 650/660: debit 5.62 over 50% of width",
+     "time": "16:37"
+    },
+    {
+     "date": "2026-11-05",
+     "ticker": "XLE",
+     "action": "skip",
+     "reason": "RSI 34.0 above 30",
+     "time": "16:37"
+    },
+    {
+     "date": "2026-11-05",
+     "ticker": "XLF",
+     "action": "skip",
+     "reason": "RSI 57.7 below 70",
+     "time": "16:37"
     }
    ],
    "lastSkip": {
@@ -5551,7 +5572,7 @@
     },
     "XLF": {
      "date": "2026-11-05",
-     "reason": "RSI 57.8 below 70"
+     "reason": "RSI 57.7 below 70"
     },
     "CVS": {
      "date": "2026-11-05",
@@ -5579,7 +5600,7 @@
     },
     "XLE": {
      "date": "2026-11-05",
-     "reason": "RSI 34.1 above 30"
+     "reason": "RSI 34.0 above 30"
     },
     "AMZN": {
      "date": "2026-11-05",
@@ -5611,7 +5632,7 @@
     },
     "QQQ": {
      "date": "2026-11-05",
-     "reason": "no strike pair passed (2026-12-18): 645/655: debit 6.06 over 50% of width; 640/650: debit 6.08 over 50% of width; 650/660: debit 5.43 over 50% of width"
+     "reason": "no strike pair passed (2026-12-18): 645/655: debit 5.87 over 50% of width; 640/650: debit 6.15 over 50% of width; 650/660: debit 5.62 over 50% of width"
     },
     "AMD": {
      "date": "2026-11-05",
@@ -5717,7 +5738,7 @@
      "openedAt": "16:07",
      "lastMark": 2.21,
      "lastMarkDate": "2026-11-05",
-     "lastMarkTime": "16:22",
+     "lastMarkTime": "16:37",
      "markSource": "chain",
      "marks": [
       {
@@ -5739,7 +5760,7 @@
        "mark": 2.21,
        "source": "chain",
        "price": 282.57,
-       "time": "16:22"
+       "time": "16:37"
       }
      ]
     },
@@ -5802,7 +5823,7 @@
      "openedAt": "16:07",
      "lastMark": 1.58,
      "lastMarkDate": "2026-11-05",
-     "lastMarkTime": "16:22",
+     "lastMarkTime": "16:37",
      "markSource": "chain",
      "marks": [
       {
@@ -5824,7 +5845,7 @@
        "mark": 1.58,
        "source": "chain",
        "price": 78.39,
-       "time": "16:22"
+       "time": "16:37"
       }
      ]
     },
@@ -5887,7 +5908,7 @@
      "openedAt": "16:07",
      "lastMark": 1.27,
      "lastMarkDate": "2026-11-05",
-     "lastMarkTime": "16:22",
+     "lastMarkTime": "16:37",
      "markSource": "chain",
      "marks": [
       {
@@ -5909,7 +5930,7 @@
        "mark": 1.27,
        "source": "chain",
        "price": 136.82,
-       "time": "16:22"
+       "time": "16:37"
       }
      ]
     }
@@ -6090,6 +6111,13 @@
      "action": "skip",
      "reason": "no strike pair passed (2026-12-18): 58/53: long leg bid/ask 0.38 wider than 0.17; 57/52: long leg bid/ask 0.21 wider than 0.15; 59/54: long leg bid/ask 0.41 wider than 0.22",
      "time": "16:22"
+    },
+    {
+     "date": "2026-11-05",
+     "ticker": "XLF",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 58/53: long leg bid/ask 0.38 wider than 0.17; 57/52: long leg bid/ask 0.22 wider than 0.15; 59/54: long leg bid/ask 0.41 wider than 0.22",
+     "time": "16:37"
     }
    ],
    "lastSkip": {
@@ -6139,7 +6167,7 @@
     },
     "XLF": {
      "date": "2026-11-05",
-     "reason": "no strike pair passed (2026-12-18): 58/53: long leg bid/ask 0.38 wider than 0.17; 57/52: long leg bid/ask 0.21 wider than 0.15; 59/54: long leg bid/ask 0.41 wider than 0.22"
+     "reason": "no strike pair passed (2026-12-18): 58/53: long leg bid/ask 0.38 wider than 0.17; 57/52: long leg bid/ask 0.22 wider than 0.15; 59/54: long leg bid/ask 0.41 wider than 0.22"
     }
    }
   }

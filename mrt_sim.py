@@ -147,6 +147,11 @@ RULES = {
     # waits for a close back inside the band after a touch, then buys at that day's close.
     "SHADOW_BOOKS": ["close", "confirm"],
     "CONFIRM_LOOKBACK": 5,         # a valid touch within this many sessions counts for the confirm book
+
+    # Signal book: every setup that passes the rules, one contract each, no capacity limits (no deployment
+    # cap, no position size, no max open). The live book is what the account can afford; this is the
+    # strategy's whole sample, so win rate and expectancy are measured on all of it.
+    "SIGNALS_BOOK": True,
 }
 
 
@@ -733,9 +738,10 @@ def candidate_order(rows):
     return cands
 
 
-def try_entry(md, state, row, today, cache, dry, side=None, book_name="live"):
+def try_entry(md, state, row, today, cache, dry, side=None, book_name="live", unconstrained=False):
     """Apply the checklist in order. Returns (entered, reason).
-    `side` preset (confirm book): the touch-day checks were done in scan_row; today's squeeze/ADX still apply."""
+    `side` preset (confirm book): the touch-day checks were done in scan_row; today's squeeze/ADX still apply.
+    `unconstrained` (signal book): skip the capacity rules and size one contract."""
     t = row["ticker"]
     # 1. Is it a setup at all?
     if row["squeeze"]:
@@ -756,7 +762,7 @@ def try_entry(md, state, row, today, cache, dry, side=None, book_name="live"):
         return False, "valid setup, already have a position"
     if RULES["NO_REENTRY_SAME_DAY"] and traded_today(state, t, today):
         return False, "valid setup, already traded today"
-    if len(opens) >= RULES["MAX_OPEN"]:
+    if not unconstrained and len(opens) >= RULES["MAX_OPEN"]:
         return False, f"valid setup, max open positions ({RULES['MAX_OPEN']}) reached"
     # 3. Time, earnings, structure, size
     expiries = md.expiries(t)
@@ -783,14 +789,17 @@ def try_entry(md, state, row, today, cache, dry, side=None, book_name="live"):
 
     equity = state["equity"]
     cost_per = round(spread["debit"] * 100, 2)
-    cap_room = round(equity * RULES["DEPLOY_CAP_PCT"] / 100.0 - deployed(state), 2)
-    pos_room = round(equity * RULES["MAX_POSITION_PCT"] / 100.0, 2)
-    budget = min(cap_room, pos_room)
-    n = int(budget // cost_per) if cost_per > 0 else 0
-    if n < 1:
-        if cap_room < cost_per:
-            return False, f"deployment cap: {cap_room:.0f} left, spread costs {cost_per:.0f}"
-        return False, f"position limit {pos_room:.0f} < spread cost {cost_per:.0f}"
+    if unconstrained:
+        n = 1
+    else:
+        cap_room = round(equity * RULES["DEPLOY_CAP_PCT"] / 100.0 - deployed(state), 2)
+        pos_room = round(equity * RULES["MAX_POSITION_PCT"] / 100.0, 2)
+        budget = min(cap_room, pos_room)
+        n = int(budget // cost_per) if cost_per > 0 else 0
+        if n < 1:
+            if cap_room < cost_per:
+                return False, f"deployment cap: {cap_room:.0f} left, spread costs {cost_per:.0f}"
+            return False, f"position limit {pos_room:.0f} < spread cost {cost_per:.0f}"
 
     stop = round(spread["debit"] * (1 - RULES["STOP_PCT"] / 100.0), 2)
     target = round(min(spread["debit"] * (1 + RULES["TARGET_PCT"] / 100.0), width), 2)
@@ -890,6 +899,19 @@ def run_day(md, state, force=False, dry=False, today_override=None, intraday=Fal
                     log_skip(book, today, row["ticker"], reason, when=when)
         summary["shadow"][name] = {"exits": [e for e in ev if "EXIT" in e], "entries": entries}
 
+    # Signal book: everything that qualifies, one contract each, every pass (same timing as the live book).
+    if RULES.get("SIGNALS_BOOK"):
+        book = state.setdefault("signals", new_book())
+        ev = manage_exits(md, book, rows, today, cache, dry, when=when)
+        entries = []
+        for row in candidate_order(rows):
+            entered, reason = try_entry(md, book, row, today, cache, dry, book_name="signals", unconstrained=True)
+            if entered:
+                entries.append(f"{row['ticker']}: {reason}")
+            elif not dry:
+                log_skip(book, today, row["ticker"], reason, when=when)
+        summary["signals"] = {"exits": [e for e in ev if "EXIT" in e], "entries": entries}
+
     if not dry:
         state["lastBar"] = asof
         state["lastRun"] = dt.datetime.now().isoformat(timespec="seconds")
@@ -933,6 +955,9 @@ def export(state):
             for name, b in state.get("shadow", {}).items()
         },
     }
+    if state.get("signals"):
+        b = state["signals"]
+        payload["signals"] = {"equity": b["equity"], "trades": b["trades"], "log": export_log(b["log"], 120)}
     JSON_PATH.write_text(json.dumps(payload, indent=1))
     JS_PATH.write_text("window.MRT_SIM = " + json.dumps(payload) + ";\n")
     cols = ["id", "ticker", "type", "opened", "expiry", "longK", "shortK", "width", "debit", "contracts", "cost",
@@ -951,6 +976,12 @@ def export(state):
             w = csv.DictWriter(f, fieldnames=["book"] + cols, extrasaction="ignore")
             w.writeheader()
             for t in sorted(shadow_rows, key=lambda x: (x["opened"], x["book"], x["createdAt"])):
+                w.writerow(t)
+    if state.get("signals") and state["signals"]["trades"]:
+        with (HERE / "signals_trades.csv").open("w", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
+            w.writeheader()
+            for t in sorted(state["signals"]["trades"].values(), key=lambda x: (x["opened"], x["createdAt"])):
                 w.writerow(t)
 
 
@@ -991,6 +1022,12 @@ def print_summary(state, summary):
             if today_bits.get("exits"):
                 extra += "  exits today: " + "; ".join(today_bits["exits"])
             print(f"  {name:<8} equity {b['equity']:,.2f}  open {len(open_positions(b))}  closed {len(c)}" + (f"  wins {w}" if c else "") + extra)
+    if state.get("signals"):
+        b = state["signals"]; c = closed_positions(b); w = sum(1 for t in c if t["pnl"] > 0)
+        bits = summary.get("signals", {})
+        print(f"\nSignal book (all qualifying setups, 1 contract each): open {len(open_positions(b))}  closed {len(c)}"
+              + (f"  win rate {w / len(c) * 100:.0f}%  net {b['equity'] - RULES['START_CAPITAL']:+,.2f}" if c else "")
+              + (f"\n  entered today: " + "; ".join(bits["entries"]) if bits.get("entries") else ""))
     print(f"\nWrote {JS_PATH.name}, {JSON_PATH.name}, {CSV_PATH.name}")
 
 

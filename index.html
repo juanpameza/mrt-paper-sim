@@ -229,7 +229,8 @@ table.cmp{width:100%;border-collapse:collapse;min-width:640px}
 .statgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px 12px;margin-bottom:12px}
 .statgrid .k{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
 .statgrid .v{font-family:var(--font-mono);font-weight:500;font-size:15px;margin-top:1px}
-@media (max-width:760px){.statgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.statgrid.five{grid-template-columns:repeat(5,minmax(0,1fr))}.statgrid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:760px){.statgrid,.statgrid.five,.statgrid.three{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 /* Chart */
 .chart{position:relative}
@@ -303,6 +304,7 @@ table.cmp{width:100%;border-collapse:collapse;min-width:640px}
   <nav class="tabs" aria-label="Sections">
     <a class="tab" href="#scan" data-view="scan">Scan</a>
     <a class="tab" href="#trades" data-view="trades">Trades</a>
+    <a class="tab" href="#signals" data-view="signals" id="tab-signals" style="display:none">Signals</a>
     <a class="tab" href="#rules" data-view="rules">Rules</a>
   </nav>
 
@@ -418,7 +420,7 @@ table.cmp{width:100%;border-collapse:collapse;min-width:640px}
         <h2>Entry timing · shadow books</h2>
         <p>Same signals, same rules, same sizing. Only the moment of entry differs. Nothing here affects the live book.</p>
       </div>
-      <div class="statgrid" id="shadow-stats" style="grid-template-columns:repeat(3,minmax(0,1fr))"></div>
+      <div class="statgrid three" id="shadow-stats"></div>
       <div class="scan-wrap" style="margin-top:4px">
         <table class="cmp" id="shadow-table">
           <thead><tr><th>Ticker</th><th>First pass (live)</th><th>Close</th><th>Confirm</th></tr></thead>
@@ -444,6 +446,37 @@ table.cmp{width:100%;border-collapse:collapse;min-width:640px}
         </div>
       </div>
       <div class="tlist" id="closed-list"></div>
+    </div>
+  </section>
+
+  <!-- SIGNALS -->
+  <section class="view" id="view-signals">
+    <div class="card">
+      <div class="card-head">
+        <h2>Every qualifying setup</h2>
+        <p>One contract per signal, no deployment cap, no position limit, no max open. One position per name at a time. This is the method's sample; the live book is what a $2,500 account could afford.</p>
+      </div>
+      <div class="statgrid five" id="sig-stats"></div>
+      <div class="grid-2" style="align-items:start">
+        <div>
+          <h3 style="margin:6px 0 8px">Cumulative P&amp;L, one contract each</h3>
+          <div class="chart" id="sig-chart"><div class="tip" id="sig-tip"></div></div>
+        </div>
+        <div>
+          <h3 style="margin:6px 0 8px">By side</h3>
+          <div class="scan-wrap"><table class="cmp" style="min-width:0"><thead><tr><th>Side</th><th>Closed</th><th>Win rate</th><th>Avg R</th><th>Net</th></tr></thead><tbody id="sig-sides"></tbody></table></div>
+          <h3 style="margin:14px 0 8px">By exit</h3>
+          <div class="scan-wrap"><table class="cmp" style="min-width:0"><thead><tr><th>Exit</th><th>Count</th><th>Avg P&amp;L</th><th>Avg hold</th></tr></thead><tbody id="sig-exits"></tbody></table></div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head"><h2>Open signals <span class="muted" id="sig-open-count"></span></h2><p>Marked every pass like the live book.</p></div>
+      <div class="tlist" id="sig-open"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><h2>Closed signals <span class="muted" id="sig-closed-count"></span></h2></div>
+      <div class="tlist" id="sig-closed"></div>
     </div>
   </section>
 
@@ -581,7 +614,8 @@ function normalizeSim(raw){
     trades, log: Array.isArray(raw.log) ? raw.log : [],
     asof: raw.asof || '', generatedAt: raw.generatedAt || '', rules: raw.rules || {},
     mode: raw.mode || 'daily', lastPoll: raw.lastPoll || '',
-    shadow: normalizeShadow(raw.shadow)
+    shadow: normalizeShadow(raw.shadow),
+    signals: (raw.signals && raw.signals.trades) ? normalizeShadow({ signals: raw.signals }).signals || null : null
   };
 }
 function normalizeShadow(raw){
@@ -1158,12 +1192,12 @@ function tradeCalc(t){
   return { width, debit, n, cost, stop, target, risk, reward, pnl, pct, r, stopPct, targetPct, fees };
 }
 function byClose(a, b){ return (a.closed || '').localeCompare(b.closed || '') || (a.createdAt || '').localeCompare(b.createdAt || ''); }
-function computeStats(){
-  const S = activeSettings();
-  const all = Object.values(activeTrades());
+function computeStats(){ return computeStatsFor(activeTrades(), activeSettings()); }
+function computeStatsFor(tradesMap, S){
+  const all = Object.values(tradesMap);
   const closed = all.filter(t => t.status === 'closed').sort(byClose);
   const open = all.filter(t => t.status !== 'closed').sort((a,b)=> (a.opened||'').localeCompare(b.opened||''));
-  let eq = S.startCapital, peak = eq, maxDD = 0, wins = 0, gw = 0, gl = 0, sumR = 0;
+  let eq = S.startCapital, peak = eq, maxDD = 0, wins = 0, gw = 0, gl = 0, sumR = 0, holdSum = 0, holdN = 0;
   const winPct = [], lossPct = [];
   const curve = [{ i:0, equity:eq }];
   for (const t of closed){
@@ -1173,15 +1207,17 @@ function computeStats(){
     const dd = peak > 0 ? (peak - eq)/peak : 0; if (dd > maxDD) maxDD = dd;
     if (c.pnl > 0){ wins++; gw += c.pnl; winPct.push(c.pct); } else { gl += -c.pnl; lossPct.push(c.pct); }
     sumR += c.r;
+    const h = daysBetween(t.opened, t.closed); if (h !== null){ holdSum += h; holdN++; }
   }
   const avg = a => a.length ? a.reduce((x,y)=>x+y,0)/a.length : null;
   const deployed = round2(open.reduce((a,t)=> a + tradeCalc(t).cost, 0));
   return {
-    closed, open, equity:eq, curve, maxDD, wins, n:closed.length,
+    closed, open, all, equity:eq, curve, maxDD, wins, n:closed.length,
     winRate: closed.length ? wins/closed.length : null,
     avgWinPct: avg(winPct), avgLossPct: avg(lossPct),
     expectancyR: closed.length ? sumR/closed.length : null,
     profitFactor: gl > 0 ? gw/gl : (gw > 0 ? Infinity : null),
+    avgHold: holdN ? holdSum/holdN : null,
     realized: round2(eq - S.startCapital), deployed,
     deployedPct: eq > 0 ? deployed/eq*100 : 0,
     cap: round2(eq * S.deployCap/100),
@@ -1337,6 +1373,46 @@ function renderShadow(){
     body.appendChild(tr);
   }
 }
+function renderSignals(){
+  const has = !!(SIM && SIM.signals);
+  $('tab-signals').style.display = has ? '' : 'none';
+  if (!has){ if ((location.hash || '') === '#signals') location.hash = '#trades'; return; }
+  const S = Object.assign({}, SIM.settings, { startCapital: 0, goal: 0 });
+  const st = computeStatsFor(SIM.signals.trades, S);
+  const g = $('sig-stats'); g.textContent = '';
+  const add = (k, v, sub)=> g.appendChild(el('div', null, [el('div', {class:'k', text:k}), el('div', {class:'v', text:v}), sub ? el('div', {class:'small muted', text:sub}) : null]));
+  add('Signals', String(st.all.length), st.open.length + ' open · ' + st.n + ' closed');
+  add('Win rate', st.winRate === null ? '–' : pct1(st.winRate * 100), st.n ? st.wins + ' of ' + st.n : 'no closes yet');
+  add('Expectancy', st.expectancyR === null ? '–' : signed(st.expectancyR, x => x.toFixed(2) + 'R'), 'per trade, 1R = half the debit');
+  add('Avg win / loss', (st.avgWinPct === null ? '–' : signed(st.avgWinPct, x => pct1(x))) + ' / ' + (st.avgLossPct === null ? '–' : signed(st.avgLossPct, x => pct1(x))), st.profitFactor === null ? '' : 'profit factor ' + (st.profitFactor === Infinity ? '∞' : st.profitFactor.toFixed(2)));
+  add('Net P&L', signed(st.realized, usd0), st.avgHold === null ? '' : 'avg hold ' + st.avgHold.toFixed(1) + ' days');
+
+  const sides = $('sig-sides'); sides.textContent = '';
+  for (const [label, type] of [['Bull calls', 'bull-call'], ['Bear puts', 'bear-put']]){
+    const cl = st.closed.filter(t => t.type === type); const cs = cl.map(tradeCalc);
+    const w = cs.filter(c => c.pnl > 0).length; const net = cs.reduce((a, c) => a + c.pnl, 0); const avgR = cs.length ? cs.reduce((a, c) => a + c.r, 0) / cs.length : null;
+    sides.appendChild(el('tr', null, [el('td', {text: label}), el('td', {class:'mono', text: String(cl.length)}), el('td', {class:'mono', text: cl.length ? pct1(w / cl.length * 100) : '–'}), el('td', {class:'mono', text: avgR === null ? '–' : signed(avgR, x => x.toFixed(2))}), el('td', {class:'mono', text: cl.length ? signed(net, usd0) : '–'})]));
+  }
+  const exits = $('sig-exits'); exits.textContent = '';
+  const groups = {};
+  for (const t of st.closed){ const k = (t.exitReason || 'closed').split(' ')[0]; (groups[k] = groups[k] || []).push(t); }
+  const order = ['target', 'stop', 'expired', 'earnings'];
+  for (const k of Object.keys(groups).sort((a, b) => (order.indexOf(a) + 99) % 99 - (order.indexOf(b) + 99) % 99)){
+    const list = groups[k]; const cs = list.map(tradeCalc);
+    const avgP = cs.reduce((a, c) => a + c.pnl, 0) / cs.length;
+    const holds = list.map(t => daysBetween(t.opened, t.closed)).filter(h => h !== null); const avgH = holds.length ? holds.reduce((a, b) => a + b, 0) / holds.length : null;
+    exits.appendChild(el('tr', null, [el('td', null, reasonPill(k)), el('td', {class:'mono', text: String(list.length)}), el('td', {class:'mono', text: signed(avgP, usd2)}), el('td', {class:'mono', text: avgH === null ? '–' : avgH.toFixed(1) + ' d'})]));
+  }
+  if (!st.closed.length) exits.appendChild(el('tr', null, el('td', {colspan:'4', class:'none', text:'No closed signals yet.'})));
+
+  drawChart(st, { host: $('sig-chart'), tip: $('sig-tip'), settings: S, showGoal: false, allowNegative: true, valueLabel: 'Cumulative', unit: 'Signal', label: 'Cumulative P&L across all qualifying signals, one contract each' });
+  const ol = $('sig-open'); ol.textContent = ''; $('sig-open-count').textContent = st.open.length ? '· ' + st.open.length : '';
+  if (!st.open.length) ol.appendChild(el('div', {class:'empty', text:'No open signals.'}));
+  for (const t of st.open) ol.appendChild(tradeRow(t, tradeCalc(t), false, true));
+  const cl = $('sig-closed'); cl.textContent = ''; $('sig-closed-count').textContent = st.closed.length ? '· ' + st.closed.length : '';
+  if (!st.closed.length) cl.appendChild(el('div', {class:'empty', text:'Closed signals appear here with P&L, percent, and R multiple.'}));
+  for (const t of st.closed.slice().reverse()) cl.appendChild(tradeRow(t, tradeCalc(t), true, true));
+}
 function renderSimCard(st){
   if (!SIM) return;
   renderShadow();
@@ -1409,6 +1485,7 @@ function renderTrades(){
 
   drawChart(st);
   if (!simMode) renderPreview();
+  renderSignals();
 }
 
 /* ---------- Close panel ---------- */
@@ -1458,27 +1535,29 @@ function niceTicks(lo, hi, count){
   for (let v = start; v <= hi + 1e-9; v += step) out.push(round2(v));
   return out;
 }
-function fmtK(v){ if (Math.abs(v) >= 1000){ const k = v/1000; return '$' + (Number.isInteger(k) ? k : k.toFixed(1).replace(/\.0$/, '')) + 'k'; } return '$' + Math.round(v); }
-function drawChart(st){
-  const host = $('chart'); const tip = $('tip');
+function fmtK(v){ const a = Math.abs(v); const sign = v < 0 ? '−' : ''; if (a >= 1000){ const k = a/1000; return sign + '$' + (Number.isInteger(k) ? k : k.toFixed(1).replace(/\.0$/, '')) + 'k'; } return sign + '$' + Math.round(a); }
+function drawChart(st, opts){
+  opts = opts || {};
+  const host = opts.host || $('chart'); const tip = opts.tip || $('tip');
   for (const n of Array.from(host.children)){ if (n !== tip) n.remove(); }
   const W = 640, H = 260, padL = 54, padR = 16, padT = 14, padB = 30;
   const pw = W - padL - padR, ph = H - padT - padB;
-  const S = state.settings;
+  const S = opts.settings || activeSettings();
+  const showGoal = opts.showGoal !== false;
   const pts = st.curve;
   const eqs = pts.map(p => p.equity);
   // Scale to the data; pull the goal line in only once it is within reach of the scale, so early trades are not flattened against it.
   const lo0 = Math.min(...eqs, S.startCapital);
   const dataHi = Math.max(...eqs, S.startCapital);
-  const goalNear = S.goal <= Math.max(dataHi, S.startCapital) * 1.6;
+  const goalNear = showGoal && S.goal <= Math.max(dataHi, S.startCapital) * 1.6;
   const hi0 = goalNear ? Math.max(dataHi, S.goal) : dataHi;
-  const range = Math.max(hi0 - lo0, Math.max(100, S.startCapital * 0.1));
-  const lo = Math.max(0, lo0 - range*0.12), hi = hi0 + range*0.12;
+  const range = Math.max(hi0 - lo0, Math.max(100, Math.abs(S.startCapital) * 0.1));
+  const lo = (opts.allowNegative ? lo0 : Math.max(0, lo0)) - range*0.12, hi = hi0 + range*0.12;
   const x = (i)=> padL + (pts.length > 1 ? i/(pts.length-1) : 0) * pw;
   const y = (v)=> padT + (1 - (v - lo)/(hi - lo)) * ph;
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   svg.setAttribute('viewBox', `0 0 ${W} ${H}`); svg.setAttribute('role', 'img');
-  svg.setAttribute('aria-label', 'Equity after each closed trade, from ' + usd0(S.startCapital) + ' toward a goal of ' + usd0(S.goal));
+  svg.setAttribute('aria-label', opts.label || ('Equity after each closed trade, from ' + usd0(S.startCapital) + ' toward a goal of ' + usd0(S.goal)));
   const ns = (tag, attrs)=>{ const n = document.createElementNS('http://www.w3.org/2000/svg', tag); for (const k in attrs) n.setAttribute(k, attrs[k]); return n; };
   const text = (tx, ty, s, cls, anchor)=>{ const t = ns('text', {x:tx, y:ty, class:cls, 'text-anchor':anchor || 'start'}); t.textContent = s; return t; };
 
@@ -1489,17 +1568,20 @@ function drawChart(st){
   }
   svg.appendChild(ns('line', {x1:padL, x2:W-padR, y1:padT+ph, y2:padT+ph, class:'base'}));
   // goal
-  if (S.goal >= lo && S.goal <= hi){
+  if (showGoal && S.goal >= lo && S.goal <= hi){
     svg.appendChild(ns('line', {x1:padL, x2:W-padR, y1:y(S.goal), y2:y(S.goal), class:'goal'}));
     svg.appendChild(text(W-padR, y(S.goal)-5, usd0(S.goal) + ' goal', 'goal-text', 'end'));
-  } else {
+  } else if (showGoal){
     svg.appendChild(text(W-padR, padT+10, usd0(S.goal) + ' goal is above this scale', 'goal-text', 'end'));
+  }
+  if (opts.allowNegative && lo < 0 && hi > 0){
+    svg.appendChild(ns('line', {x1:padL, x2:W-padR, y1:y(0), y2:y(0), class:'base'}));
   }
   // x labels
   svg.appendChild(text(x(0), H-8, 'Start', 'axis-text', 'start'));
   if (pts.length > 1){
     const n = pts.length-1;
-    svg.appendChild(text(x(n), H-8, 'Trade ' + n, 'axis-text', 'end'));
+    svg.appendChild(text(x(n), H-8, (opts.unit || 'Trade') + ' ' + n, 'axis-text', 'end'));
     if (n >= 6){ const mid = Math.round(n/2); svg.appendChild(text(x(mid), H-8, String(mid), 'axis-text', 'middle')); }
   }
   // series
@@ -1527,9 +1609,9 @@ function drawChart(st){
     tip.textContent = '';
     if (p.trade){
       tip.appendChild(el('div', null, ['Trade ' + best + ' · ' + p.trade.ticker + ' ' + typeLabel(p.trade) + ' · ' + fmtDate(p.trade.closed)]));
-      tip.appendChild(el('div', null, ['P&L ', el('b', {text: signed(p.calc.pnl, usd2)}), ' · Equity ', el('b', {text: usd0(p.equity)})]));
+      tip.appendChild(el('div', null, ['P&L ', el('b', {text: signed(p.calc.pnl, usd2)}), ' · ' + (opts.valueLabel || 'Equity') + ' ', el('b', {text: opts.allowNegative ? signed(p.equity, usd0) : usd0(p.equity)})]));
     } else {
-      tip.appendChild(el('div', null, ['Start · Equity ', el('b', {text: usd0(p.equity)})]));
+      tip.appendChild(el('div', null, ['Start · ' + (opts.valueLabel || 'Equity') + ' ', el('b', {text: opts.allowNegative ? signed(p.equity, usd0) : usd0(p.equity)})]));
     }
     tip.style.display = 'block';
     const px = x(best)/W * rect.width, py = y(p.equity)/H * rect.height;
@@ -1591,7 +1673,7 @@ function restore(){
 }
 
 /* ---------- Routing ---------- */
-const VIEWS = ['scan','trades','rules'];
+const VIEWS = ['scan','trades','signals','rules'];
 function route(){
   const h = (location.hash || '#scan').slice(1);
   const v = VIEWS.includes(h) ? h : 'scan';

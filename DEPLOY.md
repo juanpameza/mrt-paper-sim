@@ -91,3 +91,14 @@ in when they buy: **close** buys at the first pass after 4pm New York on the fin
 that day's close. Each has its own $2,500 account. They never affect the live book. The Trades tab
 shows all three side by side; `shadow_trades.csv` has every shadow trade. Turn them off by setting
 `SHADOW_BOOKS` to `[]` in `mrt_sim.py`.
+
+---
+
+## Signal book (the method's full sample)
+
+The live book is capped by the account (30% deployed, 10% per position, 5 open), so it can only hold a
+few of the setups the rules produce. The signal book records every qualifying setup as a one-contract
+paper trade, with no capacity limits, and follows it to its exit under the same stop/target/expiry rules.
+Win rate, expectancy and the by-side and by-exit breakdowns on the Signals tab are measured on that whole
+sample. One position per name at a time still applies (no averaging in). `signals_trades.csv` has every
+row. Turn it off with `SIGNALS_BOOK: False` in `mrt_sim.py`.

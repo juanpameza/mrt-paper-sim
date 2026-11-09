@@ -26,38 +26,84 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # The cron, the outside kick-off and the chain can all start a run within seconds of each other,
+      # and GitHub's concurrency group has let two run side by side. If another run of this workflow
+      # started before this one and is still going, this one steps aside.
+      - name: One run at a time
+        id: mutex
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mine=$(gh api repos/${{ github.repository }}/actions/runs/${{ github.run_id }} --jq '.run_started_at' || echo "")
+          if [ -z "$mine" ]; then echo "skip=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          # A duplicate is a run that started shortly before this one. The previous slot's run (still
+          # finishing its hand-off) and anything older are not duplicates.
+          since=$(date -u -d "$mine -5 minutes" +%Y-%m-%dT%H:%M:%SZ)
+          others=$(gh api "repos/${{ github.repository }}/actions/workflows/sim.yml/runs?status=in_progress&per_page=20" \
+            --jq --arg me "${{ github.run_id }}" --arg mine "$mine" --arg since "$since" \
+            '[.workflow_runs[] | select((.id|tostring) != $me and .run_started_at <= $mine and .run_started_at >= $since)] | length' || echo 0)
+          if [ "${others:-0}" != "0" ]; then
+            echo "Another run is already in progress; skipping this one."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/setup-python@v5
+        if: steps.mutex.outputs.skip != 'true'
         with:
           python-version: "3.12"
           cache: pip
 
       - run: pip install -r requirements.txt
+        if: steps.mutex.outputs.skip != 'true'
 
       - name: Scan (fills the Scan tab)
+        if: steps.mutex.outputs.skip != 'true'
         run: python mrt_scan.py
         continue-on-error: true
 
       - name: Simulator pass
+        if: steps.mutex.outputs.skip != 'true'
         run: python mrt_sim.py --intraday
 
+      # If another run pushed results while this one was working, its pass is as good as ours: keep
+      # theirs, drop ours, and let the next pass carry on from the repo's state.
       - name: Commit results
+        if: steps.mutex.outputs.skip != 'true'
         run: |
           git config user.name "paper-sim"
           git config user.email "paper-sim@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then
             echo "Nothing changed."
-          else
-            git commit -m "sim pass $(date -u +'%Y-%m-%d %H:%M') UTC"
-            git pull --rebase --autostash
-            git push
+            exit 0
           fi
+          git commit -m "sim pass $(date -u +'%Y-%m-%d %H:%M') UTC"
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash; then
+              if git push; then
+                exit 0
+              fi
+            else
+              git rebase --abort 2>/dev/null || true
+              echo "Another run committed first; keeping its results and dropping this pass's."
+              git fetch origin main
+              git reset --hard origin/main
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "Push kept failing; dropping this pass's results."
+          git fetch origin main && git reset --hard origin/main
+          exit 0
 
       # GitHub's cron is best-effort, so each pass also hands off to the next one: wait for the next
       # quarter-hour slot and dispatch the workflow again, until 4:45pm New York. One run started by
-      # anything (cron, a manual click, an outside trigger) keeps the chain going all day.
+      # anything (cron, a manual click, an outside trigger) keeps the chain going all day. A duplicate
+      # at a slot is harmless: the mutex step above makes the later one step aside.
       - name: Chain the next pass
-        if: always()
+        if: always() && steps.mutex.outputs.skip != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           WORKFLOW_FILE: sim.yml

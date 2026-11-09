@@ -578,7 +578,11 @@ def log(state, today, ticker, action, reason="", detail=None, when=None):
     if detail:
         entry["detail"] = detail
     state["log"].append(entry)
-    state["log"] = state["log"][-600:]
+    if len(state["log"]) > 900:
+        # Entries and exits are few and worth keeping; skips are many and only the recent ones matter.
+        keep = [e for e in state["log"] if e["action"] != "skip"]
+        skips = [e for e in state["log"] if e["action"] == "skip"][-400:]
+        state["log"] = sorted(keep + skips, key=lambda e: (e["date"], e.get("time") or ""))
 
 
 def log_skip(state, today, ticker, reason, when=None):
@@ -901,6 +905,13 @@ def run_day(md, state, force=False, dry=False, today_override=None, intraday=Fal
 # ----------------------------------------------------------------------------
 # Outputs
 # ----------------------------------------------------------------------------
+def export_log(entries, recent_skips):
+    """Every entry and exit, plus only the most recent skips, in time order."""
+    keep = [e for e in entries if e["action"] != "skip"]
+    skips = [e for e in entries if e["action"] == "skip"][-recent_skips:]
+    return sorted(keep + skips, key=lambda e: (e["date"], e.get("time") or ""))
+
+
 def export(state):
     opens = open_positions(state)
     payload = {
@@ -916,9 +927,9 @@ def export(state):
         "equity": state["equity"],
         "deployed": deployed(state),
         "trades": state["trades"],
-        "log": state["log"][-300:],
+        "log": export_log(state["log"], 250),
         "shadow": {
-            name: {"equity": b["equity"], "deployed": deployed(b), "trades": b["trades"], "log": b["log"][-100:]}
+            name: {"equity": b["equity"], "deployed": deployed(b), "trades": b["trades"], "log": export_log(b["log"], 80)}
             for name, b in state.get("shadow", {}).items()
         },
     }

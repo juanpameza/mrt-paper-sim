@@ -69,14 +69,15 @@ def main():
     if not still_trading(now_ny):
         print("chain: past the last pass after waiting; chain ends for today.")
         return
+    # Always dispatch. Yielding to a "queued" run once broke the chain for two hours when that run
+    # never started; a duplicate at a slot costs nothing because the workflow's mutex step makes the
+    # later one step aside.
     try:
         pending = other_runs_pending(repo, workflow, own_id)
-    except Exception as ex:
-        print(f"chain: could not list runs ({ex}); dispatching anyway.")
-        pending = 0
-    if pending:
-        print(f"chain: {pending} other run(s) already queued or running; they will carry the chain.")
-        return
+        if pending:
+            print(f"chain: note, {pending} other run(s) queued or running; dispatching anyway.")
+    except Exception:
+        pass
     gh("-X", "POST", f"repos/{repo}/actions/workflows/{workflow}/dispatches", "-f", "ref=main")
     print("chain: next pass dispatched.")
 

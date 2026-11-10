@@ -1,7 +1,7 @@
 {
  "AAPL": {
-  "date": null,
-  "checked": "2026-11-03"
+  "date": "2027-01-28",
+  "checked": "2026-11-10"
  },
  "MSFT": {
   "date": "2027-01-27",
@@ -52,8 +52,8 @@
   "checked": "2026-11-09"
  },
  "PLTR": {
-  "date": null,
-  "checked": "2026-11-03"
+  "date": "2027-02-01",
+  "checked": "2026-11-10"
  },
  "UBER": {
   "date": null,

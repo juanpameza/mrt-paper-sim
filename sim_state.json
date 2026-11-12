@@ -98,9 +98,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.8,
-   "lastMarkDate": "2026-11-11",
-   "lastMarkTime": "15:07",
+   "lastMark": 3.13,
+   "lastMarkDate": "2026-11-12",
+   "lastMarkTime": "09:36",
    "markSource": "chain",
    "marks": [
     {
@@ -158,6 +158,13 @@
      "source": "chain",
      "price": 294.04,
      "time": "15:07"
+    },
+    {
+     "date": "2026-11-12",
+     "mark": 3.13,
+     "source": "chain",
+     "price": 295.24,
+     "time": "09:36"
     }
    ]
   },
@@ -218,9 +225,9 @@
    },
    "createdAt": "2026-11-05T15:22:18",
    "openedAt": "10:22",
-   "lastMark": 2.52,
-   "lastMarkDate": "2026-11-11",
-   "lastMarkTime": "15:07",
+   "lastMark": 2.47,
+   "lastMarkDate": "2026-11-12",
+   "lastMarkTime": "09:36",
    "markSource": "chain",
    "marks": [
     {
@@ -257,6 +264,13 @@
      "source": "chain",
      "price": 62.34,
      "time": "15:07"
+    },
+    {
+     "date": "2026-11-12",
+     "mark": 2.47,
+     "source": "chain",
+     "price": 61.08,
+     "time": "09:36"
     }
    ]
   },
@@ -317,9 +331,9 @@
    },
    "createdAt": "2026-11-05T15:37:12",
    "openedAt": "10:37",
-   "lastMark": 3.37,
-   "lastMarkDate": "2026-11-11",
-   "lastMarkTime": "15:07",
+   "lastMark": 2.86,
+   "lastMarkDate": "2026-11-12",
+   "lastMarkTime": "09:36",
    "markSource": "chain",
    "marks": [
     {
@@ -356,6 +370,13 @@
      "source": "chain",
      "price": 85.13,
      "time": "15:07"
+    },
+    {
+     "date": "2026-11-12",
+     "mark": 2.86,
+     "source": "chain",
+     "price": 82.48,
+     "time": "09:36"
     }
    ]
   }
@@ -3888,10 +3909,45 @@
    "action": "skip",
    "reason": "RSI 57.6 below 70",
    "time": "15:07"
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "NVDA",
+   "action": "skip",
+   "reason": "earnings 2026-11-17 before expiry 2026-12-18",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "BABA",
+   "action": "skip",
+   "reason": "RSI 33.3 above 30",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "ABBV",
+   "action": "skip",
+   "reason": "squeeze: bands inside Keltner",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "AAPL",
+   "action": "skip",
+   "reason": "squeeze: bands inside Keltner",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "AVGO",
+   "action": "skip",
+   "reason": "RSI 59.5 below 70",
+   "time": "09:36"
   }
  ],
- "lastBar": "2026-11-11",
- "lastRun": "2026-11-11T20:07:06",
+ "lastBar": "2026-11-12",
+ "lastRun": "2026-11-12T14:36:31",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -3970,7 +4026,7 @@
    "reason": "RSI 34.3 above 30"
   },
   "AAPL": {
-   "date": "2026-11-11",
+   "date": "2026-11-12",
    "reason": "squeeze: bands inside Keltner"
   },
   "GE": {
@@ -4042,12 +4098,12 @@
    "reason": "RSI 43.3 below 70"
   },
   "NVDA": {
-   "date": "2026-11-11",
+   "date": "2026-11-12",
    "reason": "earnings 2026-11-17 before expiry 2026-12-18"
   },
   "ABBV": {
-   "date": "2026-11-05",
-   "reason": "RSI 57.0 below 70"
+   "date": "2026-11-12",
+   "reason": "squeeze: bands inside Keltner"
   },
   "NEM": {
    "date": "2026-11-09",
@@ -4058,8 +4114,8 @@
    "reason": "RSI 62.3 below 70"
   },
   "AVGO": {
-   "date": "2026-11-06",
-   "reason": "RSI 32.6 above 30"
+   "date": "2026-11-12",
+   "reason": "RSI 59.5 below 70"
   },
   "MRK": {
    "date": "2026-11-05",
@@ -4084,9 +4140,13 @@
   "ADBE": {
    "date": "2026-11-10",
    "reason": "RSI 40.5 above 30"
+  },
+  "BABA": {
+   "date": "2026-11-12",
+   "reason": "RSI 33.3 above 30"
   }
  },
- "lastPoll": "2026-11-11T15:07-05:00",
+ "lastPoll": "2026-11-12T09:36-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -4149,9 +4209,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 2.52,
-     "lastMarkDate": "2026-11-11",
-     "lastMarkTime": "15:07",
+     "lastMark": 2.47,
+     "lastMarkDate": "2026-11-12",
+     "lastMarkTime": "09:36",
      "markSource": "chain",
      "marks": [
       {
@@ -4188,6 +4248,13 @@
        "source": "chain",
        "price": 62.34,
        "time": "15:07"
+      },
+      {
+       "date": "2026-11-12",
+       "mark": 2.47,
+       "source": "chain",
+       "price": 61.08,
+       "time": "09:36"
       }
      ]
     },
@@ -4248,9 +4315,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 2.76,
-     "lastMarkDate": "2026-11-11",
-     "lastMarkTime": "15:07",
+     "lastMark": 2.25,
+     "lastMarkDate": "2026-11-12",
+     "lastMarkTime": "09:36",
      "markSource": "chain",
      "marks": [
       {
@@ -4287,6 +4354,13 @@
        "source": "chain",
        "price": 85.13,
        "time": "15:07"
+      },
+      {
+       "date": "2026-11-12",
+       "mark": 2.25,
+       "source": "chain",
+       "price": 82.48,
+       "time": "09:36"
       }
      ]
     }
@@ -5457,7 +5531,7 @@
    }
   },
   "confirm": {
-   "equity": 2277.8,
+   "equity": 2159.2,
    "trades": {
     "s7cd37254c1": {
      "id": "s7cd37254c1",
@@ -5600,7 +5674,7 @@
      "stopPct": 50.0,
      "targetPct": 100.0,
      "entryFees": 1.3,
-     "status": "open",
+     "status": "closed",
      "book": "confirm",
      "signal": {
       "price": 85.68,
@@ -5639,9 +5713,9 @@
      },
      "createdAt": "2026-11-03T21:07:05",
      "openedAt": "16:07",
-     "lastMark": 2.17,
-     "lastMarkDate": "2026-11-11",
-     "lastMarkTime": "15:07",
+     "lastMark": 1.07,
+     "lastMarkDate": "2026-11-12",
+     "lastMarkTime": "09:36",
      "markSource": "chain",
      "marks": [
       {
@@ -5692,8 +5766,25 @@
        "source": "chain",
        "price": 85.13,
        "time": "15:07"
+      },
+      {
+       "date": "2026-11-12",
+       "mark": 1.07,
+       "source": "chain",
+       "price": 82.48,
+       "time": "09:36"
       }
-     ]
+     ],
+     "closed": "2026-11-12",
+     "exitPrice": 1.02,
+     "exitMark": 1.07,
+     "exitReason": "stop",
+     "exitFees": 1.3,
+     "fees": 2.6,
+     "pnlGross": -116.0,
+     "pnl": -118.6,
+     "closedAt": "2026-11-12T14:36:31",
+     "closedTime": "09:36"
     },
     "s151150ad6d": {
      "id": "s151150ad6d",
@@ -5854,9 +5945,9 @@
      },
      "createdAt": "2026-11-06T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 2.52,
-     "lastMarkDate": "2026-11-11",
-     "lastMarkTime": "15:07",
+     "lastMark": 2.47,
+     "lastMarkDate": "2026-11-12",
+     "lastMarkTime": "09:36",
      "markSource": "chain",
      "marks": [
       {
@@ -5886,6 +5977,13 @@
        "source": "chain",
        "price": 62.34,
        "time": "15:07"
+      },
+      {
+       "date": "2026-11-12",
+       "mark": 2.47,
+       "source": "chain",
+       "price": 61.08,
+       "time": "09:36"
       }
      ]
     }
@@ -6225,6 +6323,17 @@
      "detail": {
       "exit": 0.94,
       "pnl": -116.6
+     }
+    },
+    {
+     "date": "2026-11-12",
+     "ticker": "HOOD",
+     "action": "exit",
+     "reason": "stop",
+     "time": "09:36",
+     "detail": {
+      "exit": 1.02,
+      "pnl": -118.6
      }
     }
    ],
@@ -9081,11 +9190,46 @@
     "action": "skip",
     "reason": "RSI 57.6 below 70",
     "time": "15:07"
+   },
+   {
+    "date": "2026-11-12",
+    "ticker": "NVDA",
+    "action": "skip",
+    "reason": "earnings 2026-11-17 before expiry 2026-12-18",
+    "time": "09:36"
+   },
+   {
+    "date": "2026-11-12",
+    "ticker": "BABA",
+    "action": "skip",
+    "reason": "RSI 33.3 above 30",
+    "time": "09:36"
+   },
+   {
+    "date": "2026-11-12",
+    "ticker": "ABBV",
+    "action": "skip",
+    "reason": "squeeze: bands inside Keltner",
+    "time": "09:36"
+   },
+   {
+    "date": "2026-11-12",
+    "ticker": "AAPL",
+    "action": "skip",
+    "reason": "squeeze: bands inside Keltner",
+    "time": "09:36"
+   },
+   {
+    "date": "2026-11-12",
+    "ticker": "AVGO",
+    "action": "skip",
+    "reason": "RSI 59.5 below 70",
+    "time": "09:36"
    }
   ],
   "lastSkip": {
    "NVDA": {
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "reason": "earnings 2026-11-17 before expiry 2026-12-18"
    },
    "DIS": {
@@ -9145,7 +9289,7 @@
     "reason": "RSI 34.3 above 30"
    },
    "AAPL": {
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "reason": "squeeze: bands inside Keltner"
    },
    "PG": {
@@ -9155,6 +9299,18 @@
    "ADBE": {
     "date": "2026-11-10",
     "reason": "RSI 40.5 above 30"
+   },
+   "BABA": {
+    "date": "2026-11-12",
+    "reason": "RSI 33.3 above 30"
+   },
+   "ABBV": {
+    "date": "2026-11-12",
+    "reason": "squeeze: bands inside Keltner"
+   },
+   "AVGO": {
+    "date": "2026-11-12",
+    "reason": "RSI 59.5 below 70"
    }
   }
  }

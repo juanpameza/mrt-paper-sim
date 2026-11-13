@@ -98,9 +98,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 3.08,
+   "lastMark": 2.9,
    "lastMarkDate": "2026-11-13",
-   "lastMarkTime": "15:07",
+   "lastMarkTime": "15:22",
    "markSource": "chain",
    "marks": [
     {
@@ -168,10 +168,10 @@
     },
     {
      "date": "2026-11-13",
-     "mark": 3.08,
+     "mark": 2.9,
      "source": "chain",
-     "price": 294.89,
-     "time": "15:07"
+     "price": 295.25,
+     "time": "15:22"
     }
    ]
   },
@@ -234,7 +234,7 @@
    "openedAt": "10:22",
    "lastMark": 1.79,
    "lastMarkDate": "2026-11-13",
-   "lastMarkTime": "15:07",
+   "lastMarkTime": "15:22",
    "markSource": "chain",
    "marks": [
     {
@@ -283,8 +283,8 @@
      "date": "2026-11-13",
      "mark": 1.79,
      "source": "chain",
-     "price": 59.22,
-     "time": "15:07"
+     "price": 59.33,
+     "time": "15:22"
     }
    ]
   },
@@ -345,9 +345,9 @@
    },
    "createdAt": "2026-11-05T15:37:12",
    "openedAt": "10:37",
-   "lastMark": 2.48,
+   "lastMark": 2.58,
    "lastMarkDate": "2026-11-13",
-   "lastMarkTime": "15:07",
+   "lastMarkTime": "15:22",
    "markSource": "chain",
    "marks": [
     {
@@ -394,10 +394,10 @@
     },
     {
      "date": "2026-11-13",
-     "mark": 2.48,
+     "mark": 2.58,
      "source": "chain",
-     "price": 78.32,
-     "time": "15:07"
+     "price": 78.36,
+     "time": "15:22"
     }
    ]
   }
@@ -4868,10 +4868,17 @@
    "action": "skip",
    "reason": "RSI 61.0 below 70",
    "time": "15:07"
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "BABA",
+   "action": "skip",
+   "reason": "RSI 33.1 above 30",
+   "time": "15:22"
   }
  ],
  "lastBar": "2026-11-13",
- "lastRun": "2026-11-13T20:07:21",
+ "lastRun": "2026-11-13T20:22:02",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -5067,14 +5074,14 @@
   },
   "BABA": {
    "date": "2026-11-13",
-   "reason": "RSI 33.2 above 30"
+   "reason": "RSI 33.1 above 30"
   },
   "GLD": {
    "date": "2026-11-12",
    "reason": "RSI 37.4 above 30"
   }
  },
- "lastPoll": "2026-11-13T15:07-05:00",
+ "lastPoll": "2026-11-13T15:22-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -5139,7 +5146,7 @@
      "openedAt": "16:07",
      "lastMark": 1.79,
      "lastMarkDate": "2026-11-13",
-     "lastMarkTime": "15:07",
+     "lastMarkTime": "15:22",
      "markSource": "chain",
      "marks": [
       {
@@ -5188,8 +5195,8 @@
        "date": "2026-11-13",
        "mark": 1.79,
        "source": "chain",
-       "price": 59.22,
-       "time": "15:07"
+       "price": 59.33,
+       "time": "15:22"
       }
      ]
     },
@@ -5250,9 +5257,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.85,
+     "lastMark": 1.87,
      "lastMarkDate": "2026-11-13",
-     "lastMarkTime": "15:07",
+     "lastMarkTime": "15:22",
      "markSource": "chain",
      "marks": [
       {
@@ -5299,10 +5306,10 @@
       },
       {
        "date": "2026-11-13",
-       "mark": 1.85,
+       "mark": 1.87,
        "source": "chain",
-       "price": 78.32,
-       "time": "15:07"
+       "price": 78.36,
+       "time": "15:22"
       }
      ]
     }
@@ -6953,7 +6960,7 @@
      "openedAt": "16:07",
      "lastMark": 1.79,
      "lastMarkDate": "2026-11-13",
-     "lastMarkTime": "15:07",
+     "lastMarkTime": "15:22",
      "markSource": "chain",
      "marks": [
       {
@@ -6995,8 +7002,8 @@
        "date": "2026-11-13",
        "mark": 1.79,
        "source": "chain",
-       "price": 59.22,
-       "time": "15:07"
+       "price": 59.33,
+       "time": "15:22"
       }
      ]
     }
@@ -11176,6 +11183,13 @@
     "action": "skip",
     "reason": "RSI 61.0 below 70",
     "time": "15:07"
+   },
+   {
+    "date": "2026-11-13",
+    "ticker": "BABA",
+    "action": "skip",
+    "reason": "RSI 33.1 above 30",
+    "time": "15:22"
    }
   ],
   "lastSkip": {
@@ -11253,7 +11267,7 @@
    },
    "BABA": {
     "date": "2026-11-13",
-    "reason": "RSI 33.2 above 30"
+    "reason": "RSI 33.1 above 30"
    },
    "ABBV": {
     "date": "2026-11-12",

@@ -98,9 +98,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 3.05,
+   "lastMark": 3.2,
    "lastMarkDate": "2026-11-13",
-   "lastMarkTime": "10:37",
+   "lastMarkTime": "10:52",
    "markSource": "chain",
    "marks": [
     {
@@ -168,10 +168,10 @@
     },
     {
      "date": "2026-11-13",
-     "mark": 3.05,
+     "mark": 3.2,
      "source": "chain",
-     "price": 294.82,
-     "time": "10:37"
+     "price": 295.33,
+     "time": "10:52"
     }
    ]
   },
@@ -232,9 +232,9 @@
    },
    "createdAt": "2026-11-05T15:22:18",
    "openedAt": "10:22",
-   "lastMark": 1.7,
+   "lastMark": 1.76,
    "lastMarkDate": "2026-11-13",
-   "lastMarkTime": "10:37",
+   "lastMarkTime": "10:52",
    "markSource": "chain",
    "marks": [
     {
@@ -281,10 +281,10 @@
     },
     {
      "date": "2026-11-13",
-     "mark": 1.7,
+     "mark": 1.76,
      "source": "chain",
-     "price": 59.17,
-     "time": "10:37"
+     "price": 59.47,
+     "time": "10:52"
     }
    ]
   },
@@ -345,9 +345,9 @@
    },
    "createdAt": "2026-11-05T15:37:12",
    "openedAt": "10:37",
-   "lastMark": 2.45,
+   "lastMark": 2.34,
    "lastMarkDate": "2026-11-13",
-   "lastMarkTime": "10:37",
+   "lastMarkTime": "10:52",
    "markSource": "chain",
    "marks": [
     {
@@ -394,10 +394,10 @@
     },
     {
      "date": "2026-11-13",
-     "mark": 2.45,
+     "mark": 2.34,
      "source": "chain",
-     "price": 76.97,
-     "time": "10:37"
+     "price": 77.71,
+     "time": "10:52"
     }
    ]
   }
@@ -4658,10 +4658,24 @@
    "action": "skip",
    "reason": "RSI 62.3 below 70",
    "time": "10:37"
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "NVDA",
+   "action": "skip",
+   "reason": "ADX 41.5 above 40: trend too strong to fade",
+   "time": "10:52"
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "AAPL",
+   "action": "skip",
+   "reason": "RSI 62.4 below 70",
+   "time": "10:52"
   }
  ],
  "lastBar": "2026-11-13",
- "lastRun": "2026-11-13T15:37:04",
+ "lastRun": "2026-11-13T15:52:12",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -4741,7 +4755,7 @@
   },
   "AAPL": {
    "date": "2026-11-13",
-   "reason": "RSI 62.3 below 70"
+   "reason": "RSI 62.4 below 70"
   },
   "GE": {
    "date": "2026-11-10",
@@ -4812,8 +4826,8 @@
    "reason": "RSI 43.3 below 70"
   },
   "NVDA": {
-   "date": "2026-11-12",
-   "reason": "earnings 2026-11-17 before expiry 2026-12-18"
+   "date": "2026-11-13",
+   "reason": "ADX 41.5 above 40: trend too strong to fade"
   },
   "ABBV": {
    "date": "2026-11-12",
@@ -4864,7 +4878,7 @@
    "reason": "RSI 37.4 above 30"
   }
  },
- "lastPoll": "2026-11-13T10:37-05:00",
+ "lastPoll": "2026-11-13T10:52-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -4927,9 +4941,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.7,
+     "lastMark": 1.76,
      "lastMarkDate": "2026-11-13",
-     "lastMarkTime": "10:37",
+     "lastMarkTime": "10:52",
      "markSource": "chain",
      "marks": [
       {
@@ -4976,10 +4990,10 @@
       },
       {
        "date": "2026-11-13",
-       "mark": 1.7,
+       "mark": 1.76,
        "source": "chain",
-       "price": 59.17,
-       "time": "10:37"
+       "price": 59.47,
+       "time": "10:52"
       }
      ]
     },
@@ -5040,9 +5054,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.68,
+     "lastMark": 1.95,
      "lastMarkDate": "2026-11-13",
-     "lastMarkTime": "10:37",
+     "lastMarkTime": "10:52",
      "markSource": "chain",
      "marks": [
       {
@@ -5089,10 +5103,10 @@
       },
       {
        "date": "2026-11-13",
-       "mark": 1.68,
+       "mark": 1.95,
        "source": "chain",
-       "price": 76.97,
-       "time": "10:37"
+       "price": 77.71,
+       "time": "10:52"
       }
      ]
     }
@@ -6741,9 +6755,9 @@
      },
      "createdAt": "2026-11-06T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.7,
+     "lastMark": 1.76,
      "lastMarkDate": "2026-11-13",
-     "lastMarkTime": "10:37",
+     "lastMarkTime": "10:52",
      "markSource": "chain",
      "marks": [
       {
@@ -6783,10 +6797,10 @@
       },
       {
        "date": "2026-11-13",
-       "mark": 1.7,
+       "mark": 1.76,
        "source": "chain",
-       "price": 59.17,
-       "time": "10:37"
+       "price": 59.47,
+       "time": "10:52"
       }
      ]
     }
@@ -10756,12 +10770,26 @@
     "action": "skip",
     "reason": "RSI 62.3 below 70",
     "time": "10:37"
+   },
+   {
+    "date": "2026-11-13",
+    "ticker": "NVDA",
+    "action": "skip",
+    "reason": "ADX 41.5 above 40: trend too strong to fade",
+    "time": "10:52"
+   },
+   {
+    "date": "2026-11-13",
+    "ticker": "AAPL",
+    "action": "skip",
+    "reason": "RSI 62.4 below 70",
+    "time": "10:52"
    }
   ],
   "lastSkip": {
    "NVDA": {
-    "date": "2026-11-12",
-    "reason": "earnings 2026-11-17 before expiry 2026-12-18"
+    "date": "2026-11-13",
+    "reason": "ADX 41.5 above 40: trend too strong to fade"
    },
    "DIS": {
     "date": "2026-11-09",
@@ -10821,7 +10849,7 @@
    },
    "AAPL": {
     "date": "2026-11-13",
-    "reason": "RSI 62.3 below 70"
+    "reason": "RSI 62.4 below 70"
    },
    "PG": {
     "date": "2026-11-10",

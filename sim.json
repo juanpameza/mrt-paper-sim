@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-13T20:52:08",
+ "generatedAt": "2026-11-13T21:07:21",
  "asof": "2026-11-13",
- "lastPoll": "2026-11-13T15:52-05:00",
+ "lastPoll": "2026-11-13T16:07-05:00",
  "mode": "intraday",
  "settings": {
   "startCapital": 2500.0,
@@ -108,9 +108,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.85,
+   "lastMark": 3.78,
    "lastMarkDate": "2026-11-13",
-   "lastMarkTime": "15:52",
+   "lastMarkTime": "16:07",
    "markSource": "chain",
    "marks": [
     {
@@ -178,10 +178,10 @@
     },
     {
      "date": "2026-11-13",
-     "mark": 2.85,
+     "mark": 3.78,
      "source": "chain",
-     "price": 296.04,
-     "time": "15:52"
+     "price": 295.77,
+     "time": "16:07"
     }
    ]
   },
@@ -242,9 +242,9 @@
    },
    "createdAt": "2026-11-05T15:22:18",
    "openedAt": "10:22",
-   "lastMark": 1.79,
+   "lastMark": 1.77,
    "lastMarkDate": "2026-11-13",
-   "lastMarkTime": "15:52",
+   "lastMarkTime": "16:07",
    "markSource": "chain",
    "marks": [
     {
@@ -291,10 +291,10 @@
     },
     {
      "date": "2026-11-13",
-     "mark": 1.79,
+     "mark": 1.77,
      "source": "chain",
-     "price": 59.33,
-     "time": "15:52"
+     "price": 59.26,
+     "time": "16:07"
     }
    ]
   },
@@ -355,9 +355,9 @@
    },
    "createdAt": "2026-11-05T15:37:12",
    "openedAt": "10:37",
-   "lastMark": 2.55,
+   "lastMark": 2.75,
    "lastMarkDate": "2026-11-13",
-   "lastMarkTime": "15:52",
+   "lastMarkTime": "16:07",
    "markSource": "chain",
    "marks": [
     {
@@ -404,22 +404,15 @@
     },
     {
      "date": "2026-11-13",
-     "mark": 2.55,
+     "mark": 2.75,
      "source": "chain",
-     "price": 78.23,
-     "time": "15:52"
+     "price": 77.86,
+     "time": "16:07"
     }
    ]
   }
  },
  "log": [
-  {
-   "date": "2026-11-10",
-   "ticker": "CVX",
-   "action": "skip",
-   "reason": "RSI 39.7 above 30",
-   "time": "14:22"
-  },
   {
    "date": "2026-11-10",
    "ticker": "COP",
@@ -2162,6 +2155,13 @@
    "action": "skip",
    "reason": "RSI 60.8 below 70",
    "time": "15:52"
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "AAPL",
+   "action": "skip",
+   "reason": "RSI 60.6 below 70",
+   "time": "16:07"
   }
  ],
  "shadow": {
@@ -2226,9 +2226,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.79,
+     "lastMark": 1.77,
      "lastMarkDate": "2026-11-13",
-     "lastMarkTime": "15:52",
+     "lastMarkTime": "16:07",
      "markSource": "chain",
      "marks": [
       {
@@ -2275,10 +2275,10 @@
       },
       {
        "date": "2026-11-13",
-       "mark": 1.79,
+       "mark": 1.77,
        "source": "chain",
-       "price": 59.33,
-       "time": "15:52"
+       "price": 59.26,
+       "time": "16:07"
       }
      ]
     },
@@ -2341,7 +2341,7 @@
      "openedAt": "16:07",
      "lastMark": 1.9,
      "lastMarkDate": "2026-11-13",
-     "lastMarkTime": "15:52",
+     "lastMarkTime": "16:07",
      "markSource": "chain",
      "marks": [
       {
@@ -2390,8 +2390,8 @@
        "date": "2026-11-13",
        "mark": 1.9,
        "source": "chain",
-       "price": 78.23,
-       "time": "15:52"
+       "price": 77.86,
+       "time": "16:07"
       }
      ]
     }
@@ -2420,27 +2420,6 @@
       "target": 4.4,
       "cost": 220.0
      }
-    },
-    {
-     "date": "2026-11-05",
-     "ticker": "SBUX",
-     "action": "skip",
-     "reason": "RSI 62.3 below 70",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-05",
-     "ticker": "XOM",
-     "action": "skip",
-     "reason": "RSI 38.4 above 30",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-05",
-     "ticker": "NKE",
-     "action": "skip",
-     "reason": "RSI 61.0 below 70",
-     "time": "16:07"
     },
     {
      "date": "2026-11-05",
@@ -2980,6 +2959,27 @@
      "action": "skip",
      "reason": "RSI 54.8 below 70",
      "time": "16:22"
+    },
+    {
+     "date": "2026-11-13",
+     "ticker": "NVDA",
+     "action": "skip",
+     "reason": "ADX 41.5 above 40: trend too strong to fade",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-13",
+     "ticker": "BABA",
+     "action": "skip",
+     "reason": "RSI 33.7 above 30",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-13",
+     "ticker": "AAPL",
+     "action": "skip",
+     "reason": "RSI 60.6 below 70",
+     "time": "16:07"
     }
    ]
   },
@@ -3399,9 +3399,9 @@
      },
      "createdAt": "2026-11-06T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.79,
+     "lastMark": 1.77,
      "lastMarkDate": "2026-11-13",
-     "lastMarkTime": "15:52",
+     "lastMarkTime": "16:07",
      "markSource": "chain",
      "marks": [
       {
@@ -3441,10 +3441,10 @@
       },
       {
        "date": "2026-11-13",
-       "mark": 1.79,
+       "mark": 1.77,
        "source": "chain",
-       "price": 59.33,
-       "time": "15:52"
+       "price": 59.26,
+       "time": "16:07"
       }
      ]
     }
@@ -3839,13 +3839,6 @@
   "equity": 2500.0,
   "trades": {},
   "log": [
-   {
-    "date": "2026-11-12",
-    "ticker": "BABA",
-    "action": "skip",
-    "reason": "RSI 34.1 above 30",
-    "time": "11:07"
-   },
    {
     "date": "2026-11-12",
     "ticker": "GLD",
@@ -4678,6 +4671,13 @@
     "action": "skip",
     "reason": "RSI 60.8 below 70",
     "time": "15:52"
+   },
+   {
+    "date": "2026-11-13",
+    "ticker": "AAPL",
+    "action": "skip",
+    "reason": "RSI 60.6 below 70",
+    "time": "16:07"
    }
   ]
  }

@@ -98,9 +98,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 3.35,
+   "lastMark": 3.2,
    "lastMarkDate": "2026-11-13",
-   "lastMarkTime": "14:22",
+   "lastMarkTime": "14:37",
    "markSource": "chain",
    "marks": [
     {
@@ -168,10 +168,10 @@
     },
     {
      "date": "2026-11-13",
-     "mark": 3.35,
+     "mark": 3.2,
      "source": "chain",
-     "price": 295.23,
-     "time": "14:22"
+     "price": 294.97,
+     "time": "14:37"
     }
    ]
   },
@@ -232,9 +232,9 @@
    },
    "createdAt": "2026-11-05T15:22:18",
    "openedAt": "10:22",
-   "lastMark": 1.77,
+   "lastMark": 1.83,
    "lastMarkDate": "2026-11-13",
-   "lastMarkTime": "14:22",
+   "lastMarkTime": "14:37",
    "markSource": "chain",
    "marks": [
     {
@@ -281,10 +281,10 @@
     },
     {
      "date": "2026-11-13",
-     "mark": 1.77,
+     "mark": 1.83,
      "source": "chain",
-     "price": 59.38,
-     "time": "14:22"
+     "price": 59.24,
+     "time": "14:37"
     }
    ]
   },
@@ -347,7 +347,7 @@
    "openedAt": "10:37",
    "lastMark": 2.6,
    "lastMarkDate": "2026-11-13",
-   "lastMarkTime": "14:22",
+   "lastMarkTime": "14:37",
    "markSource": "chain",
    "marks": [
     {
@@ -396,8 +396,8 @@
      "date": "2026-11-13",
      "mark": 2.6,
      "source": "chain",
-     "price": 78.51,
-     "time": "14:22"
+     "price": 78.5,
+     "time": "14:37"
     }
    ]
   }
@@ -4840,10 +4840,17 @@
    "action": "skip",
    "reason": "RSI 61.8 below 70",
    "time": "14:22"
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "AAPL",
+   "action": "skip",
+   "reason": "RSI 61.7 below 70",
+   "time": "14:37"
   }
  ],
  "lastBar": "2026-11-13",
- "lastRun": "2026-11-13T19:22:04",
+ "lastRun": "2026-11-13T19:37:07",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -4923,7 +4930,7 @@
   },
   "AAPL": {
    "date": "2026-11-13",
-   "reason": "RSI 61.8 below 70"
+   "reason": "RSI 61.7 below 70"
   },
   "GE": {
    "date": "2026-11-10",
@@ -5046,7 +5053,7 @@
    "reason": "RSI 37.4 above 30"
   }
  },
- "lastPoll": "2026-11-13T14:22-05:00",
+ "lastPoll": "2026-11-13T14:37-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -5109,9 +5116,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.77,
+     "lastMark": 1.83,
      "lastMarkDate": "2026-11-13",
-     "lastMarkTime": "14:22",
+     "lastMarkTime": "14:37",
      "markSource": "chain",
      "marks": [
       {
@@ -5158,10 +5165,10 @@
       },
       {
        "date": "2026-11-13",
-       "mark": 1.77,
+       "mark": 1.83,
        "source": "chain",
-       "price": 59.38,
-       "time": "14:22"
+       "price": 59.24,
+       "time": "14:37"
       }
      ]
     },
@@ -5224,7 +5231,7 @@
      "openedAt": "16:07",
      "lastMark": 1.95,
      "lastMarkDate": "2026-11-13",
-     "lastMarkTime": "14:22",
+     "lastMarkTime": "14:37",
      "markSource": "chain",
      "marks": [
       {
@@ -5273,8 +5280,8 @@
        "date": "2026-11-13",
        "mark": 1.95,
        "source": "chain",
-       "price": 78.51,
-       "time": "14:22"
+       "price": 78.5,
+       "time": "14:37"
       }
      ]
     }
@@ -6923,9 +6930,9 @@
      },
      "createdAt": "2026-11-06T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.77,
+     "lastMark": 1.83,
      "lastMarkDate": "2026-11-13",
-     "lastMarkTime": "14:22",
+     "lastMarkTime": "14:37",
      "markSource": "chain",
      "marks": [
       {
@@ -6965,10 +6972,10 @@
       },
       {
        "date": "2026-11-13",
-       "mark": 1.77,
+       "mark": 1.83,
        "source": "chain",
-       "price": 59.38,
-       "time": "14:22"
+       "price": 59.24,
+       "time": "14:37"
       }
      ]
     }
@@ -11120,6 +11127,13 @@
     "action": "skip",
     "reason": "RSI 61.8 below 70",
     "time": "14:22"
+   },
+   {
+    "date": "2026-11-13",
+    "ticker": "AAPL",
+    "action": "skip",
+    "reason": "RSI 61.7 below 70",
+    "time": "14:37"
    }
   ],
   "lastSkip": {
@@ -11185,7 +11199,7 @@
    },
    "AAPL": {
     "date": "2026-11-13",
-    "reason": "RSI 61.8 below 70"
+    "reason": "RSI 61.7 below 70"
    },
    "PG": {
     "date": "2026-11-10",

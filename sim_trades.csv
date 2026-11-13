@@ -1,4 +1,4 @@
 id,ticker,type,opened,expiry,longK,shortK,width,debit,contracts,cost,stop,target,status,lastMark,exitPrice,exitReason,closed,fees,pnlGross,pnl
 s9e0c095d89,GOOGL,bull-call,2026-11-02,2026-12-04,285.0,290.0,5.0,2.35,1,235.0,1.18,4.7,open,3.38,,,,,,
-s21f962ca5f,FCX,bull-call,2026-11-05,2026-12-18,60.0,65.0,5.0,1.77,1,177.0,0.89,3.54,open,1.81,,,,,,
+s21f962ca5f,FCX,bull-call,2026-11-05,2026-12-18,60.0,65.0,5.0,1.77,1,177.0,0.89,3.54,open,1.78,,,,,,
 s4519b24034,HOOD,bull-call,2026-11-05,2026-12-18,75.0,80.0,5.0,2.48,1,248.0,1.24,4.96,open,2.45,,,,,,

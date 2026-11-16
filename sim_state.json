@@ -98,9 +98,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.55,
+   "lastMark": 2.62,
    "lastMarkDate": "2026-11-16",
-   "lastMarkTime": "10:07",
+   "lastMarkTime": "10:22",
    "markSource": "chain",
    "marks": [
     {
@@ -175,10 +175,10 @@
     },
     {
      "date": "2026-11-16",
-     "mark": 2.55,
+     "mark": 2.62,
      "source": "chain",
-     "price": 286.83,
-     "time": "10:07"
+     "price": 286.35,
+     "time": "10:22"
     }
    ]
   },
@@ -239,9 +239,9 @@
    },
    "createdAt": "2026-11-05T15:22:18",
    "openedAt": "10:22",
-   "lastMark": 1.25,
+   "lastMark": 1.17,
    "lastMarkDate": "2026-11-16",
-   "lastMarkTime": "10:07",
+   "lastMarkTime": "10:22",
    "markSource": "chain",
    "marks": [
     {
@@ -295,10 +295,10 @@
     },
     {
      "date": "2026-11-16",
-     "mark": 1.25,
+     "mark": 1.17,
      "source": "chain",
-     "price": 56.67,
-     "time": "10:07"
+     "price": 56.18,
+     "time": "10:22"
     }
    ]
   },
@@ -359,9 +359,9 @@
    },
    "createdAt": "2026-11-05T15:37:12",
    "openedAt": "10:37",
-   "lastMark": 2.05,
+   "lastMark": 2.08,
    "lastMarkDate": "2026-11-16",
-   "lastMarkTime": "10:07",
+   "lastMarkTime": "10:22",
    "markSource": "chain",
    "marks": [
     {
@@ -415,10 +415,10 @@
     },
     {
      "date": "2026-11-16",
-     "mark": 2.05,
+     "mark": 2.08,
      "source": "chain",
-     "price": 74.49,
-     "time": "10:07"
+     "price": 73.86,
+     "time": "10:22"
     }
    ]
   }
@@ -4966,10 +4966,24 @@
    "action": "skip",
    "reason": "RSI 31.0 above 30",
    "time": "10:07"
+  },
+  {
+   "date": "2026-11-16",
+   "ticker": "PG",
+   "action": "skip",
+   "reason": "ADX 41.3 above 40: trend too strong to fade",
+   "time": "10:22"
+  },
+  {
+   "date": "2026-11-16",
+   "ticker": "FCX",
+   "action": "skip",
+   "reason": "RSI 31.9 above 30",
+   "time": "10:22"
   }
  ],
  "lastBar": "2026-11-16",
- "lastRun": "2026-11-16T15:07:01",
+ "lastRun": "2026-11-16T15:22:07",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -5101,7 +5115,7 @@
   },
   "PG": {
    "date": "2026-11-16",
-   "reason": "ADX 41.2 above 40: trend too strong to fade"
+   "reason": "ADX 41.3 above 40: trend too strong to fade"
   },
   "MU": {
    "date": "2026-11-09",
@@ -5144,8 +5158,8 @@
    "reason": "squeeze: bands inside Keltner"
   },
   "FCX": {
-   "date": "2026-11-05",
-   "reason": "valid setup, already have a position"
+   "date": "2026-11-16",
+   "reason": "RSI 31.9 above 30"
   },
   "HOOD": {
    "date": "2026-11-05",
@@ -5172,7 +5186,7 @@
    "reason": "RSI 37.4 above 30"
   }
  },
- "lastPoll": "2026-11-16T10:07-05:00",
+ "lastPoll": "2026-11-16T10:22-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -5235,9 +5249,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.25,
+     "lastMark": 1.17,
      "lastMarkDate": "2026-11-16",
-     "lastMarkTime": "10:07",
+     "lastMarkTime": "10:22",
      "markSource": "chain",
      "marks": [
       {
@@ -5291,10 +5305,10 @@
       },
       {
        "date": "2026-11-16",
-       "mark": 1.25,
+       "mark": 1.17,
        "source": "chain",
-       "price": 56.67,
-       "time": "10:07"
+       "price": 56.18,
+       "time": "10:22"
       }
      ]
     },
@@ -5357,7 +5371,7 @@
      "openedAt": "16:07",
      "lastMark": 1.49,
      "lastMarkDate": "2026-11-16",
-     "lastMarkTime": "10:07",
+     "lastMarkTime": "10:22",
      "markSource": "chain",
      "marks": [
       {
@@ -5413,8 +5427,8 @@
        "date": "2026-11-16",
        "mark": 1.49,
        "source": "chain",
-       "price": 74.49,
-       "time": "10:07"
+       "price": 73.86,
+       "time": "10:22"
       }
      ]
     }
@@ -7084,9 +7098,9 @@
      },
      "createdAt": "2026-11-06T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.25,
+     "lastMark": 1.17,
      "lastMarkDate": "2026-11-16",
-     "lastMarkTime": "10:07",
+     "lastMarkTime": "10:22",
      "markSource": "chain",
      "marks": [
       {
@@ -7133,10 +7147,10 @@
       },
       {
        "date": "2026-11-16",
-       "mark": 1.25,
+       "mark": 1.17,
        "source": "chain",
-       "price": 56.67,
-       "time": "10:07"
+       "price": 56.18,
+       "time": "10:22"
       }
      ]
     }
@@ -11393,6 +11407,20 @@
     "action": "skip",
     "reason": "RSI 31.0 above 30",
     "time": "10:07"
+   },
+   {
+    "date": "2026-11-16",
+    "ticker": "PG",
+    "action": "skip",
+    "reason": "ADX 41.3 above 40: trend too strong to fade",
+    "time": "10:22"
+   },
+   {
+    "date": "2026-11-16",
+    "ticker": "FCX",
+    "action": "skip",
+    "reason": "RSI 31.9 above 30",
+    "time": "10:22"
    }
   ],
   "lastSkip": {
@@ -11462,7 +11490,7 @@
    },
    "PG": {
     "date": "2026-11-16",
-    "reason": "ADX 41.2 above 40: trend too strong to fade"
+    "reason": "ADX 41.3 above 40: trend too strong to fade"
    },
    "ADBE": {
     "date": "2026-11-10",
@@ -11483,6 +11511,10 @@
    "GLD": {
     "date": "2026-11-12",
     "reason": "RSI 37.4 above 30"
+   },
+   "FCX": {
+    "date": "2026-11-16",
+    "reason": "RSI 31.9 above 30"
    }
   }
  }

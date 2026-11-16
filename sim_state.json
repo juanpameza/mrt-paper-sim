@@ -98,9 +98,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.7,
+   "lastMark": 2.75,
    "lastMarkDate": "2026-11-16",
-   "lastMarkTime": "11:52",
+   "lastMarkTime": "12:08",
    "markSource": "chain",
    "marks": [
     {
@@ -175,10 +175,10 @@
     },
     {
      "date": "2026-11-16",
-     "mark": 2.7,
+     "mark": 2.75,
      "source": "chain",
-     "price": 288.24,
-     "time": "11:52"
+     "price": 288.26,
+     "time": "12:08"
     }
    ]
   },
@@ -239,9 +239,9 @@
    },
    "createdAt": "2026-11-05T15:22:18",
    "openedAt": "10:22",
-   "lastMark": 1.19,
+   "lastMark": 1.21,
    "lastMarkDate": "2026-11-16",
-   "lastMarkTime": "11:52",
+   "lastMarkTime": "12:08",
    "markSource": "chain",
    "marks": [
     {
@@ -295,10 +295,10 @@
     },
     {
      "date": "2026-11-16",
-     "mark": 1.19,
+     "mark": 1.21,
      "source": "chain",
-     "price": 56.49,
-     "time": "11:52"
+     "price": 56.56,
+     "time": "12:08"
     }
    ]
   },
@@ -359,9 +359,9 @@
    },
    "createdAt": "2026-11-05T15:37:12",
    "openedAt": "10:37",
-   "lastMark": 1.94,
+   "lastMark": 1.93,
    "lastMarkDate": "2026-11-16",
-   "lastMarkTime": "11:52",
+   "lastMarkTime": "12:08",
    "markSource": "chain",
    "marks": [
     {
@@ -415,10 +415,10 @@
     },
     {
      "date": "2026-11-16",
-     "mark": 1.94,
+     "mark": 1.93,
      "source": "chain",
-     "price": 73.27,
-     "time": "11:52"
+     "price": 72.88,
+     "time": "12:08"
     }
    ]
   }
@@ -5057,10 +5057,24 @@
    "action": "skip",
    "reason": "RSI 30.9 above 30",
    "time": "11:52"
+  },
+  {
+   "date": "2026-11-16",
+   "ticker": "BABA",
+   "action": "skip",
+   "reason": "RSI 30.7 above 30",
+   "time": "12:08"
+  },
+  {
+   "date": "2026-11-16",
+   "ticker": "FCX",
+   "action": "skip",
+   "reason": "RSI 32.5 above 30",
+   "time": "12:08"
   }
  ],
  "lastBar": "2026-11-16",
- "lastRun": "2026-11-16T16:52:01",
+ "lastRun": "2026-11-16T17:08:10",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -5236,7 +5250,7 @@
   },
   "FCX": {
    "date": "2026-11-16",
-   "reason": "RSI 32.4 above 30"
+   "reason": "RSI 32.5 above 30"
   },
   "HOOD": {
    "date": "2026-11-05",
@@ -5256,14 +5270,14 @@
   },
   "BABA": {
    "date": "2026-11-16",
-   "reason": "RSI 30.9 above 30"
+   "reason": "RSI 30.7 above 30"
   },
   "GLD": {
    "date": "2026-11-12",
    "reason": "RSI 37.4 above 30"
   }
  },
- "lastPoll": "2026-11-16T11:52-05:00",
+ "lastPoll": "2026-11-16T12:08-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -5326,9 +5340,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.19,
+     "lastMark": 1.21,
      "lastMarkDate": "2026-11-16",
-     "lastMarkTime": "11:52",
+     "lastMarkTime": "12:08",
      "markSource": "chain",
      "marks": [
       {
@@ -5382,10 +5396,10 @@
       },
       {
        "date": "2026-11-16",
-       "mark": 1.19,
+       "mark": 1.21,
        "source": "chain",
-       "price": 56.49,
-       "time": "11:52"
+       "price": 56.56,
+       "time": "12:08"
       }
      ]
     },
@@ -5446,9 +5460,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.32,
+     "lastMark": 1.28,
      "lastMarkDate": "2026-11-16",
-     "lastMarkTime": "11:52",
+     "lastMarkTime": "12:08",
      "markSource": "chain",
      "marks": [
       {
@@ -5502,10 +5516,10 @@
       },
       {
        "date": "2026-11-16",
-       "mark": 1.32,
+       "mark": 1.28,
        "source": "chain",
-       "price": 73.27,
-       "time": "11:52"
+       "price": 72.88,
+       "time": "12:08"
       }
      ]
     }
@@ -7175,9 +7189,9 @@
      },
      "createdAt": "2026-11-06T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.19,
+     "lastMark": 1.21,
      "lastMarkDate": "2026-11-16",
-     "lastMarkTime": "11:52",
+     "lastMarkTime": "12:08",
      "markSource": "chain",
      "marks": [
       {
@@ -7224,10 +7238,10 @@
       },
       {
        "date": "2026-11-16",
-       "mark": 1.19,
+       "mark": 1.21,
        "source": "chain",
-       "price": 56.49,
-       "time": "11:52"
+       "price": 56.56,
+       "time": "12:08"
       }
      ]
     }
@@ -11575,6 +11589,20 @@
     "action": "skip",
     "reason": "RSI 30.9 above 30",
     "time": "11:52"
+   },
+   {
+    "date": "2026-11-16",
+    "ticker": "BABA",
+    "action": "skip",
+    "reason": "RSI 30.7 above 30",
+    "time": "12:08"
+   },
+   {
+    "date": "2026-11-16",
+    "ticker": "FCX",
+    "action": "skip",
+    "reason": "RSI 32.5 above 30",
+    "time": "12:08"
    }
   ],
   "lastSkip": {
@@ -11652,7 +11680,7 @@
    },
    "BABA": {
     "date": "2026-11-16",
-    "reason": "RSI 30.9 above 30"
+    "reason": "RSI 30.7 above 30"
    },
    "ABBV": {
     "date": "2026-11-16",
@@ -11668,7 +11696,7 @@
    },
    "FCX": {
     "date": "2026-11-16",
-    "reason": "RSI 32.4 above 30"
+    "reason": "RSI 32.5 above 30"
    }
   }
  }

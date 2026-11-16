@@ -98,9 +98,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 3.38,
-   "lastMarkDate": "2026-11-13",
-   "lastMarkTime": "16:37",
+   "lastMark": 3.23,
+   "lastMarkDate": "2026-11-16",
+   "lastMarkTime": "09:36",
    "markSource": "chain",
    "marks": [
     {
@@ -172,6 +172,13 @@
      "source": "chain",
      "price": 295.77,
      "time": "16:37"
+    },
+    {
+     "date": "2026-11-16",
+     "mark": 3.23,
+     "source": "chain",
+     "price": 288.52,
+     "time": "09:36"
     }
    ]
   },
@@ -232,9 +239,9 @@
    },
    "createdAt": "2026-11-05T15:22:18",
    "openedAt": "10:22",
-   "lastMark": 1.78,
-   "lastMarkDate": "2026-11-13",
-   "lastMarkTime": "16:37",
+   "lastMark": 1.75,
+   "lastMarkDate": "2026-11-16",
+   "lastMarkTime": "09:36",
    "markSource": "chain",
    "marks": [
     {
@@ -285,6 +292,13 @@
      "source": "chain",
      "price": 59.24,
      "time": "16:37"
+    },
+    {
+     "date": "2026-11-16",
+     "mark": 1.75,
+     "source": "chain",
+     "price": 57.08,
+     "time": "09:36"
     }
    ]
   },
@@ -345,9 +359,9 @@
    },
    "createdAt": "2026-11-05T15:37:12",
    "openedAt": "10:37",
-   "lastMark": 2.45,
-   "lastMarkDate": "2026-11-13",
-   "lastMarkTime": "16:37",
+   "lastMark": 1.58,
+   "lastMarkDate": "2026-11-16",
+   "lastMarkTime": "09:36",
    "markSource": "chain",
    "marks": [
     {
@@ -398,6 +412,13 @@
      "source": "chain",
      "price": 77.86,
      "time": "16:37"
+    },
+    {
+     "date": "2026-11-16",
+     "mark": 1.58,
+     "source": "chain",
+     "price": 74.62,
+     "time": "09:36"
     }
    ]
   }
@@ -4910,10 +4931,31 @@
    "action": "skip",
    "reason": "RSI 60.6 below 70",
    "time": "16:07"
+  },
+  {
+   "date": "2026-11-16",
+   "ticker": "PG",
+   "action": "skip",
+   "reason": "ADX 41.2 above 40: trend too strong to fade",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-16",
+   "ticker": "BABA",
+   "action": "skip",
+   "reason": "RSI 30.6 above 30",
+   "time": "09:36"
+  },
+  {
+   "date": "2026-11-16",
+   "ticker": "ABBV",
+   "action": "skip",
+   "reason": "squeeze: bands inside Keltner",
+   "time": "09:36"
   }
  ],
- "lastBar": "2026-11-13",
- "lastRun": "2026-11-13T21:37:04",
+ "lastBar": "2026-11-16",
+ "lastRun": "2026-11-16T14:36:46",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -5044,8 +5086,8 @@
    "reason": "no strike pair passed (2026-12-18): 550/560: long leg open interest 34 < 1000; 540/550: long leg open interest 30 < 1000; 560/570: long leg open interest 30 < 1000"
   },
   "PG": {
-   "date": "2026-11-10",
-   "reason": "RSI 67.8 below 70"
+   "date": "2026-11-16",
+   "reason": "ADX 41.2 above 40: trend too strong to fade"
   },
   "MU": {
    "date": "2026-11-09",
@@ -5068,7 +5110,7 @@
    "reason": "ADX 41.5 above 40: trend too strong to fade"
   },
   "ABBV": {
-   "date": "2026-11-12",
+   "date": "2026-11-16",
    "reason": "squeeze: bands inside Keltner"
   },
   "NEM": {
@@ -5108,15 +5150,15 @@
    "reason": "RSI 40.5 above 30"
   },
   "BABA": {
-   "date": "2026-11-13",
-   "reason": "RSI 33.7 above 30"
+   "date": "2026-11-16",
+   "reason": "RSI 30.6 above 30"
   },
   "GLD": {
    "date": "2026-11-12",
    "reason": "RSI 37.4 above 30"
   }
  },
- "lastPoll": "2026-11-13T16:37-05:00",
+ "lastPoll": "2026-11-16T09:36-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -5179,9 +5221,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.78,
-     "lastMarkDate": "2026-11-13",
-     "lastMarkTime": "16:37",
+     "lastMark": 1.75,
+     "lastMarkDate": "2026-11-16",
+     "lastMarkTime": "09:36",
      "markSource": "chain",
      "marks": [
       {
@@ -5232,6 +5274,13 @@
        "source": "chain",
        "price": 59.24,
        "time": "16:37"
+      },
+      {
+       "date": "2026-11-16",
+       "mark": 1.75,
+       "source": "chain",
+       "price": 57.08,
+       "time": "09:36"
       }
      ]
     },
@@ -5292,9 +5341,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.91,
-     "lastMarkDate": "2026-11-13",
-     "lastMarkTime": "16:37",
+     "lastMark": 1.87,
+     "lastMarkDate": "2026-11-16",
+     "lastMarkTime": "09:36",
      "markSource": "chain",
      "marks": [
       {
@@ -5345,6 +5394,13 @@
        "source": "chain",
        "price": 77.86,
        "time": "16:37"
+      },
+      {
+       "date": "2026-11-16",
+       "mark": 1.87,
+       "source": "chain",
+       "price": 74.62,
+       "time": "09:36"
       }
      ]
     }
@@ -7014,9 +7070,9 @@
      },
      "createdAt": "2026-11-06T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.78,
-     "lastMarkDate": "2026-11-13",
-     "lastMarkTime": "16:37",
+     "lastMark": 1.75,
+     "lastMarkDate": "2026-11-16",
+     "lastMarkTime": "09:36",
      "markSource": "chain",
      "marks": [
       {
@@ -7060,6 +7116,13 @@
        "source": "chain",
        "price": 59.24,
        "time": "16:37"
+      },
+      {
+       "date": "2026-11-16",
+       "mark": 1.75,
+       "source": "chain",
+       "price": 57.08,
+       "time": "09:36"
       }
      ]
     }
@@ -11281,6 +11344,27 @@
     "action": "skip",
     "reason": "RSI 60.6 below 70",
     "time": "16:07"
+   },
+   {
+    "date": "2026-11-16",
+    "ticker": "PG",
+    "action": "skip",
+    "reason": "ADX 41.2 above 40: trend too strong to fade",
+    "time": "09:36"
+   },
+   {
+    "date": "2026-11-16",
+    "ticker": "BABA",
+    "action": "skip",
+    "reason": "RSI 30.6 above 30",
+    "time": "09:36"
+   },
+   {
+    "date": "2026-11-16",
+    "ticker": "ABBV",
+    "action": "skip",
+    "reason": "squeeze: bands inside Keltner",
+    "time": "09:36"
    }
   ],
   "lastSkip": {
@@ -11349,19 +11433,19 @@
     "reason": "RSI 60.6 below 70"
    },
    "PG": {
-    "date": "2026-11-10",
-    "reason": "RSI 67.8 below 70"
+    "date": "2026-11-16",
+    "reason": "ADX 41.2 above 40: trend too strong to fade"
    },
    "ADBE": {
     "date": "2026-11-10",
     "reason": "RSI 40.5 above 30"
    },
    "BABA": {
-    "date": "2026-11-13",
-    "reason": "RSI 33.7 above 30"
+    "date": "2026-11-16",
+    "reason": "RSI 30.6 above 30"
    },
    "ABBV": {
-    "date": "2026-11-12",
+    "date": "2026-11-16",
     "reason": "squeeze: bands inside Keltner"
    },
    "AVGO": {

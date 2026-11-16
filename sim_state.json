@@ -98,9 +98,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 3.23,
+   "lastMark": 2.27,
    "lastMarkDate": "2026-11-16",
-   "lastMarkTime": "09:36",
+   "lastMarkTime": "09:52",
    "markSource": "chain",
    "marks": [
     {
@@ -175,10 +175,10 @@
     },
     {
      "date": "2026-11-16",
-     "mark": 3.23,
+     "mark": 2.27,
      "source": "chain",
-     "price": 288.52,
-     "time": "09:36"
+     "price": 288.73,
+     "time": "09:52"
     }
    ]
   },
@@ -239,9 +239,9 @@
    },
    "createdAt": "2026-11-05T15:22:18",
    "openedAt": "10:22",
-   "lastMark": 1.75,
+   "lastMark": 1.27,
    "lastMarkDate": "2026-11-16",
-   "lastMarkTime": "09:36",
+   "lastMarkTime": "09:52",
    "markSource": "chain",
    "marks": [
     {
@@ -295,10 +295,10 @@
     },
     {
      "date": "2026-11-16",
-     "mark": 1.75,
+     "mark": 1.27,
      "source": "chain",
-     "price": 57.08,
-     "time": "09:36"
+     "price": 57.4,
+     "time": "09:52"
     }
    ]
   },
@@ -359,9 +359,9 @@
    },
    "createdAt": "2026-11-05T15:37:12",
    "openedAt": "10:37",
-   "lastMark": 1.58,
+   "lastMark": 2.09,
    "lastMarkDate": "2026-11-16",
-   "lastMarkTime": "09:36",
+   "lastMarkTime": "09:52",
    "markSource": "chain",
    "marks": [
     {
@@ -415,10 +415,10 @@
     },
     {
      "date": "2026-11-16",
-     "mark": 1.58,
+     "mark": 2.09,
      "source": "chain",
-     "price": 74.62,
-     "time": "09:36"
+     "price": 74.65,
+     "time": "09:52"
     }
    ]
   }
@@ -4952,10 +4952,17 @@
    "action": "skip",
    "reason": "squeeze: bands inside Keltner",
    "time": "09:36"
+  },
+  {
+   "date": "2026-11-16",
+   "ticker": "BABA",
+   "action": "skip",
+   "reason": "RSI 31.3 above 30",
+   "time": "09:52"
   }
  ],
  "lastBar": "2026-11-16",
- "lastRun": "2026-11-16T14:36:46",
+ "lastRun": "2026-11-16T14:52:09",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -5151,14 +5158,14 @@
   },
   "BABA": {
    "date": "2026-11-16",
-   "reason": "RSI 30.6 above 30"
+   "reason": "RSI 31.3 above 30"
   },
   "GLD": {
    "date": "2026-11-12",
    "reason": "RSI 37.4 above 30"
   }
  },
- "lastPoll": "2026-11-16T09:36-05:00",
+ "lastPoll": "2026-11-16T09:52-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -5221,9 +5228,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.75,
+     "lastMark": 1.27,
      "lastMarkDate": "2026-11-16",
-     "lastMarkTime": "09:36",
+     "lastMarkTime": "09:52",
      "markSource": "chain",
      "marks": [
       {
@@ -5277,10 +5284,10 @@
       },
       {
        "date": "2026-11-16",
-       "mark": 1.75,
+       "mark": 1.27,
        "source": "chain",
-       "price": 57.08,
-       "time": "09:36"
+       "price": 57.4,
+       "time": "09:52"
       }
      ]
     },
@@ -5341,9 +5348,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.87,
+     "lastMark": 1.54,
      "lastMarkDate": "2026-11-16",
-     "lastMarkTime": "09:36",
+     "lastMarkTime": "09:52",
      "markSource": "chain",
      "marks": [
       {
@@ -5397,10 +5404,10 @@
       },
       {
        "date": "2026-11-16",
-       "mark": 1.87,
+       "mark": 1.54,
        "source": "chain",
-       "price": 74.62,
-       "time": "09:36"
+       "price": 74.65,
+       "time": "09:52"
       }
      ]
     }
@@ -7070,9 +7077,9 @@
      },
      "createdAt": "2026-11-06T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.75,
+     "lastMark": 1.27,
      "lastMarkDate": "2026-11-16",
-     "lastMarkTime": "09:36",
+     "lastMarkTime": "09:52",
      "markSource": "chain",
      "marks": [
       {
@@ -7119,10 +7126,10 @@
       },
       {
        "date": "2026-11-16",
-       "mark": 1.75,
+       "mark": 1.27,
        "source": "chain",
-       "price": 57.08,
-       "time": "09:36"
+       "price": 57.4,
+       "time": "09:52"
       }
      ]
     }
@@ -11365,6 +11372,13 @@
     "action": "skip",
     "reason": "squeeze: bands inside Keltner",
     "time": "09:36"
+   },
+   {
+    "date": "2026-11-16",
+    "ticker": "BABA",
+    "action": "skip",
+    "reason": "RSI 31.3 above 30",
+    "time": "09:52"
    }
   ],
   "lastSkip": {
@@ -11442,7 +11456,7 @@
    },
    "BABA": {
     "date": "2026-11-16",
-    "reason": "RSI 30.6 above 30"
+    "reason": "RSI 31.3 above 30"
    },
    "ABBV": {
     "date": "2026-11-16",

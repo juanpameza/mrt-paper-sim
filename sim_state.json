@@ -98,9 +98,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.68,
+   "lastMark": 2.55,
    "lastMarkDate": "2026-11-16",
-   "lastMarkTime": "12:23",
+   "lastMarkTime": "12:37",
    "markSource": "chain",
    "marks": [
     {
@@ -175,10 +175,10 @@
     },
     {
      "date": "2026-11-16",
-     "mark": 2.68,
+     "mark": 2.55,
      "source": "chain",
-     "price": 286.96,
-     "time": "12:23"
+     "price": 286.75,
+     "time": "12:37"
     }
    ]
   },
@@ -239,9 +239,9 @@
    },
    "createdAt": "2026-11-05T15:22:18",
    "openedAt": "10:22",
-   "lastMark": 1.25,
+   "lastMark": 1.21,
    "lastMarkDate": "2026-11-16",
-   "lastMarkTime": "12:23",
+   "lastMarkTime": "12:37",
    "markSource": "chain",
    "marks": [
     {
@@ -295,10 +295,10 @@
     },
     {
      "date": "2026-11-16",
-     "mark": 1.25,
+     "mark": 1.21,
      "source": "chain",
-     "price": 56.57,
-     "time": "12:23"
+     "price": 56.27,
+     "time": "12:37"
     }
    ]
   },
@@ -359,9 +359,9 @@
    },
    "createdAt": "2026-11-05T15:37:12",
    "openedAt": "10:37",
-   "lastMark": 1.85,
+   "lastMark": 1.81,
    "lastMarkDate": "2026-11-16",
-   "lastMarkTime": "12:23",
+   "lastMarkTime": "12:37",
    "markSource": "chain",
    "marks": [
     {
@@ -415,10 +415,10 @@
     },
     {
      "date": "2026-11-16",
-     "mark": 1.85,
+     "mark": 1.81,
      "source": "chain",
-     "price": 72.53,
-     "time": "12:23"
+     "price": 72.61,
+     "time": "12:37"
     }
    ]
   }
@@ -5078,10 +5078,17 @@
    "action": "skip",
    "reason": "RSI 30.6 above 30",
    "time": "12:23"
+  },
+  {
+   "date": "2026-11-16",
+   "ticker": "FCX",
+   "action": "skip",
+   "reason": "RSI 32.0 above 30",
+   "time": "12:37"
   }
  ],
  "lastBar": "2026-11-16",
- "lastRun": "2026-11-16T17:23:21",
+ "lastRun": "2026-11-16T17:37:04",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -5257,7 +5264,7 @@
   },
   "FCX": {
    "date": "2026-11-16",
-   "reason": "RSI 32.5 above 30"
+   "reason": "RSI 32.0 above 30"
   },
   "HOOD": {
    "date": "2026-11-05",
@@ -5284,7 +5291,7 @@
    "reason": "RSI 37.4 above 30"
   }
  },
- "lastPoll": "2026-11-16T12:23-05:00",
+ "lastPoll": "2026-11-16T12:37-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -5347,9 +5354,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.25,
+     "lastMark": 1.21,
      "lastMarkDate": "2026-11-16",
-     "lastMarkTime": "12:23",
+     "lastMarkTime": "12:37",
      "markSource": "chain",
      "marks": [
       {
@@ -5403,10 +5410,10 @@
       },
       {
        "date": "2026-11-16",
-       "mark": 1.25,
+       "mark": 1.21,
        "source": "chain",
-       "price": 56.57,
-       "time": "12:23"
+       "price": 56.27,
+       "time": "12:37"
       }
      ]
     },
@@ -5467,9 +5474,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.29,
+     "lastMark": 1.26,
      "lastMarkDate": "2026-11-16",
-     "lastMarkTime": "12:23",
+     "lastMarkTime": "12:37",
      "markSource": "chain",
      "marks": [
       {
@@ -5523,10 +5530,10 @@
       },
       {
        "date": "2026-11-16",
-       "mark": 1.29,
+       "mark": 1.26,
        "source": "chain",
-       "price": 72.53,
-       "time": "12:23"
+       "price": 72.61,
+       "time": "12:37"
       }
      ]
     }
@@ -7196,9 +7203,9 @@
      },
      "createdAt": "2026-11-06T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.25,
+     "lastMark": 1.21,
      "lastMarkDate": "2026-11-16",
-     "lastMarkTime": "12:23",
+     "lastMarkTime": "12:37",
      "markSource": "chain",
      "marks": [
       {
@@ -7245,10 +7252,10 @@
       },
       {
        "date": "2026-11-16",
-       "mark": 1.25,
+       "mark": 1.21,
        "source": "chain",
-       "price": 56.57,
-       "time": "12:23"
+       "price": 56.27,
+       "time": "12:37"
       }
      ]
     }
@@ -11617,6 +11624,13 @@
     "action": "skip",
     "reason": "RSI 30.6 above 30",
     "time": "12:23"
+   },
+   {
+    "date": "2026-11-16",
+    "ticker": "FCX",
+    "action": "skip",
+    "reason": "RSI 32.0 above 30",
+    "time": "12:37"
    }
   ],
   "lastSkip": {
@@ -11710,7 +11724,7 @@
    },
    "FCX": {
     "date": "2026-11-16",
-    "reason": "RSI 32.5 above 30"
+    "reason": "RSI 32.0 above 30"
    }
   }
  }

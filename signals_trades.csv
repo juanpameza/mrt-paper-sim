@@ -1,2 +1,2 @@
 id,ticker,type,opened,expiry,longK,shortK,width,debit,contracts,cost,stop,target,status,lastMark,exitPrice,exitReason,closed,fees,pnlGross,pnl
-s65edfe7368,HOOD,bull-call,2026-11-16,2026-12-18,75.0,80.0,5.0,1.83,1,183.0,0.92,3.66,open,1.32,,,,,,
+s65edfe7368,HOOD,bull-call,2026-11-16,2026-12-18,75.0,80.0,5.0,1.83,1,183.0,0.92,3.66,open,1.33,,,,,,

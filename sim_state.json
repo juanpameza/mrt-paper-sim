@@ -98,10 +98,10 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.2,
+   "lastMark": 2.1,
    "lastMarkDate": "2026-11-17",
-   "lastMarkTime": "13:22",
-   "markSource": "chain",
+   "lastMarkTime": "13:37",
+   "markSource": "model",
    "marks": [
     {
      "date": "2026-11-02",
@@ -182,10 +182,10 @@
     },
     {
      "date": "2026-11-17",
-     "mark": 2.2,
-     "source": "chain",
-     "price": 281.7,
-     "time": "13:22"
+     "mark": 2.1,
+     "source": "model",
+     "price": 281.61,
+     "time": "13:37"
     }
    ]
   },
@@ -246,10 +246,10 @@
    },
    "createdAt": "2026-11-05T15:22:18",
    "openedAt": "10:22",
-   "lastMark": 0.99,
+   "lastMark": 1.01,
    "lastMarkDate": "2026-11-17",
-   "lastMarkTime": "13:22",
-   "markSource": "chain",
+   "lastMarkTime": "13:37",
+   "markSource": "model",
    "marks": [
     {
      "date": "2026-11-05",
@@ -309,10 +309,10 @@
     },
     {
      "date": "2026-11-17",
-     "mark": 0.99,
-     "source": "chain",
-     "price": 55.32,
-     "time": "13:22"
+     "mark": 1.01,
+     "source": "model",
+     "price": 55.29,
+     "time": "13:37"
     }
    ]
   },
@@ -5883,10 +5883,80 @@
    "action": "skip",
    "reason": "RSI 46.6 above 30",
    "time": "13:22"
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "BABA",
+   "action": "skip",
+   "reason": "no expiration 20-55 days out",
+   "time": "13:37"
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "CRM",
+   "action": "skip",
+   "reason": "no expiration 20-55 days out",
+   "time": "13:37"
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "FCX",
+   "action": "skip",
+   "reason": "RSI 30.9 above 30",
+   "time": "13:37"
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "NFLX",
+   "action": "skip",
+   "reason": "RSI 32.8 above 30",
+   "time": "13:37"
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "DIS",
+   "action": "skip",
+   "reason": "RSI 65.8 below 70",
+   "time": "13:37"
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "SPY",
+   "action": "skip",
+   "reason": "RSI 37.5 above 30",
+   "time": "13:37"
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "IWM",
+   "action": "skip",
+   "reason": "RSI 40.2 above 30",
+   "time": "13:37"
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "MSFT",
+   "action": "skip",
+   "reason": "RSI 41.4 above 30",
+   "time": "13:37"
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "UNH",
+   "action": "skip",
+   "reason": "RSI 46.3 above 30",
+   "time": "13:37"
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "NKE",
+   "action": "skip",
+   "reason": "RSI 46.5 below 70",
+   "time": "13:37"
   }
  ],
  "lastBar": "2026-11-17",
- "lastRun": "2026-11-17T18:22:08",
+ "lastRun": "2026-11-17T18:37:18",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -5938,7 +6008,7 @@
   },
   "MSFT": {
    "date": "2026-11-17",
-   "reason": "RSI 40.6 above 30"
+   "reason": "RSI 41.4 above 30"
   },
   "QQQ": {
    "date": "2026-11-06",
@@ -5950,7 +6020,7 @@
   },
   "SPY": {
    "date": "2026-11-17",
-   "reason": "RSI 37.2 above 30"
+   "reason": "RSI 37.5 above 30"
   },
   "TGT": {
    "date": "2026-11-12",
@@ -5962,7 +6032,7 @@
   },
   "CRM": {
    "date": "2026-11-17",
-   "reason": "earnings 2026-12-02 before expiry 2026-12-18"
+   "reason": "no expiration 20-55 days out"
   },
   "AAPL": {
    "date": "2026-11-13",
@@ -5978,7 +6048,7 @@
   },
   "DIS": {
    "date": "2026-11-17",
-   "reason": "RSI 66.0 below 70"
+   "reason": "RSI 65.8 below 70"
   },
   "CVS": {
    "date": "2026-11-06",
@@ -5990,7 +6060,7 @@
   },
   "NKE": {
    "date": "2026-11-17",
-   "reason": "RSI 45.9 below 70"
+   "reason": "RSI 46.5 below 70"
   },
   "AMZN": {
    "date": "2026-11-11",
@@ -5998,7 +6068,7 @@
   },
   "IWM": {
    "date": "2026-11-17",
-   "reason": "RSI 40.1 above 30"
+   "reason": "RSI 40.2 above 30"
   },
   "XLE": {
    "date": "2026-11-10",
@@ -6062,7 +6132,7 @@
   },
   "FCX": {
    "date": "2026-11-17",
-   "reason": "RSI 31.0 above 30"
+   "reason": "RSI 30.9 above 30"
   },
   "HOOD": {
    "date": "2026-11-17",
@@ -6082,7 +6152,7 @@
   },
   "BABA": {
    "date": "2026-11-17",
-   "reason": "earnings 2026-11-19 before expiry 2026-12-18"
+   "reason": "no expiration 20-55 days out"
   },
   "GLD": {
    "date": "2026-11-12",
@@ -6090,14 +6160,14 @@
   },
   "UNH": {
    "date": "2026-11-17",
-   "reason": "RSI 46.6 above 30"
+   "reason": "RSI 46.3 above 30"
   },
   "NFLX": {
    "date": "2026-11-17",
-   "reason": "RSI 32.7 above 30"
+   "reason": "RSI 32.8 above 30"
   }
  },
- "lastPoll": "2026-11-17T13:22-05:00",
+ "lastPoll": "2026-11-17T13:37-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -6160,10 +6230,10 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 0.99,
+     "lastMark": 1.05,
      "lastMarkDate": "2026-11-17",
-     "lastMarkTime": "13:22",
-     "markSource": "chain",
+     "lastMarkTime": "13:37",
+     "markSource": "model",
      "marks": [
       {
        "date": "2026-11-05",
@@ -6223,10 +6293,10 @@
       },
       {
        "date": "2026-11-17",
-       "mark": 0.99,
-       "source": "chain",
-       "price": 55.32,
-       "time": "13:22"
+       "mark": 1.05,
+       "source": "model",
+       "price": 55.29,
+       "time": "13:37"
       }
      ]
     },
@@ -8672,10 +8742,10 @@
     },
     "createdAt": "2026-11-16T18:07:14",
     "openedAt": "13:07",
-    "lastMark": 1.32,
+    "lastMark": 1.33,
     "lastMarkDate": "2026-11-17",
-    "lastMarkTime": "13:22",
-    "markSource": "chain",
+    "lastMarkTime": "13:37",
+    "markSource": "model",
     "marks": [
      {
       "date": "2026-11-16",
@@ -8686,10 +8756,10 @@
      },
      {
       "date": "2026-11-17",
-      "mark": 1.32,
-      "source": "chain",
-      "price": 68.25,
-      "time": "13:22"
+      "mark": 1.33,
+      "source": "model",
+      "price": 68.4,
+      "time": "13:37"
      }
     ]
    }
@@ -13375,6 +13445,76 @@
     "action": "skip",
     "reason": "RSI 46.6 above 30",
     "time": "13:22"
+   },
+   {
+    "date": "2026-11-17",
+    "ticker": "BABA",
+    "action": "skip",
+    "reason": "no expiration 20-55 days out",
+    "time": "13:37"
+   },
+   {
+    "date": "2026-11-17",
+    "ticker": "CRM",
+    "action": "skip",
+    "reason": "no expiration 20-55 days out",
+    "time": "13:37"
+   },
+   {
+    "date": "2026-11-17",
+    "ticker": "FCX",
+    "action": "skip",
+    "reason": "RSI 30.9 above 30",
+    "time": "13:37"
+   },
+   {
+    "date": "2026-11-17",
+    "ticker": "NFLX",
+    "action": "skip",
+    "reason": "RSI 32.8 above 30",
+    "time": "13:37"
+   },
+   {
+    "date": "2026-11-17",
+    "ticker": "DIS",
+    "action": "skip",
+    "reason": "RSI 65.8 below 70",
+    "time": "13:37"
+   },
+   {
+    "date": "2026-11-17",
+    "ticker": "SPY",
+    "action": "skip",
+    "reason": "RSI 37.5 above 30",
+    "time": "13:37"
+   },
+   {
+    "date": "2026-11-17",
+    "ticker": "IWM",
+    "action": "skip",
+    "reason": "RSI 40.2 above 30",
+    "time": "13:37"
+   },
+   {
+    "date": "2026-11-17",
+    "ticker": "MSFT",
+    "action": "skip",
+    "reason": "RSI 41.4 above 30",
+    "time": "13:37"
+   },
+   {
+    "date": "2026-11-17",
+    "ticker": "UNH",
+    "action": "skip",
+    "reason": "RSI 46.3 above 30",
+    "time": "13:37"
+   },
+   {
+    "date": "2026-11-17",
+    "ticker": "NKE",
+    "action": "skip",
+    "reason": "RSI 46.5 below 70",
+    "time": "13:37"
    }
   ],
   "lastSkip": {
@@ -13384,7 +13524,7 @@
    },
    "DIS": {
     "date": "2026-11-17",
-    "reason": "RSI 66.0 below 70"
+    "reason": "RSI 65.8 below 70"
    },
    "ABNB": {
     "date": "2026-11-10",
@@ -13436,7 +13576,7 @@
    },
    "CRM": {
     "date": "2026-11-17",
-    "reason": "earnings 2026-12-02 before expiry 2026-12-18"
+    "reason": "no expiration 20-55 days out"
    },
    "AAPL": {
     "date": "2026-11-13",
@@ -13452,7 +13592,7 @@
    },
    "BABA": {
     "date": "2026-11-17",
-    "reason": "earnings 2026-11-19 before expiry 2026-12-18"
+    "reason": "no expiration 20-55 days out"
    },
    "ABBV": {
     "date": "2026-11-16",
@@ -13468,7 +13608,7 @@
    },
    "FCX": {
     "date": "2026-11-17",
-    "reason": "RSI 31.0 above 30"
+    "reason": "RSI 30.9 above 30"
    },
    "HOOD": {
     "date": "2026-11-17",
@@ -13476,23 +13616,23 @@
    },
    "NKE": {
     "date": "2026-11-17",
-    "reason": "RSI 45.9 below 70"
+    "reason": "RSI 46.5 below 70"
    },
    "UNH": {
     "date": "2026-11-17",
-    "reason": "RSI 46.6 above 30"
+    "reason": "RSI 46.3 above 30"
    },
    "MSFT": {
     "date": "2026-11-17",
-    "reason": "RSI 40.6 above 30"
+    "reason": "RSI 41.4 above 30"
    },
    "SPY": {
     "date": "2026-11-17",
-    "reason": "RSI 37.2 above 30"
+    "reason": "RSI 37.5 above 30"
    },
    "IWM": {
     "date": "2026-11-17",
-    "reason": "RSI 40.1 above 30"
+    "reason": "RSI 40.2 above 30"
    },
    "JPM": {
     "date": "2026-11-17",
@@ -13500,7 +13640,7 @@
    },
    "NFLX": {
     "date": "2026-11-17",
-    "reason": "RSI 32.7 above 30"
+    "reason": "RSI 32.8 above 30"
    }
   }
  }

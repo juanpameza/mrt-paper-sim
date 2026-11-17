@@ -98,9 +98,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.82,
+   "lastMark": 2.48,
    "lastMarkDate": "2026-11-17",
-   "lastMarkTime": "09:36",
+   "lastMarkTime": "09:52",
    "markSource": "chain",
    "marks": [
     {
@@ -182,10 +182,10 @@
     },
     {
      "date": "2026-11-17",
-     "mark": 2.82,
+     "mark": 2.48,
      "source": "chain",
-     "price": 282.38,
-     "time": "09:36"
+     "price": 281.48,
+     "time": "09:52"
     }
    ]
   },
@@ -246,9 +246,9 @@
    },
    "createdAt": "2026-11-05T15:22:18",
    "openedAt": "10:22",
-   "lastMark": 0.99,
+   "lastMark": 1.14,
    "lastMarkDate": "2026-11-17",
-   "lastMarkTime": "09:36",
+   "lastMarkTime": "09:52",
    "markSource": "chain",
    "marks": [
     {
@@ -309,10 +309,10 @@
     },
     {
      "date": "2026-11-17",
-     "mark": 0.99,
+     "mark": 1.14,
      "source": "chain",
-     "price": 56.17,
-     "time": "09:36"
+     "price": 56.81,
+     "time": "09:52"
     }
    ]
   },
@@ -373,9 +373,9 @@
    },
    "createdAt": "2026-11-05T15:37:12",
    "openedAt": "10:37",
-   "lastMark": 2.5,
+   "lastMark": 1.73,
    "lastMarkDate": "2026-11-17",
-   "lastMarkTime": "09:36",
+   "lastMarkTime": "09:52",
    "markSource": "chain",
    "marks": [
     {
@@ -436,10 +436,10 @@
     },
     {
      "date": "2026-11-17",
-     "mark": 2.5,
+     "mark": 1.73,
      "source": "chain",
-     "price": 70.83,
-     "time": "09:36"
+     "price": 70.72,
+     "time": "09:52"
     }
    ]
   }
@@ -5253,10 +5253,24 @@
    "action": "skip",
    "reason": "RSI 46.3 above 30",
    "time": "09:36"
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "NKE",
+   "action": "skip",
+   "reason": "RSI 57.9 below 70",
+   "time": "09:52"
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "UNH",
+   "action": "skip",
+   "reason": "RSI 44.6 above 30",
+   "time": "09:52"
   }
  ],
  "lastBar": "2026-11-17",
- "lastRun": "2026-11-17T14:36:32",
+ "lastRun": "2026-11-17T14:52:03",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -5360,7 +5374,7 @@
   },
   "NKE": {
    "date": "2026-11-17",
-   "reason": "RSI 60.8 below 70"
+   "reason": "RSI 57.9 below 70"
   },
   "AMZN": {
    "date": "2026-11-11",
@@ -5460,10 +5474,10 @@
   },
   "UNH": {
    "date": "2026-11-17",
-   "reason": "RSI 46.3 above 30"
+   "reason": "RSI 44.6 above 30"
   }
  },
- "lastPoll": "2026-11-17T09:36-05:00",
+ "lastPoll": "2026-11-17T09:52-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -5526,9 +5540,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 0.99,
+     "lastMark": 1.14,
      "lastMarkDate": "2026-11-17",
-     "lastMarkTime": "09:36",
+     "lastMarkTime": "09:52",
      "markSource": "chain",
      "marks": [
       {
@@ -5589,10 +5603,10 @@
       },
       {
        "date": "2026-11-17",
-       "mark": 0.99,
+       "mark": 1.14,
        "source": "chain",
-       "price": 56.17,
-       "time": "09:36"
+       "price": 56.81,
+       "time": "09:52"
       }
      ]
     },
@@ -8038,9 +8052,9 @@
     },
     "createdAt": "2026-11-16T18:07:14",
     "openedAt": "13:07",
-    "lastMark": 2.5,
+    "lastMark": 1.73,
     "lastMarkDate": "2026-11-17",
-    "lastMarkTime": "09:36",
+    "lastMarkTime": "09:52",
     "markSource": "chain",
     "marks": [
      {
@@ -8052,10 +8066,10 @@
      },
      {
       "date": "2026-11-17",
-      "mark": 2.5,
+      "mark": 1.73,
       "source": "chain",
-      "price": 70.83,
-      "time": "09:36"
+      "price": 70.72,
+      "time": "09:52"
      }
     ]
    }
@@ -12139,6 +12153,20 @@
     "action": "skip",
     "reason": "RSI 46.3 above 30",
     "time": "09:36"
+   },
+   {
+    "date": "2026-11-17",
+    "ticker": "NKE",
+    "action": "skip",
+    "reason": "RSI 57.9 below 70",
+    "time": "09:52"
+   },
+   {
+    "date": "2026-11-17",
+    "ticker": "UNH",
+    "action": "skip",
+    "reason": "RSI 44.6 above 30",
+    "time": "09:52"
    }
   ],
   "lastSkip": {
@@ -12240,11 +12268,11 @@
    },
    "NKE": {
     "date": "2026-11-17",
-    "reason": "RSI 60.8 below 70"
+    "reason": "RSI 57.9 below 70"
    },
    "UNH": {
     "date": "2026-11-17",
-    "reason": "RSI 46.3 above 30"
+    "reason": "RSI 44.6 above 30"
    }
   }
  }

@@ -98,9 +98,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.08,
+   "lastMark": 2.05,
    "lastMarkDate": "2026-11-17",
-   "lastMarkTime": "10:07",
+   "lastMarkTime": "10:22",
    "markSource": "chain",
    "marks": [
     {
@@ -182,10 +182,10 @@
     },
     {
      "date": "2026-11-17",
-     "mark": 2.08,
+     "mark": 2.05,
      "source": "chain",
-     "price": 282.54,
-     "time": "10:07"
+     "price": 282.53,
+     "time": "10:22"
     }
    ]
   },
@@ -246,9 +246,9 @@
    },
    "createdAt": "2026-11-05T15:22:18",
    "openedAt": "10:22",
-   "lastMark": 1.27,
+   "lastMark": 1.11,
    "lastMarkDate": "2026-11-17",
-   "lastMarkTime": "10:07",
+   "lastMarkTime": "10:22",
    "markSource": "chain",
    "marks": [
     {
@@ -309,10 +309,10 @@
     },
     {
      "date": "2026-11-17",
-     "mark": 1.27,
+     "mark": 1.11,
      "source": "chain",
-     "price": 55.92,
-     "time": "10:07"
+     "price": 55.47,
+     "time": "10:22"
     }
    ]
   },
@@ -373,9 +373,9 @@
    },
    "createdAt": "2026-11-05T15:37:12",
    "openedAt": "10:37",
-   "lastMark": 1.59,
+   "lastMark": 1.56,
    "lastMarkDate": "2026-11-17",
-   "lastMarkTime": "10:07",
+   "lastMarkTime": "10:22",
    "markSource": "chain",
    "marks": [
     {
@@ -436,10 +436,10 @@
     },
     {
      "date": "2026-11-17",
-     "mark": 1.59,
+     "mark": 1.56,
      "source": "chain",
-     "price": 70.47,
-     "time": "10:07"
+     "price": 70.3,
+     "time": "10:22"
     }
    ]
   }
@@ -5281,10 +5281,31 @@
    "action": "skip",
    "reason": "RSI 55.7 below 70",
    "time": "10:07"
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "CRM",
+   "action": "skip",
+   "reason": "earnings 2026-12-02 before expiry 2026-12-18",
+   "time": "10:22"
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "NKE",
+   "action": "skip",
+   "reason": "RSI 55.6 below 70",
+   "time": "10:22"
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "UNH",
+   "action": "skip",
+   "reason": "RSI 44.9 above 30",
+   "time": "10:22"
   }
  ],
  "lastBar": "2026-11-17",
- "lastRun": "2026-11-17T15:07:20",
+ "lastRun": "2026-11-17T15:22:10",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -5359,8 +5380,8 @@
    "reason": "earnings date unknown"
   },
   "CRM": {
-   "date": "2026-11-10",
-   "reason": "RSI 34.3 above 30"
+   "date": "2026-11-17",
+   "reason": "earnings 2026-12-02 before expiry 2026-12-18"
   },
   "AAPL": {
    "date": "2026-11-13",
@@ -5388,7 +5409,7 @@
   },
   "NKE": {
    "date": "2026-11-17",
-   "reason": "RSI 55.7 below 70"
+   "reason": "RSI 55.6 below 70"
   },
   "AMZN": {
    "date": "2026-11-11",
@@ -5488,10 +5509,10 @@
   },
   "UNH": {
    "date": "2026-11-17",
-   "reason": "RSI 43.6 above 30"
+   "reason": "RSI 44.9 above 30"
   }
  },
- "lastPoll": "2026-11-17T10:07-05:00",
+ "lastPoll": "2026-11-17T10:22-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -5554,9 +5575,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 1.27,
+     "lastMark": 1.11,
      "lastMarkDate": "2026-11-17",
-     "lastMarkTime": "10:07",
+     "lastMarkTime": "10:22",
      "markSource": "chain",
      "marks": [
       {
@@ -5617,10 +5638,10 @@
       },
       {
        "date": "2026-11-17",
-       "mark": 1.27,
+       "mark": 1.11,
        "source": "chain",
-       "price": 55.92,
-       "time": "10:07"
+       "price": 55.47,
+       "time": "10:22"
       }
      ]
     },
@@ -8066,9 +8087,9 @@
     },
     "createdAt": "2026-11-16T18:07:14",
     "openedAt": "13:07",
-    "lastMark": 1.59,
+    "lastMark": 1.56,
     "lastMarkDate": "2026-11-17",
-    "lastMarkTime": "10:07",
+    "lastMarkTime": "10:22",
     "markSource": "chain",
     "marks": [
      {
@@ -8080,10 +8101,10 @@
      },
      {
       "date": "2026-11-17",
-      "mark": 1.59,
+      "mark": 1.56,
       "source": "chain",
-      "price": 70.47,
-      "time": "10:07"
+      "price": 70.3,
+      "time": "10:22"
      }
     ]
    }
@@ -12195,6 +12216,27 @@
     "action": "skip",
     "reason": "RSI 55.7 below 70",
     "time": "10:07"
+   },
+   {
+    "date": "2026-11-17",
+    "ticker": "CRM",
+    "action": "skip",
+    "reason": "earnings 2026-12-02 before expiry 2026-12-18",
+    "time": "10:22"
+   },
+   {
+    "date": "2026-11-17",
+    "ticker": "NKE",
+    "action": "skip",
+    "reason": "RSI 55.6 below 70",
+    "time": "10:22"
+   },
+   {
+    "date": "2026-11-17",
+    "ticker": "UNH",
+    "action": "skip",
+    "reason": "RSI 44.9 above 30",
+    "time": "10:22"
    }
   ],
   "lastSkip": {
@@ -12255,8 +12297,8 @@
     "reason": "RSI 42.4 above 30"
    },
    "CRM": {
-    "date": "2026-11-10",
-    "reason": "RSI 34.3 above 30"
+    "date": "2026-11-17",
+    "reason": "earnings 2026-12-02 before expiry 2026-12-18"
    },
    "AAPL": {
     "date": "2026-11-13",
@@ -12296,11 +12338,11 @@
    },
    "NKE": {
     "date": "2026-11-17",
-    "reason": "RSI 55.7 below 70"
+    "reason": "RSI 55.6 below 70"
    },
    "UNH": {
     "date": "2026-11-17",
-    "reason": "RSI 43.6 above 30"
+    "reason": "RSI 44.9 above 30"
    }
   }
  }

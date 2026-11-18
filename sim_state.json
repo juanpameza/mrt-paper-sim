@@ -98,9 +98,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.66,
+   "lastMark": 2.09,
    "lastMarkDate": "2026-11-18",
-   "lastMarkTime": "14:07",
+   "lastMarkTime": "14:22",
    "markSource": "chain",
    "marks": [
     {
@@ -189,10 +189,10 @@
     },
     {
      "date": "2026-11-18",
-     "mark": 2.66,
+     "mark": 2.09,
      "source": "chain",
-     "price": 282.86,
-     "time": "14:07"
+     "price": 284.03,
+     "time": "14:22"
     }
    ]
   },
@@ -534,17 +534,17 @@
    },
    "createdAt": "2026-11-18T14:52:09",
    "openedAt": "09:52",
-   "lastMark": 2.11,
+   "lastMark": 2.03,
    "lastMarkDate": "2026-11-18",
-   "lastMarkTime": "14:07",
+   "lastMarkTime": "14:22",
    "markSource": "chain",
    "marks": [
     {
      "date": "2026-11-18",
-     "mark": 2.11,
+     "mark": 2.03,
      "source": "chain",
-     "price": 68.77,
-     "time": "14:07"
+     "price": 69.0,
+     "time": "14:22"
     }
    ]
   }
@@ -4321,10 +4321,66 @@
    "action": "skip",
    "reason": "RSI 43.6 above 30",
    "time": "14:07"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "UNH",
+   "action": "skip",
+   "reason": "no strike pair passed (2026-12-18): 340/345: no 5-wide pair; 330/335: no 5-wide pair; 350/355: no 5-wide pair",
+   "time": "14:22"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "ADBE",
+   "action": "skip",
+   "reason": "RSI 35.8 above 30",
+   "time": "14:22"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "TGT",
+   "action": "skip",
+   "reason": "RSI 63.4 below 70",
+   "time": "14:22"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "SPY",
+   "action": "skip",
+   "reason": "RSI 36.8 above 30",
+   "time": "14:22"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "MRK",
+   "action": "skip",
+   "reason": "RSI 37.0 above 30",
+   "time": "14:22"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "NEM",
+   "action": "skip",
+   "reason": "RSI 37.0 above 30",
+   "time": "14:22"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "IWM",
+   "action": "skip",
+   "reason": "RSI 41.3 above 30",
+   "time": "14:22"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "MSFT",
+   "action": "skip",
+   "reason": "RSI 42.6 above 30",
+   "time": "14:22"
   }
  ],
  "lastBar": "2026-11-18",
- "lastRun": "2026-11-18T19:07:10",
+ "lastRun": "2026-11-18T19:22:10",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -4376,7 +4432,7 @@
   },
   "MSFT": {
    "date": "2026-11-18",
-   "reason": "RSI 42.8 above 30"
+   "reason": "RSI 42.6 above 30"
   },
   "QQQ": {
    "date": "2026-11-06",
@@ -4388,11 +4444,11 @@
   },
   "SPY": {
    "date": "2026-11-18",
-   "reason": "RSI 36.6 above 30"
+   "reason": "RSI 36.8 above 30"
   },
   "TGT": {
    "date": "2026-11-18",
-   "reason": "RSI 64.3 below 70"
+   "reason": "RSI 63.4 below 70"
   },
   "AMD": {
    "date": "2026-11-05",
@@ -4436,7 +4492,7 @@
   },
   "IWM": {
    "date": "2026-11-18",
-   "reason": "RSI 41.0 above 30"
+   "reason": "RSI 41.3 above 30"
   },
   "XLE": {
    "date": "2026-11-10",
@@ -4484,7 +4540,7 @@
   },
   "NEM": {
    "date": "2026-11-18",
-   "reason": "RSI 36.8 above 30"
+   "reason": "RSI 37.0 above 30"
   },
   "SBUX": {
    "date": "2026-11-05",
@@ -4496,7 +4552,7 @@
   },
   "MRK": {
    "date": "2026-11-18",
-   "reason": "RSI 37.4 above 30"
+   "reason": "RSI 37.0 above 30"
   },
   "FCX": {
    "date": "2026-11-18",
@@ -4516,7 +4572,7 @@
   },
   "ADBE": {
    "date": "2026-11-18",
-   "reason": "RSI 36.0 above 30"
+   "reason": "RSI 35.8 above 30"
   },
   "BABA": {
    "date": "2026-11-18",
@@ -4528,14 +4584,14 @@
   },
   "UNH": {
    "date": "2026-11-18",
-   "reason": "no strike pair passed (2026-12-18): 350/355: no 5-wide pair; 340/345: no 5-wide pair; 360/365: no 5-wide pair"
+   "reason": "no strike pair passed (2026-12-18): 340/345: no 5-wide pair; 330/335: no 5-wide pair; 350/355: no 5-wide pair"
   },
   "NFLX": {
    "date": "2026-11-17",
    "reason": "RSI 33.0 above 30"
   }
  },
- "lastPoll": "2026-11-18T14:07-05:00",
+ "lastPoll": "2026-11-18T14:22-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -7269,9 +7325,9 @@
     },
     "createdAt": "2026-11-16T18:07:14",
     "openedAt": "13:07",
-    "lastMark": 1.42,
+    "lastMark": 1.36,
     "lastMarkDate": "2026-11-18",
-    "lastMarkTime": "14:07",
+    "lastMarkTime": "14:22",
     "markSource": "chain",
     "marks": [
      {
@@ -7290,10 +7346,10 @@
      },
      {
       "date": "2026-11-18",
-      "mark": 1.42,
+      "mark": 1.36,
       "source": "chain",
-      "price": 68.77,
-      "time": "14:07"
+      "price": 69.0,
+      "time": "14:22"
      }
     ]
    },
@@ -7354,17 +7410,17 @@
     },
     "createdAt": "2026-11-18T14:36:30",
     "openedAt": "09:36",
-    "lastMark": 1.27,
+    "lastMark": 1.23,
     "lastMarkDate": "2026-11-18",
-    "lastMarkTime": "14:07",
+    "lastMarkTime": "14:22",
     "markSource": "chain",
     "marks": [
      {
       "date": "2026-11-18",
-      "mark": 1.27,
+      "mark": 1.23,
       "source": "chain",
-      "price": 51.38,
-      "time": "14:07"
+      "price": 51.65,
+      "time": "14:22"
      }
     ]
    }
@@ -10368,6 +10424,62 @@
     "action": "skip",
     "reason": "RSI 43.6 above 30",
     "time": "14:07"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "UNH",
+    "action": "skip",
+    "reason": "no strike pair passed (2026-12-18): 340/345: no 5-wide pair; 330/335: no 5-wide pair; 350/355: no 5-wide pair",
+    "time": "14:22"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "ADBE",
+    "action": "skip",
+    "reason": "RSI 35.8 above 30",
+    "time": "14:22"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "TGT",
+    "action": "skip",
+    "reason": "RSI 63.4 below 70",
+    "time": "14:22"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "SPY",
+    "action": "skip",
+    "reason": "RSI 36.8 above 30",
+    "time": "14:22"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "MRK",
+    "action": "skip",
+    "reason": "RSI 37.0 above 30",
+    "time": "14:22"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "NEM",
+    "action": "skip",
+    "reason": "RSI 37.0 above 30",
+    "time": "14:22"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "IWM",
+    "action": "skip",
+    "reason": "RSI 41.3 above 30",
+    "time": "14:22"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "MSFT",
+    "action": "skip",
+    "reason": "RSI 42.6 above 30",
+    "time": "14:22"
    }
   ],
   "lastSkip": {
@@ -10401,7 +10513,7 @@
    },
    "NEM": {
     "date": "2026-11-18",
-    "reason": "RSI 36.8 above 30"
+    "reason": "RSI 37.0 above 30"
    },
    "XOM": {
     "date": "2026-11-10",
@@ -10417,7 +10529,7 @@
    },
    "TGT": {
     "date": "2026-11-18",
-    "reason": "RSI 64.3 below 70"
+    "reason": "RSI 63.4 below 70"
    },
    "GE": {
     "date": "2026-11-10",
@@ -10441,7 +10553,7 @@
    },
    "ADBE": {
     "date": "2026-11-18",
-    "reason": "RSI 36.0 above 30"
+    "reason": "RSI 35.8 above 30"
    },
    "BABA": {
     "date": "2026-11-18",
@@ -10473,19 +10585,19 @@
    },
    "UNH": {
     "date": "2026-11-18",
-    "reason": "no strike pair passed (2026-12-18): 350/355: no 5-wide pair; 340/345: no 5-wide pair; 360/365: no 5-wide pair"
+    "reason": "no strike pair passed (2026-12-18): 340/345: no 5-wide pair; 330/335: no 5-wide pair; 350/355: no 5-wide pair"
    },
    "MSFT": {
     "date": "2026-11-18",
-    "reason": "RSI 42.8 above 30"
+    "reason": "RSI 42.6 above 30"
    },
    "SPY": {
     "date": "2026-11-18",
-    "reason": "RSI 36.6 above 30"
+    "reason": "RSI 36.8 above 30"
    },
    "IWM": {
     "date": "2026-11-18",
-    "reason": "RSI 41.0 above 30"
+    "reason": "RSI 41.3 above 30"
    },
    "JPM": {
     "date": "2026-11-18",
@@ -10497,7 +10609,7 @@
    },
    "MRK": {
     "date": "2026-11-18",
-    "reason": "RSI 37.4 above 30"
+    "reason": "RSI 37.0 above 30"
    }
   }
  }

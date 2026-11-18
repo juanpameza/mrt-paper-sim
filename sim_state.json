@@ -98,9 +98,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.03,
+   "lastMark": 1.95,
    "lastMarkDate": "2026-11-18",
-   "lastMarkTime": "13:07",
+   "lastMarkTime": "13:22",
    "markSource": "chain",
    "marks": [
     {
@@ -189,10 +189,10 @@
     },
     {
      "date": "2026-11-18",
-     "mark": 2.03,
+     "mark": 1.95,
      "source": "chain",
-     "price": 281.01,
-     "time": "13:07"
+     "price": 281.96,
+     "time": "13:22"
     }
    ]
   },
@@ -534,17 +534,17 @@
    },
    "createdAt": "2026-11-18T14:52:09",
    "openedAt": "09:52",
-   "lastMark": 2.07,
+   "lastMark": 1.98,
    "lastMarkDate": "2026-11-18",
-   "lastMarkTime": "13:07",
+   "lastMarkTime": "13:22",
    "markSource": "chain",
    "marks": [
     {
      "date": "2026-11-18",
-     "mark": 2.07,
+     "mark": 1.98,
      "source": "chain",
      "price": 68.85,
-     "time": "13:07"
+     "time": "13:22"
     }
    ]
   }
@@ -4069,10 +4069,52 @@
    "action": "skip",
    "reason": "RSI 45.0 above 30",
    "time": "13:07"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "UNH",
+   "action": "skip",
+   "reason": "no strike pair passed (2026-12-18): 350/355: no 5-wide pair; 340/345: no 5-wide pair; 360/365: no 5-wide pair",
+   "time": "13:22"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "GLD",
+   "action": "skip",
+   "reason": "RSI 31.1 above 30",
+   "time": "13:22"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "TGT",
+   "action": "skip",
+   "reason": "RSI 64.4 below 70",
+   "time": "13:22"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "SPY",
+   "action": "skip",
+   "reason": "RSI 37.1 above 30",
+   "time": "13:22"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "MRK",
+   "action": "skip",
+   "reason": "RSI 38.1 above 30",
+   "time": "13:22"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "NKE",
+   "action": "skip",
+   "reason": "RSI 44.8 above 30",
+   "time": "13:22"
   }
  ],
  "lastBar": "2026-11-18",
- "lastRun": "2026-11-18T18:07:08",
+ "lastRun": "2026-11-18T18:22:06",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -4136,11 +4178,11 @@
   },
   "SPY": {
    "date": "2026-11-18",
-   "reason": "RSI 36.9 above 30"
+   "reason": "RSI 37.1 above 30"
   },
   "TGT": {
    "date": "2026-11-18",
-   "reason": "RSI 64.8 below 70"
+   "reason": "RSI 64.4 below 70"
   },
   "AMD": {
    "date": "2026-11-05",
@@ -4176,7 +4218,7 @@
   },
   "NKE": {
    "date": "2026-11-18",
-   "reason": "RSI 45.0 above 30"
+   "reason": "RSI 44.8 above 30"
   },
   "AMZN": {
    "date": "2026-11-11",
@@ -4244,7 +4286,7 @@
   },
   "MRK": {
    "date": "2026-11-18",
-   "reason": "RSI 38.7 above 30"
+   "reason": "RSI 38.1 above 30"
   },
   "FCX": {
    "date": "2026-11-18",
@@ -4272,18 +4314,18 @@
   },
   "GLD": {
    "date": "2026-11-18",
-   "reason": "RSI 31.2 above 30"
+   "reason": "RSI 31.1 above 30"
   },
   "UNH": {
    "date": "2026-11-18",
-   "reason": "RSI 30.2 above 30"
+   "reason": "no strike pair passed (2026-12-18): 350/355: no 5-wide pair; 340/345: no 5-wide pair; 360/365: no 5-wide pair"
   },
   "NFLX": {
    "date": "2026-11-17",
    "reason": "RSI 33.0 above 30"
   }
  },
- "lastPoll": "2026-11-18T13:07-05:00",
+ "lastPoll": "2026-11-18T13:22-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -7017,9 +7059,9 @@
     },
     "createdAt": "2026-11-16T18:07:14",
     "openedAt": "13:07",
-    "lastMark": 1.44,
+    "lastMark": 1.42,
     "lastMarkDate": "2026-11-18",
-    "lastMarkTime": "13:07",
+    "lastMarkTime": "13:22",
     "markSource": "chain",
     "marks": [
      {
@@ -7038,10 +7080,10 @@
      },
      {
       "date": "2026-11-18",
-      "mark": 1.44,
+      "mark": 1.42,
       "source": "chain",
       "price": 68.85,
-      "time": "13:07"
+      "time": "13:22"
      }
     ]
    },
@@ -7102,17 +7144,17 @@
     },
     "createdAt": "2026-11-18T14:36:30",
     "openedAt": "09:36",
-    "lastMark": 1.29,
+    "lastMark": 1.23,
     "lastMarkDate": "2026-11-18",
-    "lastMarkTime": "13:07",
+    "lastMarkTime": "13:22",
     "markSource": "chain",
     "marks": [
      {
       "date": "2026-11-18",
-      "mark": 1.29,
+      "mark": 1.23,
       "source": "chain",
-      "price": 51.71,
-      "time": "13:07"
+      "price": 51.65,
+      "time": "13:22"
      }
     ]
    }
@@ -13357,6 +13399,48 @@
     "action": "skip",
     "reason": "RSI 45.0 above 30",
     "time": "13:07"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "UNH",
+    "action": "skip",
+    "reason": "no strike pair passed (2026-12-18): 350/355: no 5-wide pair; 340/345: no 5-wide pair; 360/365: no 5-wide pair",
+    "time": "13:22"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "GLD",
+    "action": "skip",
+    "reason": "RSI 31.1 above 30",
+    "time": "13:22"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "TGT",
+    "action": "skip",
+    "reason": "RSI 64.4 below 70",
+    "time": "13:22"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "SPY",
+    "action": "skip",
+    "reason": "RSI 37.1 above 30",
+    "time": "13:22"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "MRK",
+    "action": "skip",
+    "reason": "RSI 38.1 above 30",
+    "time": "13:22"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "NKE",
+    "action": "skip",
+    "reason": "RSI 44.8 above 30",
+    "time": "13:22"
    }
   ],
   "lastSkip": {
@@ -13406,7 +13490,7 @@
    },
    "TGT": {
     "date": "2026-11-18",
-    "reason": "RSI 64.8 below 70"
+    "reason": "RSI 64.4 below 70"
    },
    "GE": {
     "date": "2026-11-10",
@@ -13446,7 +13530,7 @@
    },
    "GLD": {
     "date": "2026-11-18",
-    "reason": "RSI 31.2 above 30"
+    "reason": "RSI 31.1 above 30"
    },
    "FCX": {
     "date": "2026-11-18",
@@ -13458,11 +13542,11 @@
    },
    "NKE": {
     "date": "2026-11-18",
-    "reason": "RSI 45.0 above 30"
+    "reason": "RSI 44.8 above 30"
    },
    "UNH": {
     "date": "2026-11-18",
-    "reason": "RSI 30.2 above 30"
+    "reason": "no strike pair passed (2026-12-18): 350/355: no 5-wide pair; 340/345: no 5-wide pair; 360/365: no 5-wide pair"
    },
    "MSFT": {
     "date": "2026-11-18",
@@ -13470,7 +13554,7 @@
    },
    "SPY": {
     "date": "2026-11-18",
-    "reason": "RSI 36.9 above 30"
+    "reason": "RSI 37.1 above 30"
    },
    "IWM": {
     "date": "2026-11-18",
@@ -13486,7 +13570,7 @@
    },
    "MRK": {
     "date": "2026-11-18",
-    "reason": "RSI 38.7 above 30"
+    "reason": "RSI 38.1 above 30"
    }
   }
  }

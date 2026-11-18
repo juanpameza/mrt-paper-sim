@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-18T17:52:07",
+ "generatedAt": "2026-11-18T18:07:08",
  "asof": "2026-11-18",
- "lastPoll": "2026-11-18T12:52-05:00",
+ "lastPoll": "2026-11-18T13:07-05:00",
  "mode": "intraday",
  "settings": {
   "startCapital": 2500.0,
@@ -108,9 +108,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.0,
+   "lastMark": 2.03,
    "lastMarkDate": "2026-11-18",
-   "lastMarkTime": "12:52",
+   "lastMarkTime": "13:07",
    "markSource": "chain",
    "marks": [
     {
@@ -199,10 +199,10 @@
     },
     {
      "date": "2026-11-18",
-     "mark": 2.0,
+     "mark": 2.03,
      "source": "chain",
-     "price": 281.49,
-     "time": "12:52"
+     "price": 281.01,
+     "time": "13:07"
     }
    ]
   },
@@ -544,17 +544,17 @@
    },
    "createdAt": "2026-11-18T14:52:09",
    "openedAt": "09:52",
-   "lastMark": 2.25,
+   "lastMark": 2.07,
    "lastMarkDate": "2026-11-18",
-   "lastMarkTime": "12:52",
+   "lastMarkTime": "13:07",
    "markSource": "chain",
    "marks": [
     {
      "date": "2026-11-18",
-     "mark": 2.25,
+     "mark": 2.07,
      "source": "chain",
-     "price": 69.24,
-     "time": "12:52"
+     "price": 68.85,
+     "time": "13:07"
     }
    ]
   }
@@ -570,83 +570,6 @@
     "exit": 1.18,
     "pnl": -132.6
    }
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "IWM",
-   "action": "skip",
-   "reason": "RSI 40.7 above 30",
-   "time": "12:07"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "NKE",
-   "action": "skip",
-   "reason": "RSI 46.9 below 70",
-   "time": "12:07"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "UNH",
-   "action": "skip",
-   "reason": "RSI 48.1 above 30",
-   "time": "12:07"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "FCX",
-   "action": "skip",
-   "reason": "RSI 31.6 above 30",
-   "time": "12:22"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "NFLX",
-   "action": "skip",
-   "reason": "RSI 33.4 above 30",
-   "time": "12:22"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "SPY",
-   "action": "skip",
-   "reason": "RSI 37.9 above 30",
-   "time": "12:22"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "MSFT",
-   "action": "skip",
-   "reason": "RSI 40.5 above 30",
-   "time": "12:22"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "IWM",
-   "action": "skip",
-   "reason": "RSI 41.1 above 30",
-   "time": "12:22"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "NKE",
-   "action": "skip",
-   "reason": "RSI 46.5 below 70",
-   "time": "12:22"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "UNH",
-   "action": "skip",
-   "reason": "RSI 47.4 above 30",
-   "time": "12:22"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "DIS",
-   "action": "skip",
-   "reason": "RSI 68.7 below 70",
-   "time": "12:37"
   },
   {
    "date": "2026-11-17",
@@ -2343,6 +2266,83 @@
    "action": "skip",
    "reason": "RSI 45.8 above 30",
    "time": "12:52"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "UNH",
+   "action": "skip",
+   "reason": "RSI 30.2 above 30",
+   "time": "13:07"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "GLD",
+   "action": "skip",
+   "reason": "RSI 31.2 above 30",
+   "time": "13:07"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "TGT",
+   "action": "skip",
+   "reason": "RSI 64.8 below 70",
+   "time": "13:07"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "ADBE",
+   "action": "skip",
+   "reason": "RSI 35.7 above 30",
+   "time": "13:07"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "NEM",
+   "action": "skip",
+   "reason": "RSI 36.8 above 30",
+   "time": "13:07"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "SPY",
+   "action": "skip",
+   "reason": "RSI 36.9 above 30",
+   "time": "13:07"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "MRK",
+   "action": "skip",
+   "reason": "RSI 38.7 above 30",
+   "time": "13:07"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "JPM",
+   "action": "skip",
+   "reason": "RSI 38.9 above 30",
+   "time": "13:07"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "MSFT",
+   "action": "skip",
+   "reason": "RSI 41.5 above 30",
+   "time": "13:07"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "IWM",
+   "action": "skip",
+   "reason": "RSI 42.4 above 30",
+   "time": "13:07"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "NKE",
+   "action": "skip",
+   "reason": "RSI 45.0 above 30",
+   "time": "13:07"
   }
  ],
  "shadow": {
@@ -4195,9 +4195,9 @@
     },
     "createdAt": "2026-11-16T18:07:14",
     "openedAt": "13:07",
-    "lastMark": 1.47,
+    "lastMark": 1.44,
     "lastMarkDate": "2026-11-18",
-    "lastMarkTime": "12:52",
+    "lastMarkTime": "13:07",
     "markSource": "chain",
     "marks": [
      {
@@ -4216,10 +4216,10 @@
      },
      {
       "date": "2026-11-18",
-      "mark": 1.47,
+      "mark": 1.44,
       "source": "chain",
-      "price": 69.24,
-      "time": "12:52"
+      "price": 68.85,
+      "time": "13:07"
      }
     ]
    },
@@ -4280,17 +4280,17 @@
     },
     "createdAt": "2026-11-18T14:36:30",
     "openedAt": "09:36",
-    "lastMark": 1.36,
+    "lastMark": 1.29,
     "lastMarkDate": "2026-11-18",
-    "lastMarkTime": "12:52",
+    "lastMarkTime": "13:07",
     "markSource": "chain",
     "marks": [
      {
       "date": "2026-11-18",
-      "mark": 1.36,
+      "mark": 1.29,
       "source": "chain",
-      "price": 51.86,
-      "time": "12:52"
+      "price": 51.71,
+      "time": "13:07"
      }
     ]
    }
@@ -4319,83 +4319,6 @@
      "target": 4.04,
      "cost": 202.0
     }
-   },
-   {
-    "date": "2026-11-18",
-    "ticker": "IWM",
-    "action": "skip",
-    "reason": "RSI 39.6 above 30",
-    "time": "09:36"
-   },
-   {
-    "date": "2026-11-18",
-    "ticker": "UNH",
-    "action": "skip",
-    "reason": "RSI 40.2 above 30",
-    "time": "09:36"
-   },
-   {
-    "date": "2026-11-18",
-    "ticker": "NKE",
-    "action": "skip",
-    "reason": "RSI 40.6 above 30",
-    "time": "09:36"
-   },
-   {
-    "date": "2026-11-18",
-    "ticker": "JPM",
-    "action": "skip",
-    "reason": "RSI 41.5 above 30",
-    "time": "09:36"
-   },
-   {
-    "date": "2026-11-18",
-    "ticker": "FCX",
-    "action": "skip",
-    "reason": "valid setup, already have a position",
-    "time": "09:52"
-   },
-   {
-    "date": "2026-11-18",
-    "ticker": "HOOD",
-    "action": "skip",
-    "reason": "valid setup, already have a position",
-    "time": "09:52"
-   },
-   {
-    "date": "2026-11-18",
-    "ticker": "GLD",
-    "action": "skip",
-    "reason": "RSI 32.4 above 30",
-    "time": "09:52"
-   },
-   {
-    "date": "2026-11-18",
-    "ticker": "UNH",
-    "action": "skip",
-    "reason": "RSI 35.1 above 30",
-    "time": "09:52"
-   },
-   {
-    "date": "2026-11-18",
-    "ticker": "IWM",
-    "action": "skip",
-    "reason": "RSI 39.2 above 30",
-    "time": "09:52"
-   },
-   {
-    "date": "2026-11-18",
-    "ticker": "NKE",
-    "action": "skip",
-    "reason": "RSI 40.5 above 30",
-    "time": "09:52"
-   },
-   {
-    "date": "2026-11-18",
-    "ticker": "JPM",
-    "action": "skip",
-    "reason": "RSI 40.9 above 30",
-    "time": "09:52"
    },
    {
     "date": "2026-11-18",
@@ -5159,6 +5082,83 @@
     "action": "skip",
     "reason": "RSI 45.8 above 30",
     "time": "12:52"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "UNH",
+    "action": "skip",
+    "reason": "RSI 30.2 above 30",
+    "time": "13:07"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "GLD",
+    "action": "skip",
+    "reason": "RSI 31.2 above 30",
+    "time": "13:07"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "TGT",
+    "action": "skip",
+    "reason": "RSI 64.8 below 70",
+    "time": "13:07"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "ADBE",
+    "action": "skip",
+    "reason": "RSI 35.7 above 30",
+    "time": "13:07"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "NEM",
+    "action": "skip",
+    "reason": "RSI 36.8 above 30",
+    "time": "13:07"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "SPY",
+    "action": "skip",
+    "reason": "RSI 36.9 above 30",
+    "time": "13:07"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "MRK",
+    "action": "skip",
+    "reason": "RSI 38.7 above 30",
+    "time": "13:07"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "JPM",
+    "action": "skip",
+    "reason": "RSI 38.9 above 30",
+    "time": "13:07"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "MSFT",
+    "action": "skip",
+    "reason": "RSI 41.5 above 30",
+    "time": "13:07"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "IWM",
+    "action": "skip",
+    "reason": "RSI 42.4 above 30",
+    "time": "13:07"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "NKE",
+    "action": "skip",
+    "reason": "RSI 45.0 above 30",
+    "time": "13:07"
    }
   ]
  }

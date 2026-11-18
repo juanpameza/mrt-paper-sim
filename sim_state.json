@@ -42,7 +42,7 @@
   "CONFIRM_LOOKBACK": 5,
   "SIGNALS_BOOK": true
  },
- "equity": 2367.4,
+ "equity": 2227.8,
  "trades": {
   "s9e0c095d89": {
    "id": "s9e0c095d89",
@@ -98,9 +98,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 2.15,
+   "lastMark": 2.48,
    "lastMarkDate": "2026-11-18",
-   "lastMarkTime": "09:36",
+   "lastMarkTime": "09:52",
    "markSource": "chain",
    "marks": [
     {
@@ -189,10 +189,10 @@
     },
     {
      "date": "2026-11-18",
-     "mark": 2.15,
+     "mark": 2.48,
      "source": "chain",
-     "price": 282.84,
-     "time": "09:36"
+     "price": 282.11,
+     "time": "09:52"
     }
    ]
   },
@@ -214,7 +214,7 @@
    "stopPct": 50.0,
    "targetPct": 100.0,
    "entryFees": 1.3,
-   "status": "open",
+   "status": "closed",
    "book": "live",
    "signal": {
     "price": 58.25,
@@ -253,9 +253,9 @@
    },
    "createdAt": "2026-11-05T15:22:18",
    "openedAt": "10:22",
-   "lastMark": 0.96,
+   "lastMark": 0.45,
    "lastMarkDate": "2026-11-18",
-   "lastMarkTime": "09:36",
+   "lastMarkTime": "09:52",
    "markSource": "chain",
    "marks": [
     {
@@ -323,12 +323,22 @@
     },
     {
      "date": "2026-11-18",
-     "mark": 0.96,
+     "mark": 0.45,
      "source": "chain",
-     "price": 51.18,
-     "time": "09:36"
+     "price": 50.76,
+     "time": "09:52"
     }
-   ]
+   ],
+   "closed": "2026-11-18",
+   "exitPrice": 0.4,
+   "exitMark": 0.45,
+   "exitReason": "stop",
+   "exitFees": 1.3,
+   "fees": 2.6,
+   "pnlGross": -137.0,
+   "pnl": -139.6,
+   "closedAt": "2026-11-18T14:52:09",
+   "closedTime": "09:52"
   },
   "s4519b24034": {
    "id": "s4519b24034",
@@ -466,6 +476,64 @@
    "pnl": -132.6,
    "closedAt": "2026-11-17T16:52:05",
    "closedTime": "11:52"
+  },
+  "sa47c0e027a": {
+   "id": "sa47c0e027a",
+   "ticker": "HOOD",
+   "type": "bull-call",
+   "opened": "2026-11-18",
+   "expiry": "2026-12-18",
+   "longK": 70.0,
+   "shortK": 75.0,
+   "width": 5.0,
+   "debit": 1.95,
+   "midDebit": 1.9,
+   "contracts": 1,
+   "cost": 195.0,
+   "stop": 0.97,
+   "target": 3.9,
+   "stopPct": 50.0,
+   "targetPct": 100.0,
+   "entryFees": 1.3,
+   "status": "open",
+   "book": "live",
+   "signal": {
+    "price": 68.05,
+    "rsi": 26.5,
+    "adx": 32.8,
+    "adx_prev": 31.7,
+    "bb": "lower",
+    "atr": 5.01,
+    "confirm": null,
+    "touchDaysAgo": null
+   },
+   "entry": {
+    "long": {
+     "strike": 70.0,
+     "bid": 4.95,
+     "ask": 5.25,
+     "last": 5.25,
+     "mid": 5.1,
+     "spread": 0.3,
+     "oi": 1564,
+     "iv": 0.7561,
+     "live": true
+    },
+    "short": {
+     "strike": 75.0,
+     "bid": 3.1,
+     "ask": 3.3,
+     "last": 3.2,
+     "mid": 3.2,
+     "spread": 0.2,
+     "oi": 4058,
+     "iv": 0.7324,
+     "live": true
+    },
+    "quotes": "live"
+   },
+   "createdAt": "2026-11-18T14:52:09",
+   "openedAt": "09:52"
   }
  },
  "log": [
@@ -6562,10 +6630,82 @@
    "action": "skip",
    "reason": "RSI 41.5 above 30",
    "time": "09:36"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "FCX",
+   "action": "exit",
+   "reason": "stop",
+   "time": "09:52",
+   "detail": {
+    "exit": 0.4,
+    "pnl": -139.6
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "FCX",
+   "action": "skip",
+   "reason": "valid setup, already traded today",
+   "time": "09:52"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "HOOD",
+   "action": "entry",
+   "reason": "bull-call 70/75 exp 2026-12-18 @ 1.95 x1",
+   "time": "09:52",
+   "detail": {
+    "stop": 0.97,
+    "target": 3.9,
+    "cost": 195.0
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "GLD",
+   "action": "skip",
+   "reason": "RSI 32.4 above 30",
+   "time": "09:52"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "UNH",
+   "action": "skip",
+   "reason": "RSI 35.1 above 30",
+   "time": "09:52"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "IWM",
+   "action": "skip",
+   "reason": "RSI 39.2 above 30",
+   "time": "09:52"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "NKE",
+   "action": "skip",
+   "reason": "RSI 40.5 above 30",
+   "time": "09:52"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "JPM",
+   "action": "skip",
+   "reason": "RSI 40.9 above 30",
+   "time": "09:52"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "MRK",
+   "action": "skip",
+   "reason": "squeeze: bands inside Keltner",
+   "time": "09:52"
   }
  ],
  "lastBar": "2026-11-18",
- "lastRun": "2026-11-18T14:36:30",
+ "lastRun": "2026-11-18T14:52:09",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -6613,7 +6753,7 @@
   },
   "JPM": {
    "date": "2026-11-18",
-   "reason": "RSI 41.5 above 30"
+   "reason": "RSI 40.9 above 30"
   },
   "MSFT": {
    "date": "2026-11-17",
@@ -6669,7 +6809,7 @@
   },
   "NKE": {
    "date": "2026-11-18",
-   "reason": "RSI 40.6 above 30"
+   "reason": "RSI 40.5 above 30"
   },
   "AMZN": {
    "date": "2026-11-11",
@@ -6677,7 +6817,7 @@
   },
   "IWM": {
    "date": "2026-11-18",
-   "reason": "RSI 39.6 above 30"
+   "reason": "RSI 39.2 above 30"
   },
   "XLE": {
    "date": "2026-11-10",
@@ -6736,12 +6876,12 @@
    "reason": "RSI 59.5 below 70"
   },
   "MRK": {
-   "date": "2026-11-05",
+   "date": "2026-11-18",
    "reason": "squeeze: bands inside Keltner"
   },
   "FCX": {
    "date": "2026-11-18",
-   "reason": "valid setup, already have a position"
+   "reason": "valid setup, already traded today"
   },
   "HOOD": {
    "date": "2026-11-17",
@@ -6765,22 +6905,22 @@
   },
   "GLD": {
    "date": "2026-11-18",
-   "reason": "RSI 32.3 above 30"
+   "reason": "RSI 32.4 above 30"
   },
   "UNH": {
    "date": "2026-11-18",
-   "reason": "RSI 40.2 above 30"
+   "reason": "RSI 35.1 above 30"
   },
   "NFLX": {
    "date": "2026-11-17",
    "reason": "RSI 33.0 above 30"
   }
  },
- "lastPoll": "2026-11-18T09:36-05:00",
+ "lastPoll": "2026-11-18T09:52-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
-   "equity": 2379.4,
+   "equity": 2240.8,
    "trades": {
     "sa314b0c47b": {
      "id": "sa314b0c47b",
@@ -6800,7 +6940,7 @@
      "stopPct": 50.0,
      "targetPct": 100.0,
      "entryFees": 1.3,
-     "status": "open",
+     "status": "closed",
      "book": "close",
      "signal": {
       "price": 57.9,
@@ -6839,9 +6979,9 @@
      },
      "createdAt": "2026-11-05T21:07:09",
      "openedAt": "16:07",
-     "lastMark": 0.96,
+     "lastMark": 0.45,
      "lastMarkDate": "2026-11-18",
-     "lastMarkTime": "09:36",
+     "lastMarkTime": "09:52",
      "markSource": "chain",
      "marks": [
       {
@@ -6909,12 +7049,22 @@
       },
       {
        "date": "2026-11-18",
-       "mark": 0.96,
+       "mark": 0.45,
        "source": "chain",
-       "price": 51.18,
-       "time": "09:36"
+       "price": 50.76,
+       "time": "09:52"
       }
-     ]
+     ],
+     "closed": "2026-11-18",
+     "exitPrice": 0.4,
+     "exitMark": 0.45,
+     "exitReason": "stop",
+     "exitFees": 1.3,
+     "fees": 2.6,
+     "pnlGross": -136.0,
+     "pnl": -138.6,
+     "closedAt": "2026-11-18T14:52:09",
+     "closedTime": "09:52"
     },
     "s4a5362d25a": {
      "id": "s4a5362d25a",
@@ -8265,6 +8415,17 @@
      "action": "skip",
      "reason": "RSI 42.9 above 30",
      "time": "16:22"
+    },
+    {
+     "date": "2026-11-18",
+     "ticker": "FCX",
+     "action": "exit",
+     "reason": "stop",
+     "time": "09:52",
+     "detail": {
+      "exit": 0.4,
+      "pnl": -138.6
+     }
     }
    ],
    "lastSkip": {
@@ -9489,9 +9650,9 @@
     },
     "createdAt": "2026-11-16T18:07:14",
     "openedAt": "13:07",
-    "lastMark": 1.35,
+    "lastMark": 1.28,
     "lastMarkDate": "2026-11-18",
-    "lastMarkTime": "09:36",
+    "lastMarkTime": "09:52",
     "markSource": "chain",
     "marks": [
      {
@@ -9510,10 +9671,10 @@
      },
      {
       "date": "2026-11-18",
-      "mark": 1.35,
+      "mark": 1.28,
       "source": "chain",
-      "price": 68.48,
-      "time": "09:36"
+      "price": 68.05,
+      "time": "09:52"
      }
     ]
    },
@@ -9573,7 +9734,20 @@
      "quotes": "last trade"
     },
     "createdAt": "2026-11-18T14:36:30",
-    "openedAt": "09:36"
+    "openedAt": "09:36",
+    "lastMark": 1.32,
+    "lastMarkDate": "2026-11-18",
+    "lastMarkTime": "09:52",
+    "markSource": "chain",
+    "marks": [
+     {
+      "date": "2026-11-18",
+      "mark": 1.32,
+      "source": "chain",
+      "price": 50.76,
+      "time": "09:52"
+     }
+    ]
    }
   },
   "log": [
@@ -14927,6 +15101,62 @@
     "action": "skip",
     "reason": "RSI 41.5 above 30",
     "time": "09:36"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "FCX",
+    "action": "skip",
+    "reason": "valid setup, already have a position",
+    "time": "09:52"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "HOOD",
+    "action": "skip",
+    "reason": "valid setup, already have a position",
+    "time": "09:52"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "GLD",
+    "action": "skip",
+    "reason": "RSI 32.4 above 30",
+    "time": "09:52"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "UNH",
+    "action": "skip",
+    "reason": "RSI 35.1 above 30",
+    "time": "09:52"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "IWM",
+    "action": "skip",
+    "reason": "RSI 39.2 above 30",
+    "time": "09:52"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "NKE",
+    "action": "skip",
+    "reason": "RSI 40.5 above 30",
+    "time": "09:52"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "JPM",
+    "action": "skip",
+    "reason": "RSI 40.9 above 30",
+    "time": "09:52"
+   },
+   {
+    "date": "2026-11-18",
+    "ticker": "MRK",
+    "action": "skip",
+    "reason": "squeeze: bands inside Keltner",
+    "time": "09:52"
    }
   ],
   "lastSkip": {
@@ -15016,23 +15246,23 @@
    },
    "GLD": {
     "date": "2026-11-18",
-    "reason": "RSI 32.3 above 30"
+    "reason": "RSI 32.4 above 30"
    },
    "FCX": {
-    "date": "2026-11-17",
-    "reason": "RSI 31.0 above 30"
+    "date": "2026-11-18",
+    "reason": "valid setup, already have a position"
    },
    "HOOD": {
-    "date": "2026-11-17",
+    "date": "2026-11-18",
     "reason": "valid setup, already have a position"
    },
    "NKE": {
     "date": "2026-11-18",
-    "reason": "RSI 40.6 above 30"
+    "reason": "RSI 40.5 above 30"
    },
    "UNH": {
     "date": "2026-11-18",
-    "reason": "RSI 40.2 above 30"
+    "reason": "RSI 35.1 above 30"
    },
    "MSFT": {
     "date": "2026-11-17",
@@ -15044,15 +15274,19 @@
    },
    "IWM": {
     "date": "2026-11-18",
-    "reason": "RSI 39.6 above 30"
+    "reason": "RSI 39.2 above 30"
    },
    "JPM": {
     "date": "2026-11-18",
-    "reason": "RSI 41.5 above 30"
+    "reason": "RSI 40.9 above 30"
    },
    "NFLX": {
     "date": "2026-11-17",
     "reason": "RSI 33.0 above 30"
+   },
+   "MRK": {
+    "date": "2026-11-18",
+    "reason": "squeeze: bands inside Keltner"
    }
   }
  }

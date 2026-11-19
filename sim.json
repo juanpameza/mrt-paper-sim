@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-19T21:22:12",
+ "generatedAt": "2026-11-19T21:37:09",
  "asof": "2026-11-19",
- "lastPoll": "2026-11-19T16:22-05:00",
+ "lastPoll": "2026-11-19T16:37-05:00",
  "mode": "intraday",
  "settings": {
   "startCapital": 2500.0,
@@ -108,9 +108,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 1.29,
+   "lastMark": 1.24,
    "lastMarkDate": "2026-11-19",
-   "lastMarkTime": "16:22",
+   "lastMarkTime": "16:37",
    "markSource": "chain",
    "marks": [
     {
@@ -206,10 +206,10 @@
     },
     {
      "date": "2026-11-19",
-     "mark": 1.29,
+     "mark": 1.24,
      "source": "chain",
      "price": 272.66,
-     "time": "16:22"
+     "time": "16:37"
     }
    ]
   },
@@ -553,7 +553,7 @@
    "openedAt": "09:52",
    "lastMark": 1.97,
    "lastMarkDate": "2026-11-19",
-   "lastMarkTime": "16:22",
+   "lastMarkTime": "16:37",
    "markSource": "chain",
    "marks": [
     {
@@ -568,7 +568,7 @@
      "mark": 1.97,
      "source": "chain",
      "price": 68.65,
-     "time": "16:22"
+     "time": "16:37"
     }
    ]
   },
@@ -631,7 +631,7 @@
    "openedAt": "11:07",
    "lastMark": 1.73,
    "lastMarkDate": "2026-11-19",
-   "lastMarkTime": "16:22",
+   "lastMarkTime": "16:37",
    "markSource": "chain",
    "marks": [
     {
@@ -639,7 +639,7 @@
      "mark": 1.73,
      "source": "chain",
      "price": 49.12,
-     "time": "16:22"
+     "time": "16:37"
     }
    ]
   }
@@ -2787,7 +2787,7 @@
      "openedAt": "16:07",
      "lastMark": 1.97,
      "lastMarkDate": "2026-11-19",
-     "lastMarkTime": "16:22",
+     "lastMarkTime": "16:37",
      "markSource": "chain",
      "marks": [
       {
@@ -2802,7 +2802,7 @@
        "mark": 1.97,
        "source": "chain",
        "price": 68.65,
-       "time": "16:22"
+       "time": "16:37"
       }
      ]
     },
@@ -2865,7 +2865,7 @@
      "openedAt": "16:07",
      "lastMark": 1.73,
      "lastMarkDate": "2026-11-19",
-     "lastMarkTime": "16:22",
+     "lastMarkTime": "16:37",
      "markSource": "chain",
      "marks": [
       {
@@ -2873,7 +2873,7 @@
        "mark": 1.73,
        "source": "chain",
        "price": 49.12,
-       "time": "16:22"
+       "time": "16:37"
       }
      ]
     }
@@ -4422,6 +4422,13 @@
      "action": "skip",
      "reason": "no strike pair passed (2026-12-18): 170/165: long leg open interest 752 < 1000; 165/160: debit 1.30 under 35% of width; 175/170: long leg open interest 469 < 1000",
      "time": "16:22"
+    },
+    {
+     "date": "2026-11-19",
+     "ticker": "PG",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 170/165: long leg open interest 752 < 1000; 165/160: debit 1.34 under 35% of width; 175/170: long leg open interest 469 < 1000",
+     "time": "16:37"
     }
    ]
   }
@@ -4488,7 +4495,7 @@
     "openedAt": "13:07",
     "lastMark": 1.36,
     "lastMarkDate": "2026-11-19",
-    "lastMarkTime": "16:22",
+    "lastMarkTime": "16:37",
     "markSource": "chain",
     "marks": [
      {
@@ -4517,7 +4524,7 @@
       "mark": 1.36,
       "source": "chain",
       "price": 68.65,
-      "time": "16:22"
+      "time": "16:37"
      }
     ]
    },

@@ -98,9 +98,9 @@
    },
    "createdAt": "2026-11-02T19:00:11",
    "openedAt": "14:00",
-   "lastMark": 3.07,
+   "lastMark": 2.82,
    "lastMarkDate": "2026-11-19",
-   "lastMarkTime": "10:22",
+   "lastMarkTime": "10:37",
    "markSource": "chain",
    "marks": [
     {
@@ -196,10 +196,10 @@
     },
     {
      "date": "2026-11-19",
-     "mark": 3.07,
+     "mark": 2.82,
      "source": "chain",
-     "price": 290.99,
-     "time": "10:22"
+     "price": 288.58,
+     "time": "10:37"
     }
    ]
   },
@@ -541,9 +541,9 @@
    },
    "createdAt": "2026-11-18T14:52:09",
    "openedAt": "09:52",
-   "lastMark": 2.57,
+   "lastMark": 2.35,
    "lastMarkDate": "2026-11-19",
-   "lastMarkTime": "10:22",
+   "lastMarkTime": "10:37",
    "markSource": "chain",
    "marks": [
     {
@@ -555,10 +555,10 @@
     },
     {
      "date": "2026-11-19",
-     "mark": 2.57,
+     "mark": 2.35,
      "source": "chain",
-     "price": 71.4,
-     "time": "10:22"
+     "price": 71.25,
+     "time": "10:37"
     }
    ]
   }
@@ -5007,10 +5007,73 @@
    "action": "skip",
    "reason": "RSI 37.9 above 30",
    "time": "10:22"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "CRM",
+   "action": "skip",
+   "reason": "earnings 2026-12-02 before expiry 2026-12-18",
+   "time": "10:37"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "FCX",
+   "action": "skip",
+   "reason": "deployment cap: 238 left, spread costs 245",
+   "time": "10:37"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "BABA",
+   "action": "skip",
+   "reason": "RSI 30.2 above 30",
+   "time": "10:37"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "MRK",
+   "action": "skip",
+   "reason": "RSI 33.5 above 30",
+   "time": "10:37"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "ADBE",
+   "action": "skip",
+   "reason": "RSI 33.9 above 30",
+   "time": "10:37"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "JPM",
+   "action": "skip",
+   "reason": "RSI 37.0 above 30",
+   "time": "10:37"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "NKE",
+   "action": "skip",
+   "reason": "RSI 37.8 above 30",
+   "time": "10:37"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "IWM",
+   "action": "skip",
+   "reason": "RSI 38.4 above 30",
+   "time": "10:37"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "ISRG",
+   "action": "skip",
+   "reason": "RSI 40.2 above 30",
+   "time": "10:37"
   }
  ],
  "lastBar": "2026-11-19",
- "lastRun": "2026-11-19T15:22:14",
+ "lastRun": "2026-11-19T15:37:06",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -5058,7 +5121,7 @@
   },
   "JPM": {
    "date": "2026-11-19",
-   "reason": "RSI 37.3 above 30"
+   "reason": "RSI 37.0 above 30"
   },
   "MSFT": {
    "date": "2026-11-18",
@@ -5085,7 +5148,7 @@
    "reason": "earnings date unknown"
   },
   "CRM": {
-   "date": "2026-11-18",
+   "date": "2026-11-19",
    "reason": "earnings 2026-12-02 before expiry 2026-12-18"
   },
   "AAPL": {
@@ -5109,20 +5172,20 @@
    "reason": "RSI 39.9 above 30"
   },
   "ISRG": {
-   "date": "2026-11-05",
-   "reason": "RSI 64.8 below 70"
+   "date": "2026-11-19",
+   "reason": "RSI 40.2 above 30"
   },
   "NKE": {
    "date": "2026-11-19",
-   "reason": "RSI 37.9 above 30"
+   "reason": "RSI 37.8 above 30"
   },
   "AMZN": {
    "date": "2026-11-11",
    "reason": "RSI 57.6 below 70"
   },
   "IWM": {
-   "date": "2026-11-18",
-   "reason": "RSI 40.7 above 30"
+   "date": "2026-11-19",
+   "reason": "RSI 38.4 above 30"
   },
   "XLE": {
    "date": "2026-11-10",
@@ -5182,11 +5245,11 @@
   },
   "MRK": {
    "date": "2026-11-19",
-   "reason": "RSI 34.0 above 30"
+   "reason": "RSI 33.5 above 30"
   },
   "FCX": {
    "date": "2026-11-19",
-   "reason": "no strike pair passed (2026-12-18): 50/55: short leg bid/ask 0.21 wider than 0.19; 47.5/52.5: long leg open interest 25 < 1000; 52.5/57.5: long leg open interest 223 < 1000"
+   "reason": "deployment cap: 238 left, spread costs 245"
   },
   "HOOD": {
    "date": "2026-11-18",
@@ -5202,11 +5265,11 @@
   },
   "ADBE": {
    "date": "2026-11-19",
-   "reason": "RSI 33.2 above 30"
+   "reason": "RSI 33.9 above 30"
   },
   "BABA": {
    "date": "2026-11-19",
-   "reason": "RSI 30.3 above 30"
+   "reason": "RSI 30.2 above 30"
   },
   "GLD": {
    "date": "2026-11-19",
@@ -5221,7 +5284,7 @@
    "reason": "RSI 33.0 above 30"
   }
  },
- "lastPoll": "2026-11-19T10:22-05:00",
+ "lastPoll": "2026-11-19T10:37-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -5565,9 +5628,9 @@
      },
      "createdAt": "2026-11-18T21:07:05",
      "openedAt": "16:07",
-     "lastMark": 2.57,
+     "lastMark": 2.35,
      "lastMarkDate": "2026-11-19",
-     "lastMarkTime": "10:22",
+     "lastMarkTime": "10:37",
      "markSource": "chain",
      "marks": [
       {
@@ -5579,10 +5642,10 @@
       },
       {
        "date": "2026-11-19",
-       "mark": 2.57,
+       "mark": 2.35,
        "source": "chain",
-       "price": 71.4,
-       "time": "10:22"
+       "price": 71.25,
+       "time": "10:37"
       }
      ]
     }
@@ -8171,9 +8234,9 @@
     },
     "createdAt": "2026-11-16T18:07:14",
     "openedAt": "13:07",
-    "lastMark": 1.82,
+    "lastMark": 1.7,
     "lastMarkDate": "2026-11-19",
-    "lastMarkTime": "10:22",
+    "lastMarkTime": "10:37",
     "markSource": "chain",
     "marks": [
      {
@@ -8199,10 +8262,10 @@
      },
      {
       "date": "2026-11-19",
-      "mark": 1.82,
+      "mark": 1.7,
       "source": "chain",
-      "price": 71.4,
-      "time": "10:22"
+      "price": 71.25,
+      "time": "10:37"
      }
     ]
    },
@@ -8263,9 +8326,9 @@
     },
     "createdAt": "2026-11-18T14:36:30",
     "openedAt": "09:36",
-    "lastMark": 1.29,
+    "lastMark": 1.13,
     "lastMarkDate": "2026-11-19",
-    "lastMarkTime": "10:22",
+    "lastMarkTime": "10:37",
     "markSource": "chain",
     "marks": [
      {
@@ -8277,10 +8340,10 @@
      },
      {
       "date": "2026-11-19",
-      "mark": 1.29,
+      "mark": 1.13,
       "source": "chain",
-      "price": 51.53,
-      "time": "10:22"
+      "price": 50.89,
+      "time": "10:37"
      }
     ]
    }
@@ -11942,6 +12005,62 @@
     "action": "skip",
     "reason": "RSI 37.9 above 30",
     "time": "10:22"
+   },
+   {
+    "date": "2026-11-19",
+    "ticker": "CRM",
+    "action": "skip",
+    "reason": "earnings 2026-12-02 before expiry 2026-12-18",
+    "time": "10:37"
+   },
+   {
+    "date": "2026-11-19",
+    "ticker": "BABA",
+    "action": "skip",
+    "reason": "RSI 30.2 above 30",
+    "time": "10:37"
+   },
+   {
+    "date": "2026-11-19",
+    "ticker": "MRK",
+    "action": "skip",
+    "reason": "RSI 33.5 above 30",
+    "time": "10:37"
+   },
+   {
+    "date": "2026-11-19",
+    "ticker": "ADBE",
+    "action": "skip",
+    "reason": "RSI 33.9 above 30",
+    "time": "10:37"
+   },
+   {
+    "date": "2026-11-19",
+    "ticker": "JPM",
+    "action": "skip",
+    "reason": "RSI 37.0 above 30",
+    "time": "10:37"
+   },
+   {
+    "date": "2026-11-19",
+    "ticker": "NKE",
+    "action": "skip",
+    "reason": "RSI 37.8 above 30",
+    "time": "10:37"
+   },
+   {
+    "date": "2026-11-19",
+    "ticker": "IWM",
+    "action": "skip",
+    "reason": "RSI 38.4 above 30",
+    "time": "10:37"
+   },
+   {
+    "date": "2026-11-19",
+    "ticker": "ISRG",
+    "action": "skip",
+    "reason": "RSI 40.2 above 30",
+    "time": "10:37"
    }
   ],
   "lastSkip": {
@@ -12002,7 +12121,7 @@
     "reason": "RSI 42.4 above 30"
    },
    "CRM": {
-    "date": "2026-11-18",
+    "date": "2026-11-19",
     "reason": "earnings 2026-12-02 before expiry 2026-12-18"
    },
    "AAPL": {
@@ -12015,11 +12134,11 @@
    },
    "ADBE": {
     "date": "2026-11-19",
-    "reason": "RSI 33.2 above 30"
+    "reason": "RSI 33.9 above 30"
    },
    "BABA": {
     "date": "2026-11-19",
-    "reason": "RSI 30.3 above 30"
+    "reason": "RSI 30.2 above 30"
    },
    "ABBV": {
     "date": "2026-11-19",
@@ -12043,7 +12162,7 @@
    },
    "NKE": {
     "date": "2026-11-19",
-    "reason": "RSI 37.9 above 30"
+    "reason": "RSI 37.8 above 30"
    },
    "UNH": {
     "date": "2026-11-19",
@@ -12058,12 +12177,12 @@
     "reason": "RSI 36.6 above 30"
    },
    "IWM": {
-    "date": "2026-11-18",
-    "reason": "RSI 40.7 above 30"
+    "date": "2026-11-19",
+    "reason": "RSI 38.4 above 30"
    },
    "JPM": {
     "date": "2026-11-19",
-    "reason": "RSI 37.3 above 30"
+    "reason": "RSI 37.0 above 30"
    },
    "NFLX": {
     "date": "2026-11-17",
@@ -12071,7 +12190,11 @@
    },
    "MRK": {
     "date": "2026-11-19",
-    "reason": "RSI 34.0 above 30"
+    "reason": "RSI 33.5 above 30"
+   },
+   "ISRG": {
+    "date": "2026-11-19",
+    "reason": "RSI 40.2 above 30"
    }
   }
  }

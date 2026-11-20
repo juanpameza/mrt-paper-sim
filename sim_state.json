@@ -558,9 +558,9 @@
    },
    "createdAt": "2026-11-18T14:52:09",
    "openedAt": "09:52",
-   "lastMark": 1.59,
+   "lastMark": 1.5,
    "lastMarkDate": "2026-11-20",
-   "lastMarkTime": "11:07",
+   "lastMarkTime": "11:22",
    "markSource": "chain",
    "marks": [
     {
@@ -579,10 +579,10 @@
     },
     {
      "date": "2026-11-20",
-     "mark": 1.59,
+     "mark": 1.5,
      "source": "chain",
-     "price": 65.62,
-     "time": "11:07"
+     "price": 65.24,
+     "time": "11:22"
     }
    ]
   },
@@ -643,9 +643,9 @@
    },
    "createdAt": "2026-11-19T16:07:11",
    "openedAt": "11:07",
-   "lastMark": 1.19,
+   "lastMark": 1.16,
    "lastMarkDate": "2026-11-20",
-   "lastMarkTime": "11:07",
+   "lastMarkTime": "11:22",
    "markSource": "chain",
    "marks": [
     {
@@ -657,10 +657,10 @@
     },
     {
      "date": "2026-11-20",
-     "mark": 1.19,
+     "mark": 1.16,
      "source": "chain",
-     "price": 46.75,
-     "time": "11:07"
+     "price": 46.62,
+     "time": "11:22"
     }
    ]
   },
@@ -720,7 +720,20 @@
     "quotes": "live"
    },
    "createdAt": "2026-11-20T16:07:04",
-   "openedAt": "11:07"
+   "openedAt": "11:07",
+   "lastMark": 1.92,
+   "lastMarkDate": "2026-11-20",
+   "lastMarkTime": "11:22",
+   "markSource": "chain",
+   "marks": [
+    {
+     "date": "2026-11-20",
+     "mark": 1.92,
+     "source": "chain",
+     "price": 57.72,
+     "time": "11:22"
+    }
+   ]
   }
  },
  "log": [
@@ -4432,10 +4445,115 @@
    "action": "skip",
    "reason": "RSI 39.3 above 30",
    "time": "11:07"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "GLD",
+   "action": "skip",
+   "reason": "no strike pair passed (2026-12-18): 320/325: long leg open interest 40 < 1000; 315/320: long leg open interest 13 < 1000; 325/330: long leg open interest 45 < 1000",
+   "time": "11:22"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "SPY",
+   "action": "skip",
+   "reason": "no strike pair passed (2026-12-18): 706/716: long leg open interest 44 < 1000; 705/715: debit 5.96 over 50% of width; 707/717: long leg open interest 30 < 1000",
+   "time": "11:22"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "NFLX",
+   "action": "skip",
+   "reason": "valid setup, already have a position",
+   "time": "11:22"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "QQQ",
+   "action": "skip",
+   "reason": "no strike pair passed (2026-12-18): 625/635: debit 5.48 over 50% of width; 620/630: debit 5.02 over 50% of width; 630/640: debit 5.63 over 50% of width",
+   "time": "11:22"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "GS",
+   "action": "skip",
+   "reason": "RSI 31.2 above 30",
+   "time": "11:22"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "NEM",
+   "action": "skip",
+   "reason": "RSI 31.6 above 30",
+   "time": "11:22"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "MS",
+   "action": "skip",
+   "reason": "RSI 32.4 above 30",
+   "time": "11:22"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "META",
+   "action": "skip",
+   "reason": "RSI 32.6 above 30",
+   "time": "11:22"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "UNH",
+   "action": "skip",
+   "reason": "RSI 33.1 above 30",
+   "time": "11:22"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "IWM",
+   "action": "skip",
+   "reason": "RSI 33.5 above 30",
+   "time": "11:22"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "NKE",
+   "action": "skip",
+   "reason": "RSI 34.5 above 30",
+   "time": "11:22"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "ADBE",
+   "action": "skip",
+   "reason": "RSI 35.9 above 30",
+   "time": "11:22"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "ISRG",
+   "action": "skip",
+   "reason": "RSI 37.2 above 30",
+   "time": "11:22"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "MRK",
+   "action": "skip",
+   "reason": "RSI 37.3 above 30",
+   "time": "11:22"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "PYPL",
+   "action": "skip",
+   "reason": "RSI 38.6 above 30",
+   "time": "11:22"
   }
  ],
  "lastBar": "2026-11-20",
- "lastRun": "2026-11-20T16:07:04",
+ "lastRun": "2026-11-20T16:22:08",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -4467,7 +4585,7 @@
   },
   "PYPL": {
    "date": "2026-11-20",
-   "reason": "RSI 39.3 above 30"
+   "reason": "RSI 38.6 above 30"
   },
   "TSLA": {
    "date": "2026-11-05",
@@ -4491,7 +4609,7 @@
   },
   "QQQ": {
    "date": "2026-11-20",
-   "reason": "deployment cap: 18 left, spread costs 497"
+   "reason": "no strike pair passed (2026-12-18): 625/635: debit 5.48 over 50% of width; 620/630: debit 5.02 over 50% of width; 630/640: debit 5.63 over 50% of width"
   },
   "ORCL": {
    "date": "2026-11-20",
@@ -4499,7 +4617,7 @@
   },
   "SPY": {
    "date": "2026-11-20",
-   "reason": "no strike pair passed (2026-12-18): 706/716: long leg open interest 44 < 1000; 705/715: debit 6.13 over 50% of width; 707/717: long leg open interest 30 < 1000"
+   "reason": "no strike pair passed (2026-12-18): 706/716: long leg open interest 44 < 1000; 705/715: debit 5.96 over 50% of width; 707/717: long leg open interest 30 < 1000"
   },
   "TGT": {
    "date": "2026-11-19",
@@ -4535,11 +4653,11 @@
   },
   "ISRG": {
    "date": "2026-11-20",
-   "reason": "RSI 37.3 above 30"
+   "reason": "RSI 37.2 above 30"
   },
   "NKE": {
    "date": "2026-11-20",
-   "reason": "RSI 34.6 above 30"
+   "reason": "RSI 34.5 above 30"
   },
   "AMZN": {
    "date": "2026-11-11",
@@ -4547,7 +4665,7 @@
   },
   "IWM": {
    "date": "2026-11-20",
-   "reason": "RSI 33.6 above 30"
+   "reason": "RSI 33.5 above 30"
   },
   "XLE": {
    "date": "2026-11-10",
@@ -4559,7 +4677,7 @@
   },
   "GS": {
    "date": "2026-11-20",
-   "reason": "RSI 31.1 above 30"
+   "reason": "RSI 31.2 above 30"
   },
   "CAT": {
    "date": "2026-11-05",
@@ -4583,7 +4701,7 @@
   },
   "MS": {
    "date": "2026-11-20",
-   "reason": "RSI 32.2 above 30"
+   "reason": "RSI 32.4 above 30"
   },
   "NVDA": {
    "date": "2026-11-13",
@@ -4595,7 +4713,7 @@
   },
   "NEM": {
    "date": "2026-11-20",
-   "reason": "RSI 31.9 above 30"
+   "reason": "RSI 31.6 above 30"
   },
   "SBUX": {
    "date": "2026-11-05",
@@ -4607,7 +4725,7 @@
   },
   "MRK": {
    "date": "2026-11-20",
-   "reason": "RSI 36.8 above 30"
+   "reason": "RSI 37.3 above 30"
   },
   "FCX": {
    "date": "2026-11-20",
@@ -4627,7 +4745,7 @@
   },
   "ADBE": {
    "date": "2026-11-20",
-   "reason": "RSI 36.4 above 30"
+   "reason": "RSI 35.9 above 30"
   },
   "BABA": {
    "date": "2026-11-19",
@@ -4635,22 +4753,22 @@
   },
   "GLD": {
    "date": "2026-11-20",
-   "reason": "no strike pair passed (2026-12-18): 325/330: long leg open interest 45 < 1000; 320/325: long leg open interest 40 < 1000; 330/335: long leg open interest 110 < 1000"
+   "reason": "no strike pair passed (2026-12-18): 320/325: long leg open interest 40 < 1000; 315/320: long leg open interest 13 < 1000; 325/330: long leg open interest 45 < 1000"
   },
   "UNH": {
    "date": "2026-11-20",
-   "reason": "RSI 32.4 above 30"
+   "reason": "RSI 33.1 above 30"
   },
   "NFLX": {
    "date": "2026-11-20",
-   "reason": "RSI 32.8 above 30"
+   "reason": "valid setup, already have a position"
   },
   "META": {
    "date": "2026-11-20",
-   "reason": "RSI 32.4 above 30"
+   "reason": "RSI 32.6 above 30"
   }
  },
- "lastPoll": "2026-11-20T11:07-05:00",
+ "lastPoll": "2026-11-20T11:22-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -5089,9 +5207,9 @@
      },
      "createdAt": "2026-11-19T21:07:04",
      "openedAt": "16:07",
-     "lastMark": 1.19,
+     "lastMark": 1.16,
      "lastMarkDate": "2026-11-20",
-     "lastMarkTime": "11:07",
+     "lastMarkTime": "11:22",
      "markSource": "chain",
      "marks": [
       {
@@ -5103,10 +5221,10 @@
       },
       {
        "date": "2026-11-20",
-       "mark": 1.19,
+       "mark": 1.16,
        "source": "chain",
-       "price": 46.75,
-       "time": "11:07"
+       "price": 46.62,
+       "time": "11:22"
       }
      ]
     }
@@ -7941,7 +8059,7 @@
     "openedAt": "13:07",
     "lastMark": 0.98,
     "lastMarkDate": "2026-11-20",
-    "lastMarkTime": "11:07",
+    "lastMarkTime": "11:22",
     "markSource": "chain",
     "marks": [
      {
@@ -7976,8 +8094,8 @@
       "date": "2026-11-20",
       "mark": 0.98,
       "source": "chain",
-      "price": 65.62,
-      "time": "11:07"
+      "price": 65.24,
+      "time": "11:22"
      }
     ]
    },
@@ -8126,17 +8244,17 @@
     },
     "createdAt": "2026-11-20T15:52:10",
     "openedAt": "10:52",
-    "lastMark": 2.55,
+    "lastMark": 2.4,
     "lastMarkDate": "2026-11-20",
-    "lastMarkTime": "11:07",
+    "lastMarkTime": "11:22",
     "markSource": "chain",
     "marks": [
      {
       "date": "2026-11-20",
-      "mark": 2.55,
+      "mark": 2.4,
       "source": "chain",
-      "price": 46.75,
-      "time": "11:07"
+      "price": 46.62,
+      "time": "11:22"
      }
     ]
    },
@@ -8196,7 +8314,20 @@
      "quotes": "live"
     },
     "createdAt": "2026-11-20T16:07:04",
-    "openedAt": "11:07"
+    "openedAt": "11:07",
+    "lastMark": 1.92,
+    "lastMarkDate": "2026-11-20",
+    "lastMarkTime": "11:22",
+    "markSource": "chain",
+    "marks": [
+     {
+      "date": "2026-11-20",
+      "mark": 1.92,
+      "source": "chain",
+      "price": 57.72,
+      "time": "11:22"
+     }
+    ]
    },
    "scd3037a377": {
     "id": "scd3037a377",
@@ -8254,7 +8385,20 @@
      "quotes": "live"
     },
     "createdAt": "2026-11-20T16:07:04",
-    "openedAt": "11:07"
+    "openedAt": "11:07",
+    "lastMark": 5.58,
+    "lastMarkDate": "2026-11-20",
+    "lastMarkTime": "11:22",
+    "markSource": "chain",
+    "marks": [
+     {
+      "date": "2026-11-20",
+      "mark": 5.58,
+      "source": "chain",
+      "price": 626.75,
+      "time": "11:22"
+     }
+    ]
    }
   },
   "log": [
@@ -11219,6 +11363,111 @@
     "action": "skip",
     "reason": "RSI 39.3 above 30",
     "time": "11:07"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "GLD",
+    "action": "skip",
+    "reason": "no strike pair passed (2026-12-18): 320/325: long leg open interest 40 < 1000; 315/320: long leg open interest 13 < 1000; 325/330: long leg open interest 45 < 1000",
+    "time": "11:22"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "SPY",
+    "action": "skip",
+    "reason": "no strike pair passed (2026-12-18): 706/716: long leg open interest 44 < 1000; 705/715: debit 5.96 over 50% of width; 707/717: long leg open interest 30 < 1000",
+    "time": "11:22"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "NFLX",
+    "action": "skip",
+    "reason": "valid setup, already have a position",
+    "time": "11:22"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "QQQ",
+    "action": "skip",
+    "reason": "valid setup, already have a position",
+    "time": "11:22"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "GS",
+    "action": "skip",
+    "reason": "RSI 31.2 above 30",
+    "time": "11:22"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "NEM",
+    "action": "skip",
+    "reason": "RSI 31.6 above 30",
+    "time": "11:22"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "MS",
+    "action": "skip",
+    "reason": "RSI 32.4 above 30",
+    "time": "11:22"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "META",
+    "action": "skip",
+    "reason": "RSI 32.6 above 30",
+    "time": "11:22"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "UNH",
+    "action": "skip",
+    "reason": "RSI 33.1 above 30",
+    "time": "11:22"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "IWM",
+    "action": "skip",
+    "reason": "RSI 33.5 above 30",
+    "time": "11:22"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "NKE",
+    "action": "skip",
+    "reason": "RSI 34.5 above 30",
+    "time": "11:22"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "ADBE",
+    "action": "skip",
+    "reason": "RSI 35.9 above 30",
+    "time": "11:22"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "ISRG",
+    "action": "skip",
+    "reason": "RSI 37.2 above 30",
+    "time": "11:22"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "MRK",
+    "action": "skip",
+    "reason": "RSI 37.3 above 30",
+    "time": "11:22"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "PYPL",
+    "action": "skip",
+    "reason": "RSI 38.6 above 30",
+    "time": "11:22"
    }
   ],
   "lastSkip": {
@@ -11244,7 +11493,7 @@
    },
    "PYPL": {
     "date": "2026-11-20",
-    "reason": "RSI 39.3 above 30"
+    "reason": "RSI 38.6 above 30"
    },
    "MU": {
     "date": "2026-11-09",
@@ -11252,7 +11501,7 @@
    },
    "NEM": {
     "date": "2026-11-20",
-    "reason": "RSI 31.9 above 30"
+    "reason": "RSI 31.6 above 30"
    },
    "XOM": {
     "date": "2026-11-10",
@@ -11292,7 +11541,7 @@
    },
    "ADBE": {
     "date": "2026-11-20",
-    "reason": "RSI 36.4 above 30"
+    "reason": "RSI 35.9 above 30"
    },
    "BABA": {
     "date": "2026-11-19",
@@ -11308,7 +11557,7 @@
    },
    "GLD": {
     "date": "2026-11-20",
-    "reason": "no strike pair passed (2026-12-18): 325/330: long leg open interest 45 < 1000; 320/325: long leg open interest 40 < 1000; 330/335: long leg open interest 110 < 1000"
+    "reason": "no strike pair passed (2026-12-18): 320/325: long leg open interest 40 < 1000; 315/320: long leg open interest 13 < 1000; 325/330: long leg open interest 45 < 1000"
    },
    "FCX": {
     "date": "2026-11-20",
@@ -11320,11 +11569,11 @@
    },
    "NKE": {
     "date": "2026-11-20",
-    "reason": "RSI 34.6 above 30"
+    "reason": "RSI 34.5 above 30"
    },
    "UNH": {
     "date": "2026-11-20",
-    "reason": "RSI 32.4 above 30"
+    "reason": "RSI 33.1 above 30"
    },
    "MSFT": {
     "date": "2026-11-20",
@@ -11332,11 +11581,11 @@
    },
    "SPY": {
     "date": "2026-11-20",
-    "reason": "no strike pair passed (2026-12-18): 706/716: long leg open interest 44 < 1000; 705/715: debit 6.13 over 50% of width; 707/717: long leg open interest 30 < 1000"
+    "reason": "no strike pair passed (2026-12-18): 706/716: long leg open interest 44 < 1000; 705/715: debit 5.96 over 50% of width; 707/717: long leg open interest 30 < 1000"
    },
    "IWM": {
     "date": "2026-11-20",
-    "reason": "RSI 33.6 above 30"
+    "reason": "RSI 33.5 above 30"
    },
    "JPM": {
     "date": "2026-11-20",
@@ -11344,19 +11593,19 @@
    },
    "NFLX": {
     "date": "2026-11-20",
-    "reason": "RSI 32.8 above 30"
+    "reason": "valid setup, already have a position"
    },
    "MRK": {
     "date": "2026-11-20",
-    "reason": "RSI 36.8 above 30"
+    "reason": "RSI 37.3 above 30"
    },
    "ISRG": {
     "date": "2026-11-20",
-    "reason": "RSI 37.3 above 30"
+    "reason": "RSI 37.2 above 30"
    },
    "MS": {
     "date": "2026-11-20",
-    "reason": "RSI 32.2 above 30"
+    "reason": "RSI 32.4 above 30"
    },
    "CVS": {
     "date": "2026-11-19",
@@ -11364,15 +11613,15 @@
    },
    "GS": {
     "date": "2026-11-20",
-    "reason": "RSI 31.1 above 30"
+    "reason": "RSI 31.2 above 30"
    },
    "META": {
     "date": "2026-11-20",
-    "reason": "RSI 32.4 above 30"
+    "reason": "RSI 32.6 above 30"
    },
    "QQQ": {
     "date": "2026-11-20",
-    "reason": "RSI 30.4 above 30"
+    "reason": "valid setup, already have a position"
    },
    "ORCL": {
     "date": "2026-11-20",

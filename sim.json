@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-20T21:22:12",
+ "generatedAt": "2026-11-20T21:37:10",
  "asof": "2026-11-20",
- "lastPoll": "2026-11-20T16:22-05:00",
+ "lastPoll": "2026-11-20T16:37-05:00",
  "mode": "intraday",
  "settings": {
   "startCapital": 2500.0,
@@ -570,7 +570,7 @@
    "openedAt": "09:52",
    "lastMark": 1.21,
    "lastMarkDate": "2026-11-20",
-   "lastMarkTime": "16:22",
+   "lastMarkTime": "16:37",
    "markSource": "chain",
    "marks": [
     {
@@ -592,7 +592,7 @@
      "mark": 1.21,
      "source": "chain",
      "price": 62.17,
-     "time": "16:22"
+     "time": "16:37"
     }
    ]
   },
@@ -743,7 +743,7 @@
    "openedAt": "11:07",
    "lastMark": 1.67,
    "lastMarkDate": "2026-11-20",
-   "lastMarkTime": "16:22",
+   "lastMarkTime": "16:37",
    "markSource": "chain",
    "marks": [
     {
@@ -751,7 +751,7 @@
      "mark": 1.67,
      "source": "chain",
      "price": 56.73,
-     "time": "16:22"
+     "time": "16:37"
     }
    ]
   }
@@ -836,34 +836,6 @@
     "exit": 0.99,
     "pnl": -120.6
    }
-  },
-  {
-   "date": "2026-11-20",
-   "ticker": "ADBE",
-   "action": "skip",
-   "reason": "RSI 36.8 above 30",
-   "time": "12:37"
-  },
-  {
-   "date": "2026-11-20",
-   "ticker": "ISRG",
-   "action": "skip",
-   "reason": "RSI 37.0 above 30",
-   "time": "12:37"
-  },
-  {
-   "date": "2026-11-20",
-   "ticker": "TGT",
-   "action": "skip",
-   "reason": "RSI 61.8 below 70",
-   "time": "12:37"
-  },
-  {
-   "date": "2026-11-20",
-   "ticker": "BA",
-   "action": "skip",
-   "reason": "deployment cap: 198 left, spread costs 215",
-   "time": "12:52"
   },
   {
    "date": "2026-11-20",
@@ -2586,6 +2558,34 @@
    "action": "skip",
    "reason": "RSI 59.1 below 70",
    "time": "16:22"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "SPY",
+   "action": "skip",
+   "reason": "no strike pair passed (2026-12-18): 685/695: debit 6.79 over 50% of width; 680/690: long leg bid/ask 3.32 wider than 3.25; 690/700: debit 6.05 over 50% of width",
+   "time": "16:37"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "QQQ",
+   "action": "skip",
+   "reason": "no strike pair passed (2026-12-18): 605/615: debit 6.16 over 50% of width; 604.78/614.78: no 10-wide pair; 609.78/619.78: no 10-wide pair",
+   "time": "16:37"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "IWM",
+   "action": "skip",
+   "reason": "RSI 30.2 above 30",
+   "time": "16:37"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "XLF",
+   "action": "skip",
+   "reason": "RSI 37.3 above 30",
+   "time": "16:37"
   }
  ],
  "shadow": {
@@ -3028,7 +3028,7 @@
      "openedAt": "16:07",
      "lastMark": 1.07,
      "lastMarkDate": "2026-11-20",
-     "lastMarkTime": "16:22",
+     "lastMarkTime": "16:37",
      "markSource": "chain",
      "marks": [
       {
@@ -3043,7 +3043,7 @@
        "mark": 1.07,
        "source": "chain",
        "price": 45.99,
-       "time": "16:22"
+       "time": "16:37"
       }
      ]
     }
@@ -3106,34 +3106,6 @@
       "target": 4.16,
       "cost": 208.0
      }
-    },
-    {
-     "date": "2026-11-18",
-     "ticker": "DIS",
-     "action": "skip",
-     "reason": "RSI 69.6 below 70",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-18",
-     "ticker": "GLD",
-     "action": "skip",
-     "reason": "RSI 30.6 above 30",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-18",
-     "ticker": "ADBE",
-     "action": "skip",
-     "reason": "RSI 35.4 above 30",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-18",
-     "ticker": "SPY",
-     "action": "skip",
-     "reason": "RSI 36.6 above 30",
-     "time": "16:07"
     },
     {
      "date": "2026-11-18",
@@ -3689,6 +3661,34 @@
      "action": "skip",
      "reason": "RSI 59.1 below 70",
      "time": "16:22"
+    },
+    {
+     "date": "2026-11-20",
+     "ticker": "SPY",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 685/695: debit 6.79 over 50% of width; 680/690: long leg bid/ask 3.32 wider than 3.25; 690/700: debit 6.05 over 50% of width",
+     "time": "16:37"
+    },
+    {
+     "date": "2026-11-20",
+     "ticker": "QQQ",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 605/615: debit 6.16 over 50% of width; 604.78/614.78: no 10-wide pair; 609.78/619.78: no 10-wide pair",
+     "time": "16:37"
+    },
+    {
+     "date": "2026-11-20",
+     "ticker": "IWM",
+     "action": "skip",
+     "reason": "RSI 30.2 above 30",
+     "time": "16:37"
+    },
+    {
+     "date": "2026-11-20",
+     "ticker": "XLF",
+     "action": "skip",
+     "reason": "RSI 37.3 above 30",
+     "time": "16:37"
     }
    ]
   },
@@ -4873,7 +4873,7 @@
     "openedAt": "10:52",
     "lastMark": 2.34,
     "lastMarkDate": "2026-11-20",
-    "lastMarkTime": "16:22",
+    "lastMarkTime": "16:37",
     "markSource": "chain",
     "marks": [
      {
@@ -4881,7 +4881,7 @@
       "mark": 2.34,
       "source": "chain",
       "price": 45.99,
-      "time": "16:22"
+      "time": "16:37"
      }
     ]
    },
@@ -4944,7 +4944,7 @@
     "openedAt": "11:07",
     "lastMark": 1.67,
     "lastMarkDate": "2026-11-20",
-    "lastMarkTime": "16:22",
+    "lastMarkTime": "16:37",
     "markSource": "chain",
     "marks": [
      {
@@ -4952,7 +4952,7 @@
       "mark": 1.67,
       "source": "chain",
       "price": 56.73,
-      "time": "16:22"
+      "time": "16:37"
      }
     ]
    },
@@ -5013,17 +5013,17 @@
     },
     "createdAt": "2026-11-20T16:07:04",
     "openedAt": "11:07",
-    "lastMark": 4.49,
+    "lastMark": 4.45,
     "lastMarkDate": "2026-11-20",
-    "lastMarkTime": "16:22",
+    "lastMarkTime": "16:37",
     "markSource": "chain",
     "marks": [
      {
       "date": "2026-11-20",
-      "mark": 4.49,
+      "mark": 4.45,
       "source": "chain",
       "price": 608.45,
-      "time": "16:22"
+      "time": "16:37"
      }
     ]
    },
@@ -5086,7 +5086,7 @@
     "openedAt": "12:52",
     "lastMark": 1.88,
     "lastMarkDate": "2026-11-20",
-    "lastMarkTime": "16:22",
+    "lastMarkTime": "16:37",
     "markSource": "chain",
     "marks": [
      {
@@ -5094,7 +5094,7 @@
       "mark": 1.88,
       "source": "chain",
       "price": 155.89,
-      "time": "16:22"
+      "time": "16:37"
      }
     ]
    }
@@ -5193,27 +5193,6 @@
      "target": 4.3,
      "cost": 215.0
     }
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "IWM",
-    "action": "skip",
-    "reason": "RSI 31.0 above 30",
-    "time": "14:37"
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "JPM",
-    "action": "skip",
-    "reason": "RSI 31.2 above 30",
-    "time": "14:37"
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "ORCL",
-    "action": "skip",
-    "reason": "RSI 32.0 above 30",
-    "time": "14:37"
    },
    {
     "date": "2026-11-20",
@@ -6033,6 +6012,27 @@
     "action": "skip",
     "reason": "RSI 59.1 below 70",
     "time": "16:22"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "SPY",
+    "action": "skip",
+    "reason": "no strike pair passed (2026-12-18): 685/695: debit 6.79 over 50% of width; 680/690: long leg bid/ask 3.32 wider than 3.25; 690/700: debit 6.05 over 50% of width",
+    "time": "16:37"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "IWM",
+    "action": "skip",
+    "reason": "RSI 30.2 above 30",
+    "time": "16:37"
+   },
+   {
+    "date": "2026-11-20",
+    "ticker": "XLF",
+    "action": "skip",
+    "reason": "RSI 37.3 above 30",
+    "time": "16:37"
    }
   ]
  }

@@ -558,9 +558,9 @@
    },
    "createdAt": "2026-11-18T14:52:09",
    "openedAt": "09:52",
-   "lastMark": 1.81,
+   "lastMark": 1.82,
    "lastMarkDate": "2026-11-23",
-   "lastMarkTime": "16:07",
+   "lastMarkTime": "16:22",
    "markSource": "chain",
    "marks": [
     {
@@ -586,10 +586,10 @@
     },
     {
      "date": "2026-11-23",
-     "mark": 1.81,
+     "mark": 1.82,
      "source": "chain",
      "price": 67.37,
-     "time": "16:07"
+     "time": "16:22"
     }
    ]
   },
@@ -738,9 +738,9 @@
    },
    "createdAt": "2026-11-20T16:07:04",
    "openedAt": "11:07",
-   "lastMark": 1.86,
+   "lastMark": 1.79,
    "lastMarkDate": "2026-11-23",
-   "lastMarkTime": "16:07",
+   "lastMarkTime": "16:22",
    "markSource": "chain",
    "marks": [
     {
@@ -752,10 +752,10 @@
     },
     {
      "date": "2026-11-23",
-     "mark": 1.86,
+     "mark": 1.79,
      "source": "chain",
      "price": 58.1,
-     "time": "16:07"
+     "time": "16:22"
     }
    ]
   }
@@ -4690,10 +4690,24 @@
    "action": "skip",
    "reason": "RSI 42.9 above 30",
    "time": "16:07"
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "CVS",
+   "action": "skip",
+   "reason": "RSI 34.9 above 30",
+   "time": "16:22"
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "JPM",
+   "action": "skip",
+   "reason": "RSI 36.8 above 30",
+   "time": "16:22"
   }
  ],
  "lastBar": "2026-11-23",
- "lastRun": "2026-11-23T21:07:17",
+ "lastRun": "2026-11-23T21:22:09",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-05",
@@ -4741,7 +4755,7 @@
   },
   "JPM": {
    "date": "2026-11-23",
-   "reason": "RSI 36.9 above 30"
+   "reason": "RSI 36.8 above 30"
   },
   "MSFT": {
    "date": "2026-11-20",
@@ -4789,7 +4803,7 @@
   },
   "CVS": {
    "date": "2026-11-23",
-   "reason": "RSI 35.1 above 30"
+   "reason": "RSI 34.9 above 30"
   },
   "ISRG": {
    "date": "2026-11-20",
@@ -4916,7 +4930,7 @@
    "reason": "RSI 34.1 above 30"
   }
  },
- "lastPoll": "2026-11-23T16:07-05:00",
+ "lastPoll": "2026-11-23T16:22-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -5355,9 +5369,9 @@
      },
      "createdAt": "2026-11-19T21:07:04",
      "openedAt": "16:07",
-     "lastMark": 1.91,
+     "lastMark": 1.9,
      "lastMarkDate": "2026-11-23",
-     "lastMarkTime": "16:07",
+     "lastMarkTime": "16:22",
      "markSource": "chain",
      "marks": [
       {
@@ -5376,10 +5390,10 @@
       },
       {
        "date": "2026-11-23",
-       "mark": 1.91,
+       "mark": 1.9,
        "source": "chain",
        "price": 49.71,
-       "time": "16:07"
+       "time": "16:22"
       }
      ]
     }
@@ -7313,6 +7327,20 @@
      "action": "skip",
      "reason": "RSI 42.9 above 30",
      "time": "16:07"
+    },
+    {
+     "date": "2026-11-23",
+     "ticker": "CVS",
+     "action": "skip",
+     "reason": "RSI 34.9 above 30",
+     "time": "16:22"
+    },
+    {
+     "date": "2026-11-23",
+     "ticker": "JPM",
+     "action": "skip",
+     "reason": "RSI 36.8 above 30",
+     "time": "16:22"
     }
    ],
    "lastSkip": {
@@ -7390,7 +7418,7 @@
     },
     "CVS": {
      "date": "2026-11-23",
-     "reason": "RSI 35.1 above 30"
+     "reason": "RSI 34.9 above 30"
     },
     "PG": {
      "date": "2026-11-16",
@@ -7406,7 +7434,7 @@
     },
     "JPM": {
      "date": "2026-11-23",
-     "reason": "RSI 36.9 above 30"
+     "reason": "RSI 36.8 above 30"
     },
     "TGT": {
      "date": "2026-11-20",
@@ -8067,7 +8095,136 @@
       "quotes": "live"
      },
      "createdAt": "2026-11-23T21:07:16",
-     "openedAt": "16:07"
+     "openedAt": "16:07",
+     "lastMark": 1.9,
+     "lastMarkDate": "2026-11-23",
+     "lastMarkTime": "16:22",
+     "markSource": "chain",
+     "marks": [
+      {
+       "date": "2026-11-23",
+       "mark": 1.9,
+       "source": "chain",
+       "price": 49.71,
+       "time": "16:22"
+      }
+     ]
+    },
+    "s8fd9b87448": {
+     "id": "s8fd9b87448",
+     "ticker": "HOOD",
+     "type": "bull-call",
+     "opened": "2026-11-23",
+     "expiry": "2026-12-18",
+     "longK": 70.0,
+     "shortK": 75.0,
+     "width": 5.0,
+     "debit": 1.87,
+     "midDebit": 1.82,
+     "contracts": 1,
+     "cost": 187.0,
+     "stop": 0.94,
+     "target": 3.74,
+     "stopPct": 50.0,
+     "targetPct": 100.0,
+     "entryFees": 1.3,
+     "status": "open",
+     "book": "confirm",
+     "signal": {
+      "price": 67.37,
+      "rsi": 31.6,
+      "adx": 33.7,
+      "adx_prev": 33.4,
+      "bb": "none",
+      "atr": 5.43,
+      "confirm": "bull-call",
+      "touchDaysAgo": 1
+     },
+     "entry": {
+      "long": {
+       "strike": 70.0,
+       "bid": 4.1,
+       "ask": 4.2,
+       "last": 4.1,
+       "mid": 4.15,
+       "spread": 0.1,
+       "oi": 2513,
+       "iv": 0.7346,
+       "live": true
+      },
+      "short": {
+       "strike": 75.0,
+       "bid": 2.26,
+       "ask": 2.4,
+       "last": 2.36,
+       "mid": 2.33,
+       "spread": 0.14,
+       "oi": 5151,
+       "iv": 0.7,
+       "live": true
+      },
+      "quotes": "live"
+     },
+     "createdAt": "2026-11-23T21:22:06",
+     "openedAt": "16:22"
+    },
+    "s7b42a31c39": {
+     "id": "s7b42a31c39",
+     "ticker": "BA",
+     "type": "bull-call",
+     "opened": "2026-11-23",
+     "expiry": "2026-12-18",
+     "longK": 165.0,
+     "shortK": 170.0,
+     "width": 5.0,
+     "debit": 1.97,
+     "midDebit": 1.92,
+     "contracts": 1,
+     "cost": 197.0,
+     "stop": 0.98,
+     "target": 3.94,
+     "stopPct": 50.0,
+     "targetPct": 100.0,
+     "entryFees": 1.3,
+     "status": "open",
+     "book": "confirm",
+     "signal": {
+      "price": 162.39,
+      "rsi": 36.2,
+      "adx": 36.2,
+      "adx_prev": 34.8,
+      "bb": "none",
+      "atr": 5.59,
+      "confirm": "bull-call",
+      "touchDaysAgo": 1
+     },
+     "entry": {
+      "long": {
+       "strike": 165.0,
+       "bid": 4.6,
+       "ask": 5.0,
+       "last": 4.71,
+       "mid": 4.8,
+       "spread": 0.4,
+       "oi": 3924,
+       "iv": 0.3568,
+       "live": true
+      },
+      "short": {
+       "strike": 170.0,
+       "bid": 2.8,
+       "ask": 2.97,
+       "last": 2.78,
+       "mid": 2.88,
+       "spread": 0.17,
+       "oi": 3564,
+       "iv": 0.3407,
+       "live": true
+      },
+      "quotes": "live"
+     },
+     "createdAt": "2026-11-23T21:22:07",
+     "openedAt": "16:22"
     }
    },
    "log": [
@@ -8601,6 +8758,72 @@
      "action": "skip",
      "reason": "ADX 49.3 above 40: trend too strong to fade",
      "time": "16:07"
+    },
+    {
+     "date": "2026-11-23",
+     "ticker": "FCX",
+     "action": "skip",
+     "reason": "valid setup, already have a position",
+     "time": "16:22"
+    },
+    {
+     "date": "2026-11-23",
+     "ticker": "HOOD",
+     "action": "entry",
+     "reason": "bull-call 70/75 exp 2026-12-18 @ 1.87 x1",
+     "time": "16:22",
+     "detail": {
+      "stop": 0.94,
+      "target": 3.74,
+      "cost": 187.0
+     }
+    },
+    {
+     "date": "2026-11-23",
+     "ticker": "GLD",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 330/335: short leg open interest 735 < 1000; 325/330: debit 3.15 over 50% of width; 335/340: long leg open interest 735 < 1000",
+     "time": "16:22"
+    },
+    {
+     "date": "2026-11-23",
+     "ticker": "NFLX",
+     "action": "skip",
+     "reason": "position limit 205 < spread cost 219",
+     "time": "16:22"
+    },
+    {
+     "date": "2026-11-23",
+     "ticker": "BA",
+     "action": "entry",
+     "reason": "bull-call 165/170 exp 2026-12-18 @ 1.97 x1",
+     "time": "16:22",
+     "detail": {
+      "stop": 0.98,
+      "target": 3.94,
+      "cost": 197.0
+     }
+    },
+    {
+     "date": "2026-11-23",
+     "ticker": "NEM",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 100/105: long leg open interest 828 < 1000; 97.5/102.5: no 5-wide pair; 105/110: long leg bid/ask 0.60 wider than 0.35",
+     "time": "16:22"
+    },
+    {
+     "date": "2026-11-23",
+     "ticker": "SPY",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 722/732: debit 5.96 over 50% of width; 721/731: debit 6.08 over 50% of width; 723/733: debit 5.89 over 50% of width",
+     "time": "16:22"
+    },
+    {
+     "date": "2026-11-23",
+     "ticker": "QQQ",
+     "action": "skip",
+     "reason": "deployment cap: 35 left, spread costs 499",
+     "time": "16:22"
     }
    ],
    "lastSkip": {
@@ -8661,7 +8884,7 @@
      "reason": "deployment cap: 443 left, spread costs 485"
     },
     "FCX": {
-     "date": "2026-11-06",
+     "date": "2026-11-23",
      "reason": "valid setup, already have a position"
     },
     "PG": {
@@ -8674,7 +8897,7 @@
     },
     "GLD": {
      "date": "2026-11-23",
-     "reason": "no strike pair passed (2026-12-18): 330/335: short leg open interest 735 < 1000; 325/330: debit 3.13 over 50% of width; 335/340: long leg open interest 735 < 1000"
+     "reason": "no strike pair passed (2026-12-18): 330/335: short leg open interest 735 < 1000; 325/330: debit 3.15 over 50% of width; 335/340: long leg open interest 735 < 1000"
     },
     "BABA": {
      "date": "2026-11-23",
@@ -8682,7 +8905,7 @@
     },
     "NFLX": {
      "date": "2026-11-23",
-     "reason": "position limit 205 < spread cost 223"
+     "reason": "position limit 205 < spread cost 219"
     },
     "GS": {
      "date": "2026-11-23",
@@ -8690,7 +8913,7 @@
     },
     "NEM": {
      "date": "2026-11-23",
-     "reason": "no strike pair passed (2026-12-18): 100/105: long leg open interest 828 < 1000; 97.5/102.5: no 5-wide pair; 105/110: short leg bid/ask 0.72 wider than 0.18"
+     "reason": "no strike pair passed (2026-12-18): 100/105: long leg open interest 828 < 1000; 97.5/102.5: no 5-wide pair; 105/110: long leg bid/ask 0.60 wider than 0.35"
     },
     "MS": {
      "date": "2026-11-23",
@@ -8698,11 +8921,11 @@
     },
     "SPY": {
      "date": "2026-11-23",
-     "reason": "no strike pair passed (2026-12-18): 722/732: debit 5.93 over 50% of width; 721/731: debit 5.98 over 50% of width; 723/733: debit 5.85 over 50% of width"
+     "reason": "no strike pair passed (2026-12-18): 722/732: debit 5.96 over 50% of width; 721/731: debit 6.08 over 50% of width; 723/733: debit 5.89 over 50% of width"
     },
     "QQQ": {
      "date": "2026-11-23",
-     "reason": "deployment cap: 419 left, spread costs 500"
+     "reason": "deployment cap: 35 left, spread costs 499"
     },
     "NVDA": {
      "date": "2026-11-23",
@@ -8968,9 +9191,9 @@
     },
     "createdAt": "2026-11-20T15:52:10",
     "openedAt": "10:52",
-    "lastMark": 3.26,
+    "lastMark": 2.96,
     "lastMarkDate": "2026-11-23",
-    "lastMarkTime": "16:07",
+    "lastMarkTime": "16:22",
     "markSource": "chain",
     "marks": [
      {
@@ -8982,10 +9205,10 @@
      },
      {
       "date": "2026-11-23",
-      "mark": 3.26,
+      "mark": 2.96,
       "source": "chain",
       "price": 49.71,
-      "time": "16:07"
+      "time": "16:22"
      }
     ]
    },
@@ -9046,9 +9269,9 @@
     },
     "createdAt": "2026-11-20T16:07:04",
     "openedAt": "11:07",
-    "lastMark": 1.86,
+    "lastMark": 1.79,
     "lastMarkDate": "2026-11-23",
-    "lastMarkTime": "16:07",
+    "lastMarkTime": "16:22",
     "markSource": "chain",
     "marks": [
      {
@@ -9060,10 +9283,10 @@
      },
      {
       "date": "2026-11-23",
-      "mark": 1.86,
+      "mark": 1.79,
       "source": "chain",
       "price": 58.1,
-      "time": "16:07"
+      "time": "16:22"
      }
     ]
    },
@@ -9124,9 +9347,9 @@
     },
     "createdAt": "2026-11-20T16:07:04",
     "openedAt": "11:07",
-    "lastMark": 7.02,
+    "lastMark": 7.11,
     "lastMarkDate": "2026-11-23",
-    "lastMarkTime": "16:07",
+    "lastMarkTime": "16:22",
     "markSource": "chain",
     "marks": [
      {
@@ -9138,10 +9361,10 @@
      },
      {
       "date": "2026-11-23",
-      "mark": 7.02,
+      "mark": 7.11,
       "source": "chain",
       "price": 651.03,
-      "time": "16:07"
+      "time": "16:22"
      }
     ]
    },
@@ -9202,9 +9425,9 @@
     },
     "createdAt": "2026-11-20T17:52:14",
     "openedAt": "12:52",
-    "lastMark": 2.54,
+    "lastMark": 2.85,
     "lastMarkDate": "2026-11-23",
-    "lastMarkTime": "16:07",
+    "lastMarkTime": "16:22",
     "markSource": "chain",
     "marks": [
      {
@@ -9216,10 +9439,10 @@
      },
      {
       "date": "2026-11-23",
-      "mark": 2.54,
+      "mark": 2.85,
       "source": "chain",
-      "price": 162.49,
-      "time": "16:07"
+      "price": 162.39,
+      "time": "16:22"
      }
     ]
    }
@@ -12181,6 +12404,20 @@
     "action": "skip",
     "reason": "RSI 42.9 above 30",
     "time": "16:07"
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "CVS",
+    "action": "skip",
+    "reason": "RSI 34.9 above 30",
+    "time": "16:22"
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "JPM",
+    "action": "skip",
+    "reason": "RSI 36.8 above 30",
+    "time": "16:22"
    }
   ],
   "lastSkip": {
@@ -12302,7 +12539,7 @@
    },
    "JPM": {
     "date": "2026-11-23",
-    "reason": "RSI 36.9 above 30"
+    "reason": "RSI 36.8 above 30"
    },
    "NFLX": {
     "date": "2026-11-23",
@@ -12322,7 +12559,7 @@
    },
    "CVS": {
     "date": "2026-11-23",
-    "reason": "RSI 35.1 above 30"
+    "reason": "RSI 34.9 above 30"
    },
    "GS": {
     "date": "2026-11-23",

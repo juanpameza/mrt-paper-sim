@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-23T17:07:16",
+ "generatedAt": "2026-11-23T17:22:08",
  "asof": "2026-11-23",
- "lastPoll": "2026-11-23T12:07-05:00",
+ "lastPoll": "2026-11-23T12:22-05:00",
  "mode": "intraday",
  "settings": {
   "startCapital": 2500.0,
@@ -568,9 +568,9 @@
    },
    "createdAt": "2026-11-18T14:52:09",
    "openedAt": "09:52",
-   "lastMark": 1.79,
+   "lastMark": 1.87,
    "lastMarkDate": "2026-11-23",
-   "lastMarkTime": "12:07",
+   "lastMarkTime": "12:22",
    "markSource": "chain",
    "marks": [
     {
@@ -596,10 +596,10 @@
     },
     {
      "date": "2026-11-23",
-     "mark": 1.79,
+     "mark": 1.87,
      "source": "chain",
-     "price": 67.55,
-     "time": "12:07"
+     "price": 67.54,
+     "time": "12:22"
     }
    ]
   },
@@ -748,9 +748,9 @@
    },
    "createdAt": "2026-11-20T16:07:04",
    "openedAt": "11:07",
-   "lastMark": 1.73,
+   "lastMark": 1.71,
    "lastMarkDate": "2026-11-23",
-   "lastMarkTime": "12:07",
+   "lastMarkTime": "12:22",
    "markSource": "chain",
    "marks": [
     {
@@ -762,10 +762,10 @@
     },
     {
      "date": "2026-11-23",
-     "mark": 1.73,
+     "mark": 1.71,
      "source": "chain",
-     "price": 57.76,
-     "time": "12:07"
+     "price": 57.63,
+     "time": "12:22"
     }
    ]
   }
@@ -850,41 +850,6 @@
     "exit": 0.99,
     "pnl": -120.6
    }
-  },
-  {
-   "date": "2026-11-20",
-   "ticker": "SPY",
-   "action": "skip",
-   "reason": "no strike pair passed (2026-12-18): 700/710: debit 5.86 over 50% of width; 695/705: debit 6.09 over 50% of width; 701/711: long leg open interest 223 < 1000",
-   "time": "14:07"
-  },
-  {
-   "date": "2026-11-20",
-   "ticker": "QQQ",
-   "action": "skip",
-   "reason": "deployment cap: 198 left, spread costs 491",
-   "time": "14:07"
-  },
-  {
-   "date": "2026-11-20",
-   "ticker": "GS",
-   "action": "skip",
-   "reason": "RSI 30.9 above 30",
-   "time": "14:07"
-  },
-  {
-   "date": "2026-11-20",
-   "ticker": "META",
-   "action": "skip",
-   "reason": "RSI 31.4 above 30",
-   "time": "14:07"
-  },
-  {
-   "date": "2026-11-20",
-   "ticker": "MS",
-   "action": "skip",
-   "reason": "RSI 31.6 above 30",
-   "time": "14:07"
   },
   {
    "date": "2026-11-20",
@@ -2600,6 +2565,41 @@
    "action": "skip",
    "reason": "RSI 41.2 above 30",
    "time": "12:07"
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "NKE",
+   "action": "skip",
+   "reason": "RSI 36.0 above 30",
+   "time": "12:22"
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "ADBE",
+   "action": "skip",
+   "reason": "RSI 36.2 above 30",
+   "time": "12:22"
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "GS",
+   "action": "skip",
+   "reason": "RSI 38.0 above 30",
+   "time": "12:22"
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "META",
+   "action": "skip",
+   "reason": "RSI 41.1 above 30",
+   "time": "12:22"
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "PYPL",
+   "action": "skip",
+   "reason": "RSI 41.3 above 30",
+   "time": "12:22"
   }
  ],
  "shadow": {
@@ -3040,9 +3040,9 @@
      },
      "createdAt": "2026-11-19T21:07:04",
      "openedAt": "16:07",
-     "lastMark": 1.89,
+     "lastMark": 1.88,
      "lastMarkDate": "2026-11-23",
-     "lastMarkTime": "12:07",
+     "lastMarkTime": "12:22",
      "markSource": "chain",
      "marks": [
       {
@@ -3061,10 +3061,10 @@
       },
       {
        "date": "2026-11-23",
-       "mark": 1.89,
+       "mark": 1.88,
        "source": "chain",
-       "price": 49.62,
-       "time": "12:07"
+       "price": 49.63,
+       "time": "12:22"
       }
      ]
     }
@@ -4892,9 +4892,9 @@
     },
     "createdAt": "2026-11-20T15:52:10",
     "openedAt": "10:52",
-    "lastMark": 3.3,
+    "lastMark": 3.32,
     "lastMarkDate": "2026-11-23",
-    "lastMarkTime": "12:07",
+    "lastMarkTime": "12:22",
     "markSource": "chain",
     "marks": [
      {
@@ -4906,10 +4906,10 @@
      },
      {
       "date": "2026-11-23",
-      "mark": 3.3,
+      "mark": 3.32,
       "source": "chain",
-      "price": 49.62,
-      "time": "12:07"
+      "price": 49.63,
+      "time": "12:22"
      }
     ]
    },
@@ -4970,9 +4970,9 @@
     },
     "createdAt": "2026-11-20T16:07:04",
     "openedAt": "11:07",
-    "lastMark": 1.73,
+    "lastMark": 1.71,
     "lastMarkDate": "2026-11-23",
-    "lastMarkTime": "12:07",
+    "lastMarkTime": "12:22",
     "markSource": "chain",
     "marks": [
      {
@@ -4984,10 +4984,10 @@
      },
      {
       "date": "2026-11-23",
-      "mark": 1.73,
+      "mark": 1.71,
       "source": "chain",
-      "price": 57.76,
-      "time": "12:07"
+      "price": 57.63,
+      "time": "12:22"
      }
     ]
    },
@@ -5048,9 +5048,9 @@
     },
     "createdAt": "2026-11-20T16:07:04",
     "openedAt": "11:07",
-    "lastMark": 6.87,
+    "lastMark": 7.03,
     "lastMarkDate": "2026-11-23",
-    "lastMarkTime": "12:07",
+    "lastMarkTime": "12:22",
     "markSource": "chain",
     "marks": [
      {
@@ -5062,10 +5062,10 @@
      },
      {
       "date": "2026-11-23",
-      "mark": 6.87,
+      "mark": 7.03,
       "source": "chain",
-      "price": 651.2,
-      "time": "12:07"
+      "price": 651.17,
+      "time": "12:22"
      }
     ]
    },
@@ -5126,9 +5126,9 @@
     },
     "createdAt": "2026-11-20T17:52:14",
     "openedAt": "12:52",
-    "lastMark": 2.72,
+    "lastMark": 2.5,
     "lastMarkDate": "2026-11-23",
-    "lastMarkTime": "12:07",
+    "lastMarkTime": "12:22",
     "markSource": "chain",
     "marks": [
      {
@@ -5140,10 +5140,10 @@
      },
      {
       "date": "2026-11-23",
-      "mark": 2.72,
+      "mark": 2.5,
       "source": "chain",
-      "price": 161.91,
-      "time": "12:07"
+      "price": 162.16,
+      "time": "12:22"
      }
     ]
    }
@@ -5242,41 +5242,6 @@
      "target": 4.3,
      "cost": 215.0
     }
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "MSFT",
-    "action": "skip",
-    "reason": "RSI 34.5 above 30",
-    "time": "15:37"
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "PYPL",
-    "action": "skip",
-    "reason": "RSI 34.8 above 30",
-    "time": "15:37"
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "ISRG",
-    "action": "skip",
-    "reason": "RSI 35.9 above 30",
-    "time": "15:37"
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "QCOM",
-    "action": "skip",
-    "reason": "RSI 36.0 above 30",
-    "time": "15:37"
-   },
-   {
-    "date": "2026-11-20",
-    "ticker": "TSLA",
-    "action": "skip",
-    "reason": "RSI 37.6 above 30",
-    "time": "15:37"
    },
    {
     "date": "2026-11-20",
@@ -6082,6 +6047,41 @@
     "action": "skip",
     "reason": "RSI 41.2 above 30",
     "time": "12:07"
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "NKE",
+    "action": "skip",
+    "reason": "RSI 36.0 above 30",
+    "time": "12:22"
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "ADBE",
+    "action": "skip",
+    "reason": "RSI 36.2 above 30",
+    "time": "12:22"
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "GS",
+    "action": "skip",
+    "reason": "RSI 38.0 above 30",
+    "time": "12:22"
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "META",
+    "action": "skip",
+    "reason": "RSI 41.1 above 30",
+    "time": "12:22"
+   },
+   {
+    "date": "2026-11-23",
+    "ticker": "PYPL",
+    "action": "skip",
+    "reason": "RSI 41.3 above 30",
+    "time": "12:22"
    }
   ]
  }

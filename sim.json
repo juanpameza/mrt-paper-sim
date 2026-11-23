@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-23T21:22:09",
+ "generatedAt": "2026-11-23T21:37:23",
  "asof": "2026-11-23",
- "lastPoll": "2026-11-23T16:22-05:00",
+ "lastPoll": "2026-11-23T16:37-05:00",
  "mode": "intraday",
  "settings": {
   "startCapital": 2500.0,
@@ -568,9 +568,9 @@
    },
    "createdAt": "2026-11-18T14:52:09",
    "openedAt": "09:52",
-   "lastMark": 1.82,
+   "lastMark": 1.79,
    "lastMarkDate": "2026-11-23",
-   "lastMarkTime": "16:22",
+   "lastMarkTime": "16:37",
    "markSource": "chain",
    "marks": [
     {
@@ -596,10 +596,10 @@
     },
     {
      "date": "2026-11-23",
-     "mark": 1.82,
+     "mark": 1.79,
      "source": "chain",
      "price": 67.37,
-     "time": "16:22"
+     "time": "16:37"
     }
    ]
   },
@@ -750,7 +750,7 @@
    "openedAt": "11:07",
    "lastMark": 1.79,
    "lastMarkDate": "2026-11-23",
-   "lastMarkTime": "16:22",
+   "lastMarkTime": "16:37",
    "markSource": "chain",
    "marks": [
     {
@@ -765,7 +765,7 @@
      "mark": 1.79,
      "source": "chain",
      "price": 58.1,
-     "time": "16:22"
+     "time": "16:37"
     }
    ]
   }
@@ -3042,7 +3042,7 @@
      "openedAt": "16:07",
      "lastMark": 1.9,
      "lastMarkDate": "2026-11-23",
-     "lastMarkTime": "16:22",
+     "lastMarkTime": "16:37",
      "markSource": "chain",
      "marks": [
       {
@@ -3064,7 +3064,7 @@
        "mark": 1.9,
        "source": "chain",
        "price": 49.71,
-       "time": "16:22"
+       "time": "16:37"
       }
      ]
     }
@@ -4254,7 +4254,7 @@
      "openedAt": "16:07",
      "lastMark": 1.9,
      "lastMarkDate": "2026-11-23",
-     "lastMarkTime": "16:22",
+     "lastMarkTime": "16:37",
      "markSource": "chain",
      "marks": [
       {
@@ -4262,7 +4262,7 @@
        "mark": 1.9,
        "source": "chain",
        "price": 49.71,
-       "time": "16:22"
+       "time": "16:37"
       }
      ]
     },
@@ -4322,7 +4322,20 @@
       "quotes": "live"
      },
      "createdAt": "2026-11-23T21:22:06",
-     "openedAt": "16:22"
+     "openedAt": "16:22",
+     "lastMark": 1.79,
+     "lastMarkDate": "2026-11-23",
+     "lastMarkTime": "16:37",
+     "markSource": "chain",
+     "marks": [
+      {
+       "date": "2026-11-23",
+       "mark": 1.79,
+       "source": "chain",
+       "price": 67.37,
+       "time": "16:37"
+      }
+     ]
     },
     "s7b42a31c39": {
      "id": "s7b42a31c39",
@@ -4380,7 +4393,20 @@
       "quotes": "live"
      },
      "createdAt": "2026-11-23T21:22:07",
-     "openedAt": "16:22"
+     "openedAt": "16:22",
+     "lastMark": 1.92,
+     "lastMarkDate": "2026-11-23",
+     "lastMarkTime": "16:37",
+     "markSource": "chain",
+     "marks": [
+      {
+       "date": "2026-11-23",
+       "mark": 1.92,
+       "source": "chain",
+       "price": 162.39,
+       "time": "16:37"
+      }
+     ]
     }
    },
    "log": [
@@ -4980,6 +5006,48 @@
      "action": "skip",
      "reason": "deployment cap: 35 left, spread costs 499",
      "time": "16:22"
+    },
+    {
+     "date": "2026-11-23",
+     "ticker": "HOOD",
+     "action": "skip",
+     "reason": "valid setup, already have a position",
+     "time": "16:37"
+    },
+    {
+     "date": "2026-11-23",
+     "ticker": "GLD",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 330/335: short leg open interest 735 < 1000; 325/330: debit 3.17 over 50% of width; 335/340: long leg open interest 735 < 1000",
+     "time": "16:37"
+    },
+    {
+     "date": "2026-11-23",
+     "ticker": "NFLX",
+     "action": "skip",
+     "reason": "deployment cap: 35 left, spread costs 219",
+     "time": "16:37"
+    },
+    {
+     "date": "2026-11-23",
+     "ticker": "BA",
+     "action": "skip",
+     "reason": "valid setup, already have a position",
+     "time": "16:37"
+    },
+    {
+     "date": "2026-11-23",
+     "ticker": "SPY",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 722/732: debit 5.95 over 50% of width; 721/731: debit 6.07 over 50% of width; 723/733: debit 5.87 over 50% of width",
+     "time": "16:37"
+    },
+    {
+     "date": "2026-11-23",
+     "ticker": "QQQ",
+     "action": "skip",
+     "reason": "deployment cap: 35 left, spread costs 492",
+     "time": "16:37"
     }
    ]
   }
@@ -5243,7 +5311,7 @@
     "openedAt": "10:52",
     "lastMark": 2.96,
     "lastMarkDate": "2026-11-23",
-    "lastMarkTime": "16:22",
+    "lastMarkTime": "16:37",
     "markSource": "chain",
     "marks": [
      {
@@ -5258,7 +5326,7 @@
       "mark": 2.96,
       "source": "chain",
       "price": 49.71,
-      "time": "16:22"
+      "time": "16:37"
      }
     ]
    },
@@ -5321,7 +5389,7 @@
     "openedAt": "11:07",
     "lastMark": 1.79,
     "lastMarkDate": "2026-11-23",
-    "lastMarkTime": "16:22",
+    "lastMarkTime": "16:37",
     "markSource": "chain",
     "marks": [
      {
@@ -5336,7 +5404,7 @@
       "mark": 1.79,
       "source": "chain",
       "price": 58.1,
-      "time": "16:22"
+      "time": "16:37"
      }
     ]
    },
@@ -5397,9 +5465,9 @@
     },
     "createdAt": "2026-11-20T16:07:04",
     "openedAt": "11:07",
-    "lastMark": 7.11,
+    "lastMark": 6.94,
     "lastMarkDate": "2026-11-23",
-    "lastMarkTime": "16:22",
+    "lastMarkTime": "16:37",
     "markSource": "chain",
     "marks": [
      {
@@ -5411,10 +5479,10 @@
      },
      {
       "date": "2026-11-23",
-      "mark": 7.11,
+      "mark": 6.94,
       "source": "chain",
       "price": 651.03,
-      "time": "16:22"
+      "time": "16:37"
      }
     ]
    },
@@ -5477,7 +5545,7 @@
     "openedAt": "12:52",
     "lastMark": 2.85,
     "lastMarkDate": "2026-11-23",
-    "lastMarkTime": "16:22",
+    "lastMarkTime": "16:37",
     "markSource": "chain",
     "marks": [
      {
@@ -5492,7 +5560,7 @@
       "mark": 2.85,
       "source": "chain",
       "price": 162.39,
-      "time": "16:22"
+      "time": "16:37"
      }
     ]
    }

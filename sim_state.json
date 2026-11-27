@@ -4270,14 +4270,21 @@
    "action": "skip",
    "reason": "ADX 41.2 above 40: trend too strong to fade",
    "time": "09:52"
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "WMT",
+   "action": "skip",
+   "reason": "no strike pair passed (2026-12-18): 133/128: long leg open interest 214 < 1000; 132/127: long leg open interest 352 < 1000; 134/129: long leg open interest 84 < 1000",
+   "time": "11:52"
   }
  ],
  "lastBar": "2026-11-27",
- "lastRun": "2026-11-27T16:37:16",
+ "lastRun": "2026-11-27T16:52:09",
  "lastSkip": {
   "WMT": {
-   "date": "2026-11-25",
-   "reason": "ADX 40.1 above 40: trend too strong to fade"
+   "date": "2026-11-27",
+   "reason": "no strike pair passed (2026-12-18): 133/128: long leg open interest 214 < 1000; 132/127: long leg open interest 352 < 1000; 134/129: long leg open interest 84 < 1000"
   },
   "GOOGL": {
    "date": "2026-11-25",
@@ -4496,7 +4503,7 @@
    "reason": "RSI 34.1 above 30"
   }
  },
- "lastPoll": "2026-11-27T11:37-05:00",
+ "lastPoll": "2026-11-27T11:52-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -8143,9 +8150,9 @@
      },
      "createdAt": "2026-11-23T21:22:07",
      "openedAt": "16:22",
-     "lastMark": 2.67,
+     "lastMark": 2.44,
      "lastMarkDate": "2026-11-27",
-     "lastMarkTime": "11:37",
+     "lastMarkTime": "11:52",
      "markSource": "chain",
      "marks": [
       {
@@ -8171,10 +8178,10 @@
       },
       {
        "date": "2026-11-27",
-       "mark": 2.67,
+       "mark": 2.44,
        "source": "chain",
-       "price": 167.26,
-       "time": "11:37"
+       "price": 167.06,
+       "time": "11:52"
       }
      ]
     }
@@ -9330,9 +9337,9 @@
     },
     "createdAt": "2026-11-20T15:52:10",
     "openedAt": "10:52",
-    "lastMark": 3.3,
+    "lastMark": 3.35,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "11:37",
+    "lastMarkTime": "11:52",
     "markSource": "chain",
     "marks": [
      {
@@ -9365,10 +9372,10 @@
      },
      {
       "date": "2026-11-27",
-      "mark": 3.3,
+      "mark": 3.35,
       "source": "chain",
-      "price": 50.47,
-      "time": "11:37"
+      "price": 50.63,
+      "time": "11:52"
      }
     ]
    },
@@ -9524,9 +9531,9 @@
     },
     "createdAt": "2026-11-20T16:07:04",
     "openedAt": "11:07",
-    "lastMark": 6.65,
+    "lastMark": 6.74,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "11:37",
+    "lastMarkTime": "11:52",
     "markSource": "chain",
     "marks": [
      {
@@ -9559,10 +9566,10 @@
      },
      {
       "date": "2026-11-27",
-      "mark": 6.65,
+      "mark": 6.74,
       "source": "chain",
-      "price": 646.62,
-      "time": "11:37"
+      "price": 647.89,
+      "time": "11:52"
      }
     ]
    },
@@ -9623,9 +9630,9 @@
     },
     "createdAt": "2026-11-20T17:52:14",
     "openedAt": "12:52",
-    "lastMark": 3.05,
+    "lastMark": 3.4,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "11:37",
+    "lastMarkTime": "11:52",
     "markSource": "chain",
     "marks": [
      {
@@ -9658,10 +9665,10 @@
      },
      {
       "date": "2026-11-27",
-      "mark": 3.05,
+      "mark": 3.4,
       "source": "chain",
-      "price": 167.26,
-      "time": "11:37"
+      "price": 167.06,
+      "time": "11:52"
      }
     ]
    },
@@ -9722,9 +9729,9 @@
     },
     "createdAt": "2026-11-25T18:07:11",
     "openedAt": "13:07",
-    "lastMark": 3.13,
+    "lastMark": 3.14,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "11:37",
+    "lastMarkTime": "11:52",
     "markSource": "chain",
     "marks": [
      {
@@ -9736,10 +9743,10 @@
      },
      {
       "date": "2026-11-27",
-      "mark": 3.13,
+      "mark": 3.14,
       "source": "chain",
-      "price": 332.33,
-      "time": "11:37"
+      "price": 332.75,
+      "time": "11:52"
      }
     ]
    }
@@ -15650,6 +15657,13 @@
     "action": "skip",
     "reason": "ADX 41.2 above 40: trend too strong to fade",
     "time": "09:52"
+   },
+   {
+    "date": "2026-11-27",
+    "ticker": "WMT",
+    "action": "skip",
+    "reason": "no strike pair passed (2026-12-18): 133/128: long leg open interest 214 < 1000; 132/127: long leg open interest 352 < 1000; 134/129: long leg open interest 84 < 1000",
+    "time": "11:52"
    }
   ],
   "lastSkip": {
@@ -15830,8 +15844,8 @@
     "reason": "RSI 34.1 above 30"
    },
    "WMT": {
-    "date": "2026-11-25",
-    "reason": "ADX 40.1 above 40: trend too strong to fade"
+    "date": "2026-11-27",
+    "reason": "no strike pair passed (2026-12-18): 133/128: long leg open interest 214 < 1000; 132/127: long leg open interest 352 < 1000; 134/129: long leg open interest 84 < 1000"
    },
    "AMD": {
     "date": "2026-11-25",

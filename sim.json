@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-27T15:22:10",
+ "generatedAt": "2026-11-27T15:37:04",
  "asof": "2026-11-27",
- "lastPoll": "2026-11-27T10:22-05:00",
+ "lastPoll": "2026-11-27T10:37-05:00",
  "mode": "intraday",
  "settings": {
   "startCapital": 2500.0,
@@ -4554,9 +4554,9 @@
      },
      "createdAt": "2026-11-23T21:22:07",
      "openedAt": "16:22",
-     "lastMark": 2.4,
+     "lastMark": 2.55,
      "lastMarkDate": "2026-11-27",
-     "lastMarkTime": "10:22",
+     "lastMarkTime": "10:37",
      "markSource": "chain",
      "marks": [
       {
@@ -4582,10 +4582,10 @@
       },
       {
        "date": "2026-11-27",
-       "mark": 2.4,
+       "mark": 2.55,
        "source": "chain",
-       "price": 166.13,
-       "time": "10:22"
+       "price": 166.6,
+       "time": "10:37"
       }
      ]
     }
@@ -5561,9 +5561,9 @@
     },
     "createdAt": "2026-11-20T15:52:10",
     "openedAt": "10:52",
-    "lastMark": 3.27,
+    "lastMark": 3.3,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "10:22",
+    "lastMarkTime": "10:37",
     "markSource": "chain",
     "marks": [
      {
@@ -5596,10 +5596,10 @@
      },
      {
       "date": "2026-11-27",
-      "mark": 3.27,
+      "mark": 3.3,
       "source": "chain",
-      "price": 49.86,
-      "time": "10:22"
+      "price": 50.26,
+      "time": "10:37"
      }
     ]
    },
@@ -5755,9 +5755,9 @@
     },
     "createdAt": "2026-11-20T16:07:04",
     "openedAt": "11:07",
-    "lastMark": 6.53,
+    "lastMark": 6.39,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "10:22",
+    "lastMarkTime": "10:37",
     "markSource": "chain",
     "marks": [
      {
@@ -5790,10 +5790,10 @@
      },
      {
       "date": "2026-11-27",
-      "mark": 6.53,
+      "mark": 6.39,
       "source": "chain",
-      "price": 640.54,
-      "time": "10:22"
+      "price": 644.16,
+      "time": "10:37"
      }
     ]
    },
@@ -5856,7 +5856,7 @@
     "openedAt": "12:52",
     "lastMark": 3.21,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "10:22",
+    "lastMarkTime": "10:37",
     "markSource": "chain",
     "marks": [
      {
@@ -5891,8 +5891,8 @@
       "date": "2026-11-27",
       "mark": 3.21,
       "source": "chain",
-      "price": 166.13,
-      "time": "10:22"
+      "price": 166.6,
+      "time": "10:37"
      }
     ]
    },
@@ -5953,9 +5953,9 @@
     },
     "createdAt": "2026-11-25T18:07:11",
     "openedAt": "13:07",
-    "lastMark": 3.23,
+    "lastMark": 3.27,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "10:22",
+    "lastMarkTime": "10:37",
     "markSource": "chain",
     "marks": [
      {
@@ -5967,10 +5967,10 @@
      },
      {
       "date": "2026-11-27",
-      "mark": 3.23,
+      "mark": 3.27,
       "source": "chain",
-      "price": 332.08,
-      "time": "10:22"
+      "price": 332.67,
+      "time": "10:37"
      }
     ]
    }

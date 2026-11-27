@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-27T18:22:03",
+ "generatedAt": "2026-11-27T18:37:06",
  "asof": "2026-11-27",
- "lastPoll": "2026-11-27T13:22-05:00",
+ "lastPoll": "2026-11-27T13:37-05:00",
  "mode": "intraday",
  "settings": {
   "startCapital": 2500.0,
@@ -4556,7 +4556,7 @@
      "openedAt": "16:22",
      "lastMark": 2.63,
      "lastMarkDate": "2026-11-27",
-     "lastMarkTime": "13:22",
+     "lastMarkTime": "13:37",
      "markSource": "chain",
      "marks": [
       {
@@ -4585,7 +4585,7 @@
        "mark": 2.63,
        "source": "chain",
        "price": 166.59,
-       "time": "13:22"
+       "time": "13:37"
       }
      ]
     }
@@ -5563,7 +5563,7 @@
     "openedAt": "10:52",
     "lastMark": 3.47,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "13:22",
+    "lastMarkTime": "13:37",
     "markSource": "chain",
     "marks": [
      {
@@ -5599,7 +5599,7 @@
       "mark": 3.47,
       "source": "chain",
       "price": 50.42,
-      "time": "13:22"
+      "time": "13:37"
      }
     ]
    },
@@ -5755,9 +5755,9 @@
     },
     "createdAt": "2026-11-20T16:07:04",
     "openedAt": "11:07",
-    "lastMark": 7.81,
+    "lastMark": 7.35,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "13:22",
+    "lastMarkTime": "13:37",
     "markSource": "chain",
     "marks": [
      {
@@ -5790,10 +5790,10 @@
      },
      {
       "date": "2026-11-27",
-      "mark": 7.81,
+      "mark": 7.35,
       "source": "chain",
       "price": 650.99,
-      "time": "13:22"
+      "time": "13:37"
      }
     ]
    },
@@ -5856,7 +5856,7 @@
     "openedAt": "12:52",
     "lastMark": 3.4,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "13:22",
+    "lastMarkTime": "13:37",
     "markSource": "chain",
     "marks": [
      {
@@ -5892,7 +5892,7 @@
       "mark": 3.4,
       "source": "chain",
       "price": 166.59,
-      "time": "13:22"
+      "time": "13:37"
      }
     ]
    },
@@ -5953,9 +5953,9 @@
     },
     "createdAt": "2026-11-25T18:07:11",
     "openedAt": "13:07",
-    "lastMark": 3.05,
+    "lastMark": 3.48,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "13:22",
+    "lastMarkTime": "13:37",
     "markSource": "chain",
     "marks": [
      {
@@ -5967,10 +5967,10 @@
      },
      {
       "date": "2026-11-27",
-      "mark": 3.05,
+      "mark": 3.48,
       "source": "chain",
       "price": 334.4,
-      "time": "13:22"
+      "time": "13:37"
      }
     ]
    }

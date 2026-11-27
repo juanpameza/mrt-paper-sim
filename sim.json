@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-27T20:07:01",
+ "generatedAt": "2026-11-27T20:22:04",
  "asof": "2026-11-27",
- "lastPoll": "2026-11-27T15:07-05:00",
+ "lastPoll": "2026-11-27T15:22-05:00",
  "mode": "intraday",
  "settings": {
   "startCapital": 2500.0,
@@ -4556,7 +4556,7 @@
      "openedAt": "16:22",
      "lastMark": 2.63,
      "lastMarkDate": "2026-11-27",
-     "lastMarkTime": "15:07",
+     "lastMarkTime": "15:22",
      "markSource": "chain",
      "marks": [
       {
@@ -4585,7 +4585,7 @@
        "mark": 2.63,
        "source": "chain",
        "price": 167.24,
-       "time": "15:07"
+       "time": "15:22"
       }
      ]
     }
@@ -5563,7 +5563,7 @@
     "openedAt": "10:52",
     "lastMark": 3.47,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "15:07",
+    "lastMarkTime": "15:22",
     "markSource": "chain",
     "marks": [
      {
@@ -5599,7 +5599,7 @@
       "mark": 3.47,
       "source": "chain",
       "price": 50.77,
-      "time": "15:07"
+      "time": "15:22"
      }
     ]
    },
@@ -5757,7 +5757,7 @@
     "openedAt": "11:07",
     "lastMark": 7.35,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "15:07",
+    "lastMarkTime": "15:22",
     "markSource": "chain",
     "marks": [
      {
@@ -5793,7 +5793,7 @@
       "mark": 7.35,
       "source": "chain",
       "price": 650.99,
-      "time": "15:07"
+      "time": "15:22"
      }
     ]
    },
@@ -5856,7 +5856,7 @@
     "openedAt": "12:52",
     "lastMark": 3.4,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "15:07",
+    "lastMarkTime": "15:22",
     "markSource": "chain",
     "marks": [
      {
@@ -5892,7 +5892,7 @@
       "mark": 3.4,
       "source": "chain",
       "price": 167.24,
-      "time": "15:07"
+      "time": "15:22"
      }
     ]
    },
@@ -5955,7 +5955,7 @@
     "openedAt": "13:07",
     "lastMark": 3.48,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "15:07",
+    "lastMarkTime": "15:22",
     "markSource": "chain",
     "marks": [
      {
@@ -5970,7 +5970,7 @@
       "mark": 3.48,
       "source": "chain",
       "price": 334.4,
-      "time": "15:07"
+      "time": "15:22"
      }
     ]
    }

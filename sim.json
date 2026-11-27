@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-27T20:51:59",
+ "generatedAt": "2026-11-27T21:07:05",
  "asof": "2026-11-27",
- "lastPoll": "2026-11-27T15:51-05:00",
+ "lastPoll": "2026-11-27T16:07-05:00",
  "mode": "intraday",
  "settings": {
   "startCapital": 2500.0,
@@ -3247,20 +3247,6 @@
     },
     {
      "date": "2026-11-20",
-     "ticker": "QQQ",
-     "action": "skip",
-     "reason": "no strike pair passed (2026-12-18): 605/615: debit 5.71 over 50% of width; 604.78/614.78: no 10-wide pair; 609.78/619.78: no 10-wide pair",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-20",
-     "ticker": "NFLX",
-     "action": "skip",
-     "reason": "no strike pair passed (2026-12-18): 56/61: long leg open interest 679 < 1000; 55/60: long leg open interest 505 < 1000; 57/62: long leg open interest 545 < 1000",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-20",
      "ticker": "GS",
      "action": "skip",
      "reason": "no strike pair passed (2026-12-18): 790/800: long leg open interest 401 < 1000; 785/795: long leg open interest 7 < 1000; 795/805: long leg open interest 19 < 1000",
@@ -3815,6 +3801,20 @@
      "action": "skip",
      "reason": "RSI 31.7 above 30",
      "time": "16:37"
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "WMT",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 134/129: long leg open interest 84 < 1000; 133/128: long leg open interest 214 < 1000; 135/130: long leg open interest 244 < 1000",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "DIS",
+     "action": "skip",
+     "reason": "ADX 41.3 above 40: trend too strong to fade",
+     "time": "16:07"
     }
    ]
   },
@@ -4556,7 +4556,7 @@
      "openedAt": "16:22",
      "lastMark": 2.63,
      "lastMarkDate": "2026-11-27",
-     "lastMarkTime": "15:51",
+     "lastMarkTime": "16:07",
      "markSource": "chain",
      "marks": [
       {
@@ -4585,7 +4585,7 @@
        "mark": 2.63,
        "source": "chain",
        "price": 167.24,
-       "time": "15:51"
+       "time": "16:07"
       }
      ]
     }
@@ -4628,83 +4628,6 @@
      }
     },
     {
-     "date": "2026-11-04",
-     "ticker": "BA",
-     "action": "skip",
-     "reason": "deployment cap: 131 left, spread costs 203",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-04",
-     "ticker": "BA",
-     "action": "skip",
-     "reason": "deployment cap: 131 left, spread costs 205",
-     "time": "16:22"
-    },
-    {
-     "date": "2026-11-05",
-     "ticker": "HD",
-     "action": "skip",
-     "reason": "ADX 42.6 above 40: trend too strong to fade",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-05",
-     "ticker": "WMT",
-     "action": "skip",
-     "reason": "ADX 48.5 above 40: trend too strong to fade",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-05",
-     "ticker": "ISRG",
-     "action": "skip",
-     "reason": "no strike pair passed (2026-12-18): 470/460: long leg open interest 85 < 1000; 465/455: long leg open interest 9 < 1000; 475/465: long leg open interest 15 < 1000",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-05",
-     "ticker": "V",
-     "action": "skip",
-     "reason": "no strike pair passed (2026-12-18): 425/415: long leg open interest 130 < 1000; 420/410: long leg open interest 433 < 1000; 430/420: long leg open interest 141 < 1000",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-05",
-     "ticker": "FDX",
-     "action": "skip",
-     "reason": "earnings date unknown",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-05",
-     "ticker": "XLF",
-     "action": "skip",
-     "reason": "no strike pair passed (2026-12-18): 58/53: debit 1.33 under 35% of width; 57/52: debit 0.96 under 35% of width; 59/54: long leg bid/ask 0.35 wider than 0.22",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-05",
-     "ticker": "ABBV",
-     "action": "skip",
-     "reason": "no strike pair passed (2026-12-18): 290/285: no 5-wide pair; 280/275: no 5-wide pair; 300/295: no 5-wide pair",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-05",
-     "ticker": "XLF",
-     "action": "skip",
-     "reason": "no strike pair passed (2026-12-18): 58/53: long leg bid/ask 0.38 wider than 0.17; 57/52: long leg bid/ask 0.21 wider than 0.15; 59/54: long leg bid/ask 0.41 wider than 0.22",
-     "time": "16:22"
-    },
-    {
-     "date": "2026-11-05",
-     "ticker": "XLF",
-     "action": "skip",
-     "reason": "no strike pair passed (2026-12-18): 58/53: long leg bid/ask 0.38 wider than 0.17; 57/52: long leg bid/ask 0.22 wider than 0.15; 59/54: long leg bid/ask 0.41 wider than 0.22",
-     "time": "16:37"
-    },
-    {
      "date": "2026-11-06",
      "ticker": "COIN",
      "action": "exit",
@@ -4726,27 +4649,6 @@
       "target": 4.1,
       "cost": 205.0
      }
-    },
-    {
-     "date": "2026-11-06",
-     "ticker": "CAT",
-     "action": "skip",
-     "reason": "ADX 40.2 above 40: trend too strong to fade",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-06",
-     "ticker": "GOOGL",
-     "action": "skip",
-     "reason": "valid setup, already have a position",
-     "time": "16:07"
-    },
-    {
-     "date": "2026-11-06",
-     "ticker": "HOOD",
-     "action": "skip",
-     "reason": "valid setup, already have a position",
-     "time": "16:07"
     },
     {
      "date": "2026-11-06",
@@ -5300,6 +5202,104 @@
       "exit": 0.8,
       "pnl": -109.6
      }
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "HOOD",
+     "action": "skip",
+     "reason": "valid setup, already traded today",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "FCX",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 50/55: short leg open interest 0 < 1000; 49.5/54.5: no 5-wide pair; 51/56: long leg open interest 0 < 1000",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "GLD",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 334/339: long leg open interest 0 < 1000; 333/338: long leg open interest 0 < 1000; 335/340: short leg open interest 0 < 1000",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "GS",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 810/820: long leg open interest 251 < 1000; 805/815: long leg open interest 101 < 1000; 815/825: long leg open interest 0 < 1000",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "UNH",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 350/355: short leg open interest 0 < 1000; 347.5/352.5: long leg open interest 0 < 1000; 352.5/357.5: long leg open interest 149 < 1000",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "NVDA",
+     "action": "skip",
+     "reason": "ADX 47.2 above 40: trend too strong to fade",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "MS",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 170/175: long leg open interest 653 < 1000; 167.5/172.5: long leg open interest 0 < 1000; 172.5/177.5: long leg open interest 291 < 1000",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "CRM",
+     "action": "skip",
+     "reason": "earnings 2026-12-02 before expiry 2026-12-18",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "BABA",
+     "action": "skip",
+     "reason": "position limit 182 < spread cost 198",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "BA",
+     "action": "skip",
+     "reason": "valid setup, already have a position",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "QQQ",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 650/660: debit 5.78 over 50% of width; 649/659: long leg open interest 0 < 1000; 651/661: short leg open interest 0 < 1000",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "NFLX",
+     "action": "skip",
+     "reason": "position limit 182 < spread cost 248",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "SPY",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 728/738: long leg open interest 0 < 1000; 727/737: long leg open interest 843 < 1000; 729/739: long leg open interest 938 < 1000",
+     "time": "16:07"
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "NEM",
+     "action": "skip",
+     "reason": "no strike pair passed (2026-12-18): 106/111: long leg open interest 0 < 1000; 105/110: long leg open interest 0 < 1000; 107/112: no 5-wide pair",
+     "time": "16:07"
     }
    ]
   }
@@ -5563,7 +5563,7 @@
     "openedAt": "10:52",
     "lastMark": 3.47,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "15:51",
+    "lastMarkTime": "16:07",
     "markSource": "chain",
     "marks": [
      {
@@ -5599,7 +5599,7 @@
       "mark": 3.47,
       "source": "chain",
       "price": 50.77,
-      "time": "15:51"
+      "time": "16:07"
      }
     ]
    },
@@ -5757,7 +5757,7 @@
     "openedAt": "11:07",
     "lastMark": 7.35,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "15:51",
+    "lastMarkTime": "16:07",
     "markSource": "chain",
     "marks": [
      {
@@ -5793,7 +5793,7 @@
       "mark": 7.35,
       "source": "chain",
       "price": 650.99,
-      "time": "15:51"
+      "time": "16:07"
      }
     ]
    },
@@ -5856,7 +5856,7 @@
     "openedAt": "12:52",
     "lastMark": 3.4,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "15:51",
+    "lastMarkTime": "16:07",
     "markSource": "chain",
     "marks": [
      {
@@ -5892,7 +5892,7 @@
       "mark": 3.4,
       "source": "chain",
       "price": 167.24,
-      "time": "15:51"
+      "time": "16:07"
      }
     ]
    },
@@ -5955,7 +5955,7 @@
     "openedAt": "13:07",
     "lastMark": 3.48,
     "lastMarkDate": "2026-11-27",
-    "lastMarkTime": "15:51",
+    "lastMarkTime": "16:07",
     "markSource": "chain",
     "marks": [
      {
@@ -5970,7 +5970,7 @@
       "mark": 3.48,
       "source": "chain",
       "price": 334.4,
-      "time": "15:51"
+      "time": "16:07"
      }
     ]
    }

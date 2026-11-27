@@ -42,7 +42,7 @@
   "CONFIRM_LOOKBACK": 5,
   "SIGNALS_BOOK": true
  },
- "equity": 1856.0,
+ "equity": 1738.4,
  "trades": {
   "s9e0c095d89": {
    "id": "s9e0c095d89",
@@ -519,7 +519,7 @@
    "stopPct": 50.0,
    "targetPct": 100.0,
    "entryFees": 1.3,
-   "status": "open",
+   "status": "closed",
    "book": "live",
    "signal": {
     "price": 68.05,
@@ -558,9 +558,9 @@
    },
    "createdAt": "2026-11-18T14:52:09",
    "openedAt": "09:52",
-   "lastMark": 1.5,
-   "lastMarkDate": "2026-11-25",
-   "lastMarkTime": "16:37",
+   "lastMark": 0.85,
+   "lastMarkDate": "2026-11-27",
+   "lastMarkTime": "09:36",
    "markSource": "chain",
    "marks": [
     {
@@ -604,8 +604,25 @@
      "source": "chain",
      "price": 65.78,
      "time": "16:37"
+    },
+    {
+     "date": "2026-11-27",
+     "mark": 0.85,
+     "source": "chain",
+     "price": 66.72,
+     "time": "09:36"
     }
-   ]
+   ],
+   "closed": "2026-11-27",
+   "exitPrice": 0.8,
+   "exitMark": 0.85,
+   "exitReason": "stop",
+   "exitFees": 1.3,
+   "fees": 2.6,
+   "pnlGross": -115.0,
+   "pnl": -117.6,
+   "closedAt": "2026-11-27T14:36:36",
+   "closedTime": "09:36"
   },
   "s587f7a1223": {
    "id": "s587f7a1223",
@@ -4228,10 +4245,28 @@
    "action": "skip",
    "reason": "RSI 31.7 above 30",
    "time": "16:37"
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "HOOD",
+   "action": "exit",
+   "reason": "stop",
+   "time": "09:36",
+   "detail": {
+    "exit": 0.8,
+    "pnl": -117.6
+   }
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "DIS",
+   "action": "skip",
+   "reason": "ADX 41.1 above 40: trend too strong to fade",
+   "time": "09:36"
   }
  ],
- "lastBar": "2026-11-25",
- "lastRun": "2026-11-25T21:37:06",
+ "lastBar": "2026-11-27",
+ "lastRun": "2026-11-27T14:36:37",
  "lastSkip": {
   "WMT": {
    "date": "2026-11-25",
@@ -4322,8 +4357,8 @@
    "reason": "RSI 64.9 below 70"
   },
   "DIS": {
-   "date": "2026-11-25",
-   "reason": "RSI 68.9 below 70"
+   "date": "2026-11-27",
+   "reason": "ADX 41.1 above 40: trend too strong to fade"
   },
   "CVS": {
    "date": "2026-11-23",
@@ -4454,7 +4489,7 @@
    "reason": "RSI 34.1 above 30"
   }
  },
- "lastPoll": "2026-11-25T16:37-05:00",
+ "lastPoll": "2026-11-27T09:36-05:00",
  "mode": "intraday",
  "shadow": {
   "close": {
@@ -7367,7 +7402,7 @@
    }
   },
   "confirm": {
-   "equity": 1934.0,
+   "equity": 1824.4,
    "trades": {
     "s7cd37254c1": {
      "id": "s7cd37254c1",
@@ -7960,7 +7995,7 @@
      "stopPct": 50.0,
      "targetPct": 100.0,
      "entryFees": 1.3,
-     "status": "open",
+     "status": "closed",
      "book": "confirm",
      "signal": {
       "price": 67.37,
@@ -7999,9 +8034,9 @@
      },
      "createdAt": "2026-11-23T21:22:06",
      "openedAt": "16:22",
-     "lastMark": 1.5,
-     "lastMarkDate": "2026-11-25",
-     "lastMarkTime": "16:37",
+     "lastMark": 0.85,
+     "lastMarkDate": "2026-11-27",
+     "lastMarkTime": "09:36",
      "markSource": "chain",
      "marks": [
       {
@@ -8024,8 +8059,25 @@
        "source": "chain",
        "price": 65.78,
        "time": "16:37"
+      },
+      {
+       "date": "2026-11-27",
+       "mark": 0.85,
+       "source": "chain",
+       "price": 66.72,
+       "time": "09:36"
       }
-     ]
+     ],
+     "closed": "2026-11-27",
+     "exitPrice": 0.8,
+     "exitMark": 0.85,
+     "exitReason": "stop",
+     "exitFees": 1.3,
+     "fees": 2.6,
+     "pnlGross": -107.0,
+     "pnl": -109.6,
+     "closedAt": "2026-11-27T14:36:36",
+     "closedTime": "09:36"
     },
     "s7b42a31c39": {
      "id": "s7b42a31c39",
@@ -8084,9 +8136,9 @@
      },
      "createdAt": "2026-11-23T21:22:07",
      "openedAt": "16:22",
-     "lastMark": 2.24,
-     "lastMarkDate": "2026-11-25",
-     "lastMarkTime": "16:37",
+     "lastMark": 2.55,
+     "lastMarkDate": "2026-11-27",
+     "lastMarkTime": "09:36",
      "markSource": "chain",
      "marks": [
       {
@@ -8109,6 +8161,13 @@
        "source": "chain",
        "price": 164.53,
        "time": "16:37"
+      },
+      {
+       "date": "2026-11-27",
+       "mark": 2.55,
+       "source": "chain",
+       "price": 164.79,
+       "time": "09:36"
       }
      ]
     }
@@ -8882,6 +8941,17 @@
      "action": "skip",
      "reason": "no strike pair passed (2026-12-18): 101/106: long leg open interest 84 < 1000; 100/105: long leg bid/ask 1.10 wider than 0.62; 102/107: long leg bid/ask 0.70 wider than 0.51",
      "time": "16:22"
+    },
+    {
+     "date": "2026-11-27",
+     "ticker": "HOOD",
+     "action": "exit",
+     "reason": "stop",
+     "time": "09:36",
+     "detail": {
+      "exit": 0.8,
+      "pnl": -109.6
+     }
     }
    ],
    "lastSkip": {
@@ -9253,9 +9323,9 @@
     },
     "createdAt": "2026-11-20T15:52:10",
     "openedAt": "10:52",
-    "lastMark": 2.8,
-    "lastMarkDate": "2026-11-25",
-    "lastMarkTime": "16:37",
+    "lastMark": 3.11,
+    "lastMarkDate": "2026-11-27",
+    "lastMarkTime": "09:36",
     "markSource": "chain",
     "marks": [
      {
@@ -9285,6 +9355,13 @@
       "source": "chain",
       "price": 48.55,
       "time": "16:37"
+     },
+     {
+      "date": "2026-11-27",
+      "mark": 3.11,
+      "source": "chain",
+      "price": 50.1,
+      "time": "09:36"
      }
     ]
    },
@@ -9440,9 +9517,9 @@
     },
     "createdAt": "2026-11-20T16:07:04",
     "openedAt": "11:07",
-    "lastMark": 5.43,
-    "lastMarkDate": "2026-11-25",
-    "lastMarkTime": "16:37",
+    "lastMark": 6.7,
+    "lastMarkDate": "2026-11-27",
+    "lastMarkTime": "09:36",
     "markSource": "chain",
     "marks": [
      {
@@ -9472,6 +9549,13 @@
       "source": "chain",
       "price": 633.93,
       "time": "16:37"
+     },
+     {
+      "date": "2026-11-27",
+      "mark": 6.7,
+      "source": "chain",
+      "price": 640.9,
+      "time": "09:36"
      }
     ]
    },
@@ -9532,9 +9616,9 @@
     },
     "createdAt": "2026-11-20T17:52:14",
     "openedAt": "12:52",
-    "lastMark": 3.71,
-    "lastMarkDate": "2026-11-25",
-    "lastMarkTime": "16:37",
+    "lastMark": 3.01,
+    "lastMarkDate": "2026-11-27",
+    "lastMarkTime": "09:36",
     "markSource": "chain",
     "marks": [
      {
@@ -9564,6 +9648,13 @@
       "source": "chain",
       "price": 164.53,
       "time": "16:37"
+     },
+     {
+      "date": "2026-11-27",
+      "mark": 3.01,
+      "source": "chain",
+      "price": 164.79,
+      "time": "09:36"
      }
     ]
    },
@@ -9624,9 +9715,9 @@
     },
     "createdAt": "2026-11-25T18:07:11",
     "openedAt": "13:07",
-    "lastMark": 2.72,
-    "lastMarkDate": "2026-11-25",
-    "lastMarkTime": "16:37",
+    "lastMark": 3.25,
+    "lastMarkDate": "2026-11-27",
+    "lastMarkTime": "09:36",
     "markSource": "chain",
     "marks": [
      {
@@ -9635,6 +9726,13 @@
       "source": "chain",
       "price": 327.45,
       "time": "16:37"
+     },
+     {
+      "date": "2026-11-27",
+      "mark": 3.25,
+      "source": "chain",
+      "price": 332.61,
+      "time": "09:36"
      }
     ]
    }
@@ -15531,6 +15629,13 @@
     "action": "skip",
     "reason": "RSI 31.7 above 30",
     "time": "16:37"
+   },
+   {
+    "date": "2026-11-27",
+    "ticker": "DIS",
+    "action": "skip",
+    "reason": "ADX 41.1 above 40: trend too strong to fade",
+    "time": "09:36"
    }
   ],
   "lastSkip": {
@@ -15539,8 +15644,8 @@
     "reason": "ADX 50.6 above 40: trend too strong to fade"
    },
    "DIS": {
-    "date": "2026-11-25",
-    "reason": "RSI 68.9 below 70"
+    "date": "2026-11-27",
+    "reason": "ADX 41.1 above 40: trend too strong to fade"
    },
    "ABNB": {
     "date": "2026-11-10",
